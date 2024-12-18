@@ -11,5 +11,4 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadEnvirohelm
+    - PlasmamanSafe

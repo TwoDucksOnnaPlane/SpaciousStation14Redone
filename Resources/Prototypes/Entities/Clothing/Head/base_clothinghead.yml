@@ -136,6 +136,7 @@
     tags:
     - WhitelistChameleon
     - HelmetEVA
+    - PlasmamanSafe
   - type: IdentityBlocker
   - type: HideLayerClothing
     slots:
@@ -180,6 +181,7 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+    - PlasmamanSafe
   - type: IdentityBlocker
   - type: HideLayerClothing
     slots:
@@ -189,26 +191,23 @@
 - type: entity
   abstract: true
   id: ClothingHeadEnvirohelmBase
+  parent: ClothingHeadBase
   name: base envirosuit helmet
-  categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    state: icon
-  - type: Clickable
-  - type: InteractionOutline
-  - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
-    quickEquip: false
-    slots: [ HEAD ]
   - type: IgniteFromGasImmunity
   - type: EyeProtection
   - type: BreathMask
   - type: GroupExamine
+  - type: PressureProtection # Same as EVA helmet
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    coefficient: 0.2
   - type: IngestionBlocker
   - type: Tag
     tags:
     - WhitelistChameleon
+    - PlasmamanSafe
   - type: HideLayerClothing
     slots:
     - Hair

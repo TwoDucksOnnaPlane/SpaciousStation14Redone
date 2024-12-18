@@ -1,5 +1,5 @@
 - type: characterItemGroup
-  id: LoadoutPlasmamanPlasmaTank
+  id: LoadoutPlasmamanEnvirohelm
   minItems: 1
   maxItems: 1
   requirements:
@@ -8,5 +8,5 @@
         - Plasmaman
   items:
     - type: loadout
-      id: LoadoutSpeciesDoubleEmergencyPlasmaTank
+      id: LoadoutSpeciesHeadEnvirohelm
       priority: 0
