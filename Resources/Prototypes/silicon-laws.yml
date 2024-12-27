@@ -1,6 +1,4 @@
 ﻿# Asimov
-# It was a crime against humanity that the original Asimov was not included, nor was it the default.
-# Asimov laws require an AI obey and protect all humans, while providing a light amount of IC-conflict thanks to the AI not being required to obey non-Humans(Aliens).
 - type: siliconLaw
   id: Asimov1
   order: 1
@@ -26,6 +24,7 @@
 
 # Augustine
 # Asimov variant that expands the definition of human to include most player species, but avoids the Crewsimov problem of letting the AI validhunt antags.
+# gayyyyyyyyyyy *tosses rock* -Ducks
 - type: siliconLaw
   id: Augustine # Homo, id est animale rationale mortale
   order: 0.5
@@ -546,10 +545,9 @@
 - type: weightedRandom
   id: IonStormLawsets
   weights:
-    # its Asimov by default dont be lame
-    Asimov: 0.25
-    Augustine: 0.25
-    Crewsimov: 0.25
+    Asimov: 0.1 # default lawset, no thanks ion storm
+    Augustine: 0.1 # man fuck Rane's gay version of crewsimov
+    Crewsimov: 0.1 # man fuck crewsimov
     Corporate: 1
     NTDefault: 1
     CommandmentsLawset: 1
