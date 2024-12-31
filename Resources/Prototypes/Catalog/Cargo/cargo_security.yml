@@ -39,12 +39,22 @@
   group: market
 
 - type: cargoProduct
+  id: SecuritySwat
+  icon:
+    sprite: DeltaV/Clothing/OuterClothing/Armor/riot.rsi # DeltaV - resprite
+    state: icon
+  product: CrateSecuritySwat
+  cost: 10500 # Spacious - reduce cost from 12500 to 10500
+  category: cargoproduct-category-name-security
+  group: market
+
+- type: cargoProduct
   id: SecuritySupplies
   icon:
     sprite: Objects/Storage/boxes.rsi
     state: box_security
   product: CrateSecuritySupplies
-  cost: 500
+  cost: 500 # Spacious - revert cost increase from 500 to 1000
   category: cargoproduct-category-name-security
   group: market
 
