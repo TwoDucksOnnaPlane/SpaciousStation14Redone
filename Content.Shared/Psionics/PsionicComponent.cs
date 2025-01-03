@@ -1,4 +1,3 @@
-using Content.Shared.Alert;
 using Content.Shared.DoAfter;
 using Content.Shared.Psionics;
 using Robust.Shared.GameStates;
@@ -13,7 +12,7 @@ namespace Content.Shared.Abilities.Psionics
         ///     Current Mana.
         /// </summary>
         [DataField, AutoNetworkedField]
-        public float Mana = 50;
+        public float Mana;
 
         /// <summary>
         ///     Max Mana Possible.
@@ -213,7 +212,6 @@ namespace Content.Shared.Abilities.Psionics
         public string AlreadyCasting = "already-casting";
 
         /// Popup to play if there no Mana left for a power to execute.
-        [DataField]
         public string NoMana = "no-mana";
 
         /// <summary>
@@ -227,8 +225,5 @@ namespace Content.Shared.Abilities.Psionics
         /// </summary>
         [DataField]
         public int FamiliarLimit = 1;
-
-        [DataField]
-        public ProtoId<AlertPrototype> ManaAlert = "Mana";
     }
 }

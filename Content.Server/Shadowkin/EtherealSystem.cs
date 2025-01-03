@@ -79,6 +79,9 @@ public sealed class EtherealSystem : SharedEtherealSystem
         RemComp<RespiratorImmuneComponent>(uid);
         RemComp<MovementIgnoreGravityComponent>(uid);
 
+        SpawnAtPosition("ShadowkinShadow", Transform(uid).Coordinates);
+        SpawnAtPosition("EffectFlashShadowkinDarkSwapOff", Transform(uid).Coordinates);
+
         foreach (var light in component.DarkenedLights.ToArray())
         {
             if (!TryComp<PointLightComponent>(light, out var pointLight)
@@ -178,7 +181,7 @@ public sealed class EtherealSystem : SharedEtherealSystem
 
                 if (etherealLight.AttachedEntity == uid
                     && _random.Prob(0.03f))
-                    etherealLight.AttachedEntity = EntityUid.Invalid;
+                        etherealLight.AttachedEntity = EntityUid.Invalid;
 
                 if (!etherealLight.OldRadiusEdited)
                 {

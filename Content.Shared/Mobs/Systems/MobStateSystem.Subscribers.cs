@@ -1,6 +1,5 @@
 ﻿using Content.Shared.Bed.Sleep;
 using Content.Shared.Buckle.Components;
-using Content.Shared.CCVar;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.Damage.ForceSay;
 using Content.Shared.Emoting;
@@ -17,20 +16,17 @@ using Content.Shared.Speech;
 using Content.Shared.Standing;
 using Content.Shared.Strip.Components;
 using Content.Shared.Throwing;
-using Robust.Shared.Configuration;
 using Robust.Shared.Physics.Components;
 
 namespace Content.Shared.Mobs.Systems;
 
 public partial class MobStateSystem
 {
-    [Dependency] private readonly IConfigurationManager _configurationManager = default!;
-
     //General purpose event subscriptions. If you can avoid it register these events inside their own systems
     private void SubscribeEvents()
     {
         SubscribeLocalEvent<MobStateComponent, BeforeGettingStrippedEvent>(OnGettingStripped);
-        SubscribeLocalEvent<MobStateComponent, ChangeDirectionAttemptEvent>(OnDirectionAttempt);
+        SubscribeLocalEvent<MobStateComponent, ChangeDirectionAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, UseAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, AttackAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, ConsciousAttemptEvent>(CheckAct);
@@ -42,7 +38,7 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, DropAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, PickupAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, StartPullAttemptEvent>(CheckAct);
-        SubscribeLocalEvent<MobStateComponent, UpdateCanMoveEvent>(OnMoveAttempt);
+        SubscribeLocalEvent<MobStateComponent, UpdateCanMoveEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, StandAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, PointAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
@@ -51,23 +47,6 @@ public partial class MobStateSystem
 
         SubscribeLocalEvent<MobStateComponent, UnbuckleAttemptEvent>(OnUnbuckleAttempt);
     }
-
-    private void OnDirectionAttempt(Entity<MobStateComponent> ent, ref ChangeDirectionAttemptEvent args)
-    {
-        if (ent.Comp.CurrentState is MobState.Critical && _configurationManager.GetCVar(CCVars.AllowMovementWhileCrit))
-            return;
-
-        CheckAct(ent.Owner, ent.Comp, args);
-    }
-
-    private void OnMoveAttempt(Entity<MobStateComponent> ent, ref UpdateCanMoveEvent args)
-    {
-        if (ent.Comp.CurrentState is MobState.Critical && _configurationManager.GetCVar(CCVars.AllowMovementWhileCrit))
-            return;
-
-        CheckAct(ent.Owner, ent.Comp, args);
-    }
-
 
     private void OnUnbuckleAttempt(Entity<MobStateComponent> ent, ref UnbuckleAttemptEvent args)
     {
@@ -165,9 +144,6 @@ public partial class MobStateSystem
             RemCompDeferred<AllowNextCritSpeechComponent>(uid);
             return;
         }
-
-        if (component.CurrentState is MobState.Critical && _configurationManager.GetCVar(CCVars.AllowTalkingWhileCrit))
-            return;
 
         CheckAct(uid, component, args);
     }

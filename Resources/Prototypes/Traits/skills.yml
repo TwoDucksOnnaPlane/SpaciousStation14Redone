@@ -291,12 +291,9 @@
     - !type:CharacterLogicOrRequirement
       requirements:
         - !type:CharacterSpeciesRequirement
+          inverted: true
           species:
             - Shadowkin
-        - !type:CharacterTraitRequirement
-          inverted: true
-          traits:
-            - ShadowkinBlackeye
 
 - type: trait
   id: TrapAvoider
