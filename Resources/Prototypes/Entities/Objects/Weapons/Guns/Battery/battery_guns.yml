@@ -32,6 +32,11 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
+  - type: Cautery
+    speed: 0.9
+  - type: SurgeryTool
+    endSound:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: MeleeWeapon
     attackRate: 1.3333
     damage:
@@ -50,12 +55,6 @@
         Blunt: 2.5
   - type: DamageOtherOnHit
     staminaCost: 7
-  # Shitmed Change
-  - type: Cautery
-    speed: 0.9
-  - type: SurgeryTool
-    endSound:
-      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
 
 - type: entity
   id: BaseWeaponPowerCell
@@ -92,6 +91,11 @@
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
+  - type: Cautery
+    speed: 0.9
+  - type: SurgeryTool
+    endSound:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: MeleeWeapon
     attackRate: 1.3333
     damage:
@@ -110,12 +114,6 @@
         Blunt: 2.5
   - type: DamageOtherOnHit
     staminaCost: 7
-  # Shitmed Change
-  - type: Cautery
-    speed: 0.9
-  - type: SurgeryTool
-    endSound:
-      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
 
 - type: entity
   id: BaseWeaponBatterySmall

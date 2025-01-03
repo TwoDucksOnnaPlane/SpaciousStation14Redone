@@ -3,7 +3,7 @@ using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.FixedPoint;
 using Content.Shared.Localizations;
-using Content.Shared._Shitmed.Targeting; // Shitmed Change
+using Content.Shared.Targeting; // Shitmed
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using System.Linq;
@@ -121,11 +121,11 @@ namespace Content.Server.Chemistry.ReagentEffects
                 Damage * scale,
                 IgnoreResistances,
                 interruptsDoAfters: false,
-                // Shitmed Change Start
+                // Shitmed Start
                 targetPart: TargetBodyPart.All,
                 partMultiplier: 0.5f,
                 canSever: false);
-                // Shitmed Change End
+                // Shitmed End
         }
     }
 }
