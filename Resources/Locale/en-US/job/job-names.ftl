@@ -25,7 +25,7 @@ job-name-hop = Head of Personnel
 job-name-captain = Station Administrator
 job-name-serviceworker = Service Worker
 job-name-centcomoff = High Command Official
-job-name-reporter = Propogandist
+job-name-reporter = Propagandist
 job-name-musician = Musician
 job-name-librarian = Cataloguer
 # DeltaV - Changed Lawyer to Attorney
