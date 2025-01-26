@@ -21,8 +21,8 @@
       min: 108000 # 30 hours
   weight: 10
   startingGear: QuartermasterGear
-  conditionalStartingGear:
-    - id: QuartermasterPlasmamanGear
+  conditionalStartingGear: # Quartermasters have the same gear as cargo techs. Ouch.
+    - id: CargoTechPlasmamanGear
       requirements:
       - !type:CharacterSpeciesRequirement
         species: [ Plasmaman ]
@@ -60,11 +60,3 @@
   innerClothingSkirt: ClothingUniformJumpskirtQM
   satchel: ClothingBackpackSatchelQuartermasterFilled
   duffelbag: ClothingBackpackDuffelQuartermasterFilled
-
-- type: startingGear
-  id: QuartermasterPlasmamanGear
-  parent: BasePlasmamanGear
-  equipment:
-    jumpsuit: ClothingUniformEnvirosuitQM
-    head: ClothingHeadEnvirohelmQM
-    gloves: ClothingHandsGlovesEnviroglovesCargo
