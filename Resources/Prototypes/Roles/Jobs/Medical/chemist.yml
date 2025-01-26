@@ -8,11 +8,6 @@
       department: Medical
       min: 28800 # DeltaV - 8 hours
   startingGear: ChemistGear
-  conditionalStartingGear:
-    - id: ChemistPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
   access:
@@ -37,11 +32,3 @@
   innerClothingSkirt: ClothingUniformJumpskirtChemistry
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled
-
-- type: startingGear
-  id: ChemistPlasmamanGear
-  parent: BasePlasmamanGear
-  equipment:
-    jumpsuit: ClothingUniformEnvirosuitChemist
-    head: ClothingHeadEnvirohelmChemist
-    gloves: ClothingHandsGlovesEnviroglovesWhite

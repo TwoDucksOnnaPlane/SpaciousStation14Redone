@@ -20,11 +20,6 @@
       min: 90000 # 25 hours
   weight: 10
   startingGear: CMOGear
-  conditionalStartingGear:
-    - id: CMOPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconChiefMedicalOfficer"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
@@ -62,11 +57,3 @@
   innerClothingSkirt: ClothingUniformJumpskirtCMO
   satchel: ClothingBackpackSatchelCMOFilled
   duffelbag: ClothingBackpackDuffelCMOFilled
-
-- type: startingGear
-  id: CMOPlasmamanGear
-  parent: BasePlasmamanGear
-  equipment:
-    jumpsuit: ClothingUniformEnvirosuitCMO
-    head: ClothingHeadEnvirohelmCMO
-    gloves: ClothingHandsGlovesEnviroglovesWhite

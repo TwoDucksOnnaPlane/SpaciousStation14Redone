@@ -18,11 +18,6 @@
       department: Security
       min: 216000 # 60 hrs
   startingGear: SeniorOfficerGear
-  conditionalStartingGear:
-    - id: SecurityOfficerPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconSeniorOfficer"
   supervisors: job-supervisors-hos
   canBeAntag: false

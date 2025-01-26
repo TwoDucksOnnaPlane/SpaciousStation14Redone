@@ -11,11 +11,3 @@
   innerClothingSkirt: ClothingUniformSkirtCourier
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
-
-- type: startingGear
-  id: CourierPlasmamanGear
-  parent: BasePlasmamanGear
-  equipment:
-    jumpsuit: ClothingUniformEnvirosuitCourier
-    head: ClothingHeadEnvirohelmCourier
-    gloves: ClothingHandsGlovesEnviroglovesCargo

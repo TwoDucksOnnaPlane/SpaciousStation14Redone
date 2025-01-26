@@ -7,11 +7,6 @@
     - !type:CharacterOverallTimeRequirement
       min: 7200 #2 hours
   startingGear: MartialArtistGear
-  conditionalStartingGear: # TODO: martial artist plasmaman gear
-    - id: PassengerPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconMartialArtist"
   supervisors: job-supervisors-hop
   setPreference: true

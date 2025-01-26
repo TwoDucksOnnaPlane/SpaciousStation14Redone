@@ -4,11 +4,6 @@
   description: job-description-janitor
   playTimeTracker: JobJanitor
   startingGear: JanitorGear
-  conditionalStartingGear:
-    - id: JanitorPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconJanitor"
   supervisors: job-supervisors-hop
   access:
@@ -34,14 +29,6 @@
   innerClothingSkirt: ClothingUniformJumpskirtJanitor
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
-
-- type: startingGear
-  id: JanitorPlasmamanGear
-  parent: BasePlasmamanGear
-  equipment:
-    jumpsuit: ClothingUniformEnvirosuitJanitor
-    head: ClothingHeadEnvirohelmJanitor
-    gloves: ClothingHandsGlovesEnviroglovesJanitor
 
 - type: startingGear
   id: JanitorMaidGear
