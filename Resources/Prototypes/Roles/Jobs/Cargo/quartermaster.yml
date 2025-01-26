@@ -21,11 +21,6 @@
       min: 108000 # 30 hours
   weight: 10
   startingGear: QuartermasterGear
-  conditionalStartingGear:
-    - id: QuartermasterPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
   canBeAntag: false
@@ -45,9 +40,14 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 8
 
 - type: startingGear
   id: QuartermasterGear
+  subGear:
+  - QuartermasterPlasmamanGear
   equipment:
     head: ClothingHeadHatBeretLogi
     jumpsuit: ClothingUniformJumpsuitQM

@@ -5,11 +5,6 @@
   playTimeTracker: JobCentralCommandOfficial
   setPreference: false
   startingGear: CentcomGear
-  conditionalStartingGear:
-    - id: CentcomPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconNanotrasen"
   supervisors: job-supervisors-hos
   canBeAntag: false
@@ -17,9 +12,16 @@
   - AllAccess
   access:
   - CentralCommand
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 10
+  - !type:ModifyEnvirohelmSpecial
+    powerCell: PowerCellHigh
 
 - type: startingGear
   id: CentcomGear
+  subGear:
+  - CentcomPlasmamanGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficial
     shoes: ClothingShoesBootsCombatFilled

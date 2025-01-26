@@ -20,11 +20,6 @@
       min: 90000 # 25 hours
   weight: 10
   startingGear: CMOGear
-  conditionalStartingGear:
-    - id: CMOPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconChiefMedicalOfficer"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
@@ -50,9 +45,16 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 2.5
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 8
+  - !type:ModifyEnvirohelmSpecial
+    powerCell: PowerCellHigh
 
 - type: startingGear
   id: CMOGear
+  subGear:
+  - CMOPlasmamanGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCMO
     back: ClothingBackpackCMOFilled

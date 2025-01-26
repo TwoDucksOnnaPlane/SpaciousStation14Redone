@@ -64,6 +64,7 @@
   - type: Body
     prototype: Plasmaman
     requiredLegs: 2
+    gibSound: /Audio/Effects/bone_rattle.ogg
   - type: Bloodstream
     bloodlossThreshold: 0
     bleedReductionAmount: 0
@@ -92,7 +93,7 @@
       collection: FirePunch
     animation: WeaponArcPurplePunch
     damage:
-      types:
+      types: # oooh scarier extra damage~
         Heat: 5
         Blunt: 2.25
   - type: DamageOnHit
@@ -111,12 +112,12 @@
     butcheringType: Spike
     spawned:
     - id: SheetPlasma1
-      amount: 4
+      amount: 8
   - type: Inventory
     templateId: plasmaman
   - type: Temperature
-    heatDamageThreshold: 313    # 40    celsius, -12 from base heat damage threshold
-    currentTemperature: 270.15  # -3    celsius
+    heatDamageThreshold: 313    # 40 celsius, -12 from base heat damage threshold
+    currentTemperature: 270.15  # -3 celsius
     specificHeat: 46
     coldDamage:
       types:

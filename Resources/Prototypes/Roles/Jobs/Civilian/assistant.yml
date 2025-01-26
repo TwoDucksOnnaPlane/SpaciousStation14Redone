@@ -4,11 +4,6 @@
   description: job-description-passenger
   playTimeTracker: JobPassenger
   startingGear: PassengerGear
-  conditionalStartingGear:
-    - id: PassengerPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
   access:
@@ -16,6 +11,8 @@
 
 - type: startingGear
   id: PassengerGear
+  subGear:
+  - PassengerPlasmamanGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
     back: ClothingBackpackFilled
@@ -30,6 +27,6 @@
   id: PassengerPlasmamanGear
   parent: BasePlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformEnvirosuit
-    head: ClothingHeadEnvirohelm
-    gloves: ClothingHandsGlovesEnvirogloves
+    jumpsuit: ClothingUniformEnvirosuitColorGrey
+    head: ClothingHeadEnvirohelmColorGrey
+    gloves: ClothingHandsGlovesEnviroglovesColorDarkGrey

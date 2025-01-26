@@ -3,11 +3,6 @@
   name: job-name-mail-carrier
   description: job-description-mail-carrier
   startingGear: CourierGear
-  conditionalStartingGear:
-    - id: CourierPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   playTimeTracker: JobMailCarrier
   icon: "JobIconMailCarrier"
   supervisors: job-supervisors-qm
@@ -18,6 +13,8 @@
 
 - type: startingGear
   id: MailCarrierGear
+  subGear:
+  - MailCarrierPlasmamanGear
   equipment:
     head: ClothingHeadMailCarrier
     jumpsuit: ClothingUniformMailCarrier
@@ -29,3 +26,11 @@
   innerClothingSkirt: ClothingUniformSkirtMailCarrier
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled
+
+- type: startingGear
+  id: MailCarrierPlasmamanGear
+  parent: BasePlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformEnvirosuitMailCarrier
+    head: ClothingHeadEnvirohelmMailCarrier
+    gloves: ClothingHandsGlovesEnviroglovesWhite

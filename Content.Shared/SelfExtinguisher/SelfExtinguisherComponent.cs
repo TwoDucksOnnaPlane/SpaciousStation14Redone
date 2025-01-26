@@ -37,7 +37,7 @@ public sealed partial class SelfExtinguisherComponent : Component
     ///   don't spam popups every frame and instead have a cooldown.
     /// </summary>
     [DataField]
-    public TimeSpan PopupCooldown = TimeSpan.FromSeconds(0.8);
+    public TimeSpan PopupCooldown = TimeSpan.FromSeconds(1);
 
     /// <summary>
     ///   Time before the next popup can be shown.
@@ -57,4 +57,10 @@ public sealed partial class SelfExtinguisherComponent : Component
     /// </summary>
     [DataField(required: true)]
     public SoundSpecifier Sound { get; private set; } = default!;
+
+    /// <summary>
+    ///   The sound effect that plays upon getting refilled.
+    /// </summary>
+    [DataField]
+    public SoundSpecifier RefillSound = new SoundPathSpecifier("/Audio/Weapons/Guns/MagIn/revolver_magin.ogg");
 }

@@ -31,7 +31,8 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
   weights:
-    KillRandomPersonObjective: 1
+    KillRandomPersonObjective: 1 # DeltaV Replaced for Teach Lesson # Spacious - re-enabled Kill Person objective
+    # TeachLessonRandomPersonObjective: 1 # Spacious - Disable Teach Lesson objective
     KillRandomHeadObjective: 0.25
 
 - type: weightedRandom

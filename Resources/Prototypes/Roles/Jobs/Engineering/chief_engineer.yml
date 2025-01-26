@@ -17,11 +17,6 @@
       min: 108000 # 30 hours
   weight: 10
   startingGear: ChiefEngineerGear
-  conditionalStartingGear:
-    - id: ChiefEngineerPlasmamanGear
-      requirements:
-      - !type:CharacterSpeciesRequirement
-        species: [ Plasmaman ]
   icon: "JobIconChiefEngineer"
   requireAdminNotify: true
   supervisors: job-supervisors-captain
@@ -40,9 +35,16 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 8
+  - !type:ModifyEnvirohelmSpecial
+    powerCell: PowerCellPotato
 
 - type: startingGear
   id: ChiefEngineerGear
+  subGear:
+  - ChiefEngineerPlasmamanGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitChiefEngineer
     back: ClothingBackpackChiefEngineerFilled

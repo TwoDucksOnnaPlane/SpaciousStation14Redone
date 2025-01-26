@@ -3,11 +3,13 @@ using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Actions;
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
+using Content.Shared.Effects;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Popups;
 using Content.Shared.SelfExtinguisher;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Robust.Shared.Player;
 using Robust.Shared.Timing;
 
 namespace Content.Server.SelfExtinguisher;
@@ -21,6 +23,11 @@ public sealed partial class SelfExtinguisherSystem : SharedSelfExtinguisherSyste
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
+    [Dependency] private readonly SharedColorFlashEffectSystem _color = default!;
+
+    // Same color as the water reagent
+    private readonly Color ExtinguishColor = Color.FromHex("#75b1f0");
+    private const float ExtinguishAnimationLength = 0.45f;
 
     public override void Initialize()
     {
@@ -53,7 +60,7 @@ public sealed partial class SelfExtinguisherSystem : SharedSelfExtinguisherSyste
                 return;
 
             _popup.PopupEntity(Loc.GetString("self-extinguisher-no-charges", ("item", uid)),
-                target, user, !flammable.OnFire ? PopupType.Small : PopupType.SmallCaution);
+                target, user, !flammable.OnFire ? PopupType.Small : PopupType.MediumCaution);
             return;
         }
 
@@ -63,7 +70,7 @@ public sealed partial class SelfExtinguisherSystem : SharedSelfExtinguisherSyste
                 return;
 
             _popup.PopupEntity(Loc.GetString($"self-extinguisher-on-cooldown", ("item", uid)),
-                target, user, !flammable.OnFire ? PopupType.Small : PopupType.SmallCaution);
+                target, user, !flammable.OnFire ? PopupType.Small : PopupType.MediumCaution);
             return;
         }
 
@@ -80,19 +87,19 @@ public sealed partial class SelfExtinguisherSystem : SharedSelfExtinguisherSyste
         if (selfExtinguisher.RequiresIgniteFromGasImmune &&
             // Non-self-igniters can use the self-extinguish whenever, but self-igniters must have
             // all ignitable body parts covered up
-            (!TryComp<IgniteFromGasComponent>(target, out var ignite) || !ignite.HasImmunity))
+            TryComp<IgniteFromGasComponent>(target, out var ignite) && !ignite.HasImmunity)
         {
             if (!SetPopupCooldown((uid, selfExtinguisher), curTime))
                 return;
 
             _popup.PopupEntity(Loc.GetString($"self-extinguisher-not-immune-to-fire-{locSuffix}", ("item", uid), ("target", targetIdentity)),
-                target, user, PopupType.SmallCaution);
+                target, user, PopupType.MediumCaution);
             return;
         }
 
         _flammable.Extinguish(target, flammable);
+        _color.RaiseEffect(ExtinguishColor, [target], Filter.Pvs(target, entityManager: EntityManager), ExtinguishAnimationLength);
         _audio.PlayPvs(selfExtinguisher.Sound, uid, selfExtinguisher.Sound.Params.WithVariation(0.125f));
-        // TODO add visuals like stam damage for being extinguished
 
         _popup.PopupPredicted(
             Loc.GetString("self-extinguisher-extinguish-other", ("item", uid), ("target", targetIdentity)),
@@ -119,19 +126,5 @@ public sealed partial class SelfExtinguisherSystem : SharedSelfExtinguisherSyste
         _actions.StartUseDelay(selfExtinguisher.ActionEntity);
 
         Dirty(uid, selfExtinguisher);
-    }
-
-    // <summary>
-    //   Returns:
-    //   - true if a popup is ready to be shown. The popup cooldown is also set.
-    //   - false if popups are still on cooldown
-    // </summary>
-    private bool SetPopupCooldown(Entity<SelfExtinguisherComponent> ent, TimeSpan curTime)
-    {
-        if (curTime < ent.Comp.NextPopup)
-            return false;
-
-        ent.Comp.NextPopup = curTime + ent.Comp.PopupCooldown;
-        return true;
     }
 }

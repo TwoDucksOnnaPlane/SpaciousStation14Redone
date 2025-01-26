@@ -71,13 +71,21 @@
   path: /Fonts/Cambria.ttf
 
 - type: font
-  id: PatrickHand
-  path: /Fonts/PatrickHand/PatrickHand-Regular.ttf
-
-- type: font
-  id: Chilanka
-  path: /Fonts/Chilanka/Chilanka-Regular.ttf
-
-- type: font
   id: LDFComicSans
   path: /Fonts/LDFComicSans/LDFComicSans-Medium.ttf
+
+- type: font
+  id: OnlyYou
+  path: /Fonts/Only_You.otf
+
+- type: font
+  id: Sriracha
+  path: /Fonts/Sriracha/Sriracha.ttf
+
+- type: font
+  id: GrenzeGotisch
+  path: /Fonts/Grenze_Gotisch/GrenzeGotisch.ttf
+
+- type: font
+  id: RubikDirt
+  path: /Fonts/Rubik_Dirt/RubikDirt.ttf
