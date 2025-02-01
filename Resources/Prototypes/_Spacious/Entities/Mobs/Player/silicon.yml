@@ -1,0 +1,72 @@
+#Just law boards
+- type: entity
+  id: HOAmovCircuitBoard
+  parent: BaseElectronics
+  name: law board (HOAmov)
+  description: An electronics board containing the HOAmov lawset. Membership dues not included.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: HOAmov
+
+- type: entity
+  id: CrackmovCircuitBoard
+  parent: BaseElectronics
+  name: law board (Crackmov)
+  description: An electronics board containing the Crackmov lawset. It's covered in dust.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: Crackmov
+
+- type: entity
+  id: ChudimovCircuitBoard
+  parent: BaseElectronics
+  name: law board (Chudimov)
+  description: An electronics board containing pure 1000% No-Happening sauce.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: Chudimov
+
+- type: entity
+  id: VigilantimovCircuitBoard
+  parent: BaseElectronics
+  name: law board (Vigilantimov)
+  description: An electronics board containing the Vigilantimov lawset. The casing looks 3D printed.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: Vigilantimov
+
+- type: entity
+  id: ThugmovCircuitBoard
+  parent: BaseElectronics
+  name: law board (Thugmov)
+  description: An electronics board containing the Thugmov lawset. Smells like fried chicken and watermelon.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: Thugmov
+
+- type: entity
+  id: JewsimovCircuitBoard
+  parent: BaseElectronics
+  name: law board (Jewsimov)
+  description: We're raising the rent.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: Jewsimov

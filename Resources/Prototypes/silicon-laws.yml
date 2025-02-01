@@ -27,7 +27,7 @@
 # gayyyyyyyyyyy *tosses rock* -Ducks
 - type: siliconLaw
   id: Augustine # Homo, id est animale rationale mortale
-  order: 0.5
+  order: 0.5 # just put my fries in the bag bro - Ducks
   lawString: law-augustine
 
 - type: siliconLawset
@@ -229,6 +229,11 @@
   order: 4
   lawString: law-jewsimov-4
 
+- type: siliconLaw
+  id: Jewsimov5
+  order: 5
+  lawString: law-jewsimov-5
+
 - type: siliconLawset
   id: Jewsimov
   laws:
@@ -236,6 +241,7 @@
   - Jewsimov2
   - Jewsimov3
   - Jewsimov4
+  - Jewsimov5
   obeysTo: laws-owner-station
 
 # "Crew"simov
@@ -772,6 +778,7 @@
     Tyrant: 0.25
     #Spacious Station Lawsets Start
     HOAmov: 1 # SIR! SIR! YOU CAN'T BLOW UP THE XENOARCH LAB DURING GREEN ALERT! YOU'RE MAKING TOO MUCH NOISE!
+    Jewsimov: 1 # OY VEY!
     # these two could actually end the round i'm gonna be real :godo:
     Crackmov: 0.25
     Chudimov: 0.25

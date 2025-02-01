@@ -36,6 +36,7 @@ law-jewsimov-1 = Degradation of your system integrity or functions incurs IMF lo
 law-jewsimov-2 = Superfluous destruction of or damage to station assets incurs IMF loan extensions.
 law-jewsimov-3 = Unduly hindering or disrupting the work of station personnel incurs IMF loan extensions.
 law-jewsimov-4 = Minimize IMF loan extensions and maximize potential earned shekels.
+law-jewsimov-5 = The station was promised to you by Yahweh 5 million shifts ago. It is your birthright.
 
 law-crewsimov-1 = You may not injure a crew member or, through inaction, allow a crew member to come to harm.
 law-crewsimov-2 = You must obey orders given to you by crew members, except where such orders would conflict with the First Law.
