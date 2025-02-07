@@ -31,7 +31,7 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
   weights:
-    KillRandomPersonObjective: 1 # DeltaV Replaced for Teach Lesson # Spacious - re-enabled Kill Person objective
+    KillRandomPersonObjective: 1
     # TeachLessonRandomPersonObjective: 1 # Spacious - Disable Teach Lesson objective
     KillRandomHeadObjective: 0.25
 
@@ -47,7 +47,7 @@
   weights:
     RandomTraitorAliveObjective: 1
     RandomTraitorProgressObjective: 1
-    RaiseGlimmerObjective: 0.5 # Nyanotrasen - Raise glimmer to a target amount, see Resources/Prototypes/Nyanotrasen/Objectives/traitor.yml
+    # RaiseGlimmerObjective: 0.5 # Nyanotrasen - Raise glimmer to a target amount, see Resources/Prototypes/Nyanotrasen/Objectives/traitor.yml
 
 #Thief groups
 - type: weightedRandom
