@@ -79,4 +79,8 @@ public sealed partial class ProjectileComponent : Component
     /// </summary>
     [DataField]
     public bool DamagedEntity;
+
+    // Spacious
+    [DataField]
+    public float StyleCostMultiplier;
 }
