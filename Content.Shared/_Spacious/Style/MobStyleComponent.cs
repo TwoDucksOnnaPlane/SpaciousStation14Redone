@@ -6,41 +6,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Content.Shared.Stylishness;
+namespace Content.Shared._Spacious.Style;
 
 /// <summary>
 /// 
 /// </summary>
 [RegisterComponent]
 [NetworkedComponent, AutoGenerateComponentState]
-public sealed partial class MobStylishComponent : Component
+public sealed partial class MobStyleComponent : Component
 {
-    [DataField("slicknessCap"), AutoNetworkedField]
-    public float OriginalSlicknessCap = 0f;
+    [DataField("styleCap"), AutoNetworkedField]
+    public float OriginalStyleCap = 0f;
 
     /// <remarks>
     /// Per second.
     /// </remarks>
-    [DataField("slicknessGain"), AutoNetworkedField]
-    public float OriginalSlicknessGain = 0.05f;
+    [DataField("styleGain"), AutoNetworkedField]
+    public float OriginalStyleGain = 0.5f;
 
     /// <summary>
     /// How much slickness is consumed every time the user dodges.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float StylishnessConsumedPerDamage = 1f;
+    public float StyleConsumedPerDamage = 1f;
 
     [DataField, AutoNetworkedField]
     public SoundSpecifier DodgeSound = new SoundPathSpecifier("/Audio/_Spacious/dodge.ogg");
 
     [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public float SlicknessCap;
+    public float StyleCap;
 
     [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public float SlicknessGain;
+    public float StyleGain;
 
     [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public float Slickness = 0f;
+    public float CurrentStyle = 0f;
 
     /// <summary>
     /// This tracks when was the last time slickness was consumed.
@@ -48,6 +48,6 @@ public sealed partial class MobStylishComponent : Component
     /// help avoid mispredictions. I think.
     /// </summary>
     [AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan LastSlicknessUpdate;
+    public TimeSpan LastStyleUpdate;
 }
 
