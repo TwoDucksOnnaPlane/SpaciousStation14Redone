@@ -8,6 +8,8 @@
     sprite: Clothing/Shoes/Misc/flippers.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Misc/flippers.rsi
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -74,6 +76,8 @@
     sprite: Clothing/Shoes/Misc/damedaneshoes.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Misc/damedaneshoes.rsi
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingShoesBase
@@ -86,6 +90,8 @@
   - type: Clothing
     sprite: Clothing/Shoes/Misc/snakeskin.rsi
   - type: NoSlip
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: [ClothingShoesBase, PowerCellSlotSmallItem, BaseToggleClothing]
@@ -169,6 +175,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHighHeels
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -188,6 +196,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHighHeels
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -202,6 +212,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepHighHeels
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingShoesBaseButcherable

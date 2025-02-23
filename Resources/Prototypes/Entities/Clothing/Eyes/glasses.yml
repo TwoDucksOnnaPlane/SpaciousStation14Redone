@@ -13,6 +13,8 @@
     damage:
       types:
         Blunt: 7
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingEyesBase
@@ -32,6 +34,8 @@
     damage:
       types:
         Blunt: 10
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingEyesBase
@@ -51,6 +55,8 @@
     damage:
       types:
         Blunt: 10
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingEyesBase
@@ -121,6 +127,8 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ItemStyle
+    styleGain: 2
 
 - type: entity
   parent: ClothingEyesGlasses
@@ -149,6 +157,8 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity
   parent: ClothingEyesBase
@@ -196,6 +206,8 @@
     - SecDogWearable # DeltaV - let Laika wear sunglasses
   - type: IdentityBlocker
     coverage: EYES
+  - type: ItemStyle
+    styleGain: 1
 
 - type: entity
   parent: ClothingEyesGlassesCheapSunglasses
@@ -206,6 +218,8 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
+  - type: ItemStyle
+    styleGain: 2
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons]
@@ -263,6 +277,8 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ItemStyle
+    styleGain: 2
 
 - type: entity
   parent: ClothingEyesGlassesSunglasses
@@ -277,6 +293,8 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ItemStyle
+    styleGain: 5
 
 - type: entity
   parent: ClothingEyesGlassesSecurity
@@ -432,6 +450,8 @@
   - type: FlashImmunity
   - type: NightVision
     isEquipment: true
+  - type: ItemStyle
+    styleGain: 4
 
 - type: entity #Fake goggles, the latest in anti-valid hunting technology
   parent: ClothingEyesBase

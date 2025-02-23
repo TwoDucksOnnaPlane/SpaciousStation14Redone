@@ -13,6 +13,8 @@
     - HamsterWearable
     - WhitelistChameleon
     - ClothMade
+  - type: ItemStyle
+    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -24,6 +26,8 @@
     sprite: Clothing/Neck/Ties/dettie.rsi
   - type: Clothing
     sprite: Clothing/Neck/Ties/dettie.rsi
+  - type: ItemStyle
+    styleCap: 10
 
 - type: entity
   parent: ClothingNeckBase
@@ -40,6 +44,8 @@
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
+  - type: ItemStyle
+    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -56,6 +62,8 @@
     tags:
     - WhitelistChameleon
     - ClothMade
+  - type: ItemStyle
+    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -67,6 +75,8 @@
     sprite: Clothing/Neck/Ties/shorttie.rsi
   - type: Clothing
     sprite: Clothing/Neck/Ties/shorttie.rsi
+  - type: ItemStyle
+    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -78,6 +88,8 @@
     sprite: Clothing/Neck/Ties/bow.rsi
   - type: Clothing
     sprite: Clothing/Neck/Ties/bow.rsi
+  - type: ItemStyle
+    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -89,6 +101,8 @@
     sprite: Clothing/Neck/Ties/bowtie.rsi
   - type: Clothing
     sprite: Clothing/Neck/Ties/bowtie.rsi
+  - type: ItemStyle
+    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -100,3 +114,5 @@
     sprite: Clothing/Neck/Ties/ribbon.rsi
   - type: Clothing
     sprite: Clothing/Neck/Ties/ribbon.rsi
+  - type: ItemStyle
+    styleCap: 5

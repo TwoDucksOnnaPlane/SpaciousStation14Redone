@@ -33,6 +33,8 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 50
+  - type: ItemStyle
+    styleCap: 15
 
 - type: entity
   parent: ClothingOuterWinterCoat

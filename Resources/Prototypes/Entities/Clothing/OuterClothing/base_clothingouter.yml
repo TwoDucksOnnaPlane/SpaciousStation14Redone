@@ -213,6 +213,8 @@
     requiresWorn: true
     distanceWalking: 2
     distanceSprinting: 3
+  - type: ItemStyle
+    styleCap: -50
 
 - type: entity
   abstract: true
@@ -336,6 +338,8 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
+  - type: ItemStyle
+    styleCap: -25
 
 - type: entity
   parent: ClothingOuterBase
