@@ -197,7 +197,7 @@ public sealed partial class GunSystem : SharedGunSystem
 
                             FireEffects(fromEffect, result.Distance, dir.Normalized().ToAngle(), hitscan, hit);
 
-                            var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan.Reflective, dir, false);
+                            var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan, hitscan.Reflective, dir, false); // Spacious edit
                             RaiseLocalEvent(hit, ref ev);
 
                             if (!ev.Reflected)

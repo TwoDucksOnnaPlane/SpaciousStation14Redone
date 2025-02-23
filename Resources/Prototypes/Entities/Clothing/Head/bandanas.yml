@@ -12,6 +12,9 @@
   - type: IdentityBlocker
     enabled: false
     coverage: MOUTH
+  - type: ItemStyle
+    styleCap: 10
+    styleGain: 2
   - type: Sprite # needed for vendor inventory icons
     layers:
     - state: icon

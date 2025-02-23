@@ -24,6 +24,8 @@
     - ClothMade
     - WhitelistChameleon
   - type: ClothingRequiredStepTriggerImmune
+  - type: ItemStyle
+    styleGain: 2
 
 - type: entity
   abstract: true
@@ -51,6 +53,8 @@
           tags:
           - Knife
           - Sidearm
+  - type: ItemStyle
+    styleGain: 0.1
 
 - type: entity
   abstract: true

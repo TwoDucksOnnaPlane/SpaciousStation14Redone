@@ -16,6 +16,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
+    styleCostMultiplier: 0.6
     minAngle: 2
     maxAngle: 16
     fireRate: 8

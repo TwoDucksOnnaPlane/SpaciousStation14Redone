@@ -130,6 +130,8 @@
     parts:
     - Head
   - type: IngestionBlocker
+  - type: ItemStyle
+    styleCap: -25
   - type: Clothing
     #Copies ClothingHeadHardsuitBase behavior
     equipSound: /Audio/Mecha/mechmove03.ogg
@@ -180,6 +182,8 @@
         Piercing: 0.95
         Heat: 0.90
         Radiation: 0.25
+  - type: ItemStyle
+    styleCap: -50
   - type: GroupExamine
   - type: IngestionBlocker
   - type: Tag

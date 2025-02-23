@@ -33,6 +33,8 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ItemStyle
+    styleGain: 0.1
 
 - type: entity
   parent: [ClothingShoesBootsMagBase]

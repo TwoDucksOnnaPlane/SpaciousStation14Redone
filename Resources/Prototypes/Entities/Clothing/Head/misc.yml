@@ -315,6 +315,9 @@
   name: basic headband
   description: Perfect for martial artists, sweaty rogue operators, and tunnel gangsters.
   components:
+  - type: ItemStyle
+    styleCap: 10
+    styleGain: 2
   - type: Sprite
     sprite: Clothing/Head/Misc/headband.rsi
   - type: Clothing
