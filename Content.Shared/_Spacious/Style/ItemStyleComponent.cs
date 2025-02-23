@@ -16,13 +16,16 @@ namespace Content.Shared._Spacious.Style;
 [NetworkedComponent]
 public sealed partial class ItemStyleComponent : Component
 {
-    [DataField]
-    public float StyleCapIncrease = 1.2f;
+    [DataField("styleCap")]
+    public float StyleCapIncrease = 0f;
 
     /// <remarks>
     /// Per second.
     /// </remarks>
-    [DataField]
+    [DataField("styleGain")]
     public float StyleGainIncrease = 0f;
+
+    [DataField]
+    public SlotFlags Slots = SlotFlags.WITHOUT_POCKET & ~SlotFlags.SUITSTORAGE; // without pocket and suit storage
 }
 

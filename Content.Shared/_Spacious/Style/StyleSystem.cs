@@ -44,41 +44,21 @@ public sealed class StyleSystem : EntitySystem
 
     private void OnMobStyleInit(EntityUid uid, MobStyleComponent comp, ComponentInit args)
     {
-        comp.StyleCap = comp.OriginalStyleCap;
-        comp.StyleGain = comp.OriginalStyleGain;
-
-        if (!TryComp<InventoryComponent>(uid, out var inventory))
-            return;
-
-        var slotenum = _inventory.GetSlotEnumerator(uid);
-        while (slotenum.MoveNext(out var slot))
-        {
-            if (!TryComp<ClothingComponent>(slot.ContainedEntity, out var clothingComp) ||
-                !TryComp<ItemStyleComponent>(slot.ContainedEntity, out var itemStyle) ||
-                !_inventory.InSlotWithFlags(slot.ContainedEntity.Value, clothingComp.Slots))
-                continue;
-                
-            comp.StyleCap = MathF.Max(comp.StyleCap + itemStyle.StyleCapIncrease, 0);
-            comp.StyleGain += itemStyle.StyleGainIncrease;
-        }
+        UpdateMobStyleCapGain(comp);
     }
 
     private void ClothingDidEquippedHandler(EntityUid uid, MobStyleComponent comp, ClothingDidEquippedEvent args)
     {
         if (!TryComp<ItemStyleComponent>(args.Clothing, out var stylishComp))
             return;
-        UpdateMobStyle(comp);
-        comp.StyleCap = MathF.Max(comp.StyleCap + stylishComp.StyleCapIncrease, 0);
-        comp.StyleGain += stylishComp.StyleGainIncrease;
+        UpdateMobStyleCapGain(comp);
     }
 
     private void ClothingDidUnequippedHandler(EntityUid uid, MobStyleComponent comp, ClothingDidUnequippedEvent args)
     {
         if (!TryComp<ItemStyleComponent>(args.Clothing, out var stylishComp))
             return;
-        UpdateMobStyle(comp);
-        comp.StyleCap -= MathF.Max(comp.StyleCap - stylishComp.StyleCapIncrease, 0);
-        comp.StyleGain -= stylishComp.StyleGainIncrease;
+        UpdateMobStyleCapGain(comp);
     }
 
     // These events are only fired server-side.
@@ -136,6 +116,40 @@ public sealed class StyleSystem : EntitySystem
         var gained = comp.StyleGain * (float)(_timing.CurTime - comp.LastStyleUpdate).TotalSeconds;
         comp.CurrentStyle = MathF.Min(comp.CurrentStyle + gained, comp.StyleCap);
         comp.LastStyleUpdate = _timing.CurTime;
+    }
+
+    public bool UpdateMobStyleCapGain(EntityUid uid, MobStyleComponent? comp = null)
+    {
+        if (!Resolve(uid, ref comp))
+            return false;
+        UpdateMobStyleCapGain(comp);
+        return true;
+    }
+
+    public void UpdateMobStyleCapGain(MobStyleComponent comp)
+    {
+        UpdateMobStyle(comp); // Update style before changing cap and gain values
+        comp.StyleCap = comp.InnateStyleCap;
+        comp.StyleGain = comp.InnateStyleGain;
+
+        if (!TryComp<InventoryComponent>(comp.Owner, out var inventory))
+            return;
+
+        var slotenum = _inventory.GetSlotEnumerator(comp.Owner);
+        while (slotenum.MoveNext(out var slot))
+        {
+            if (!TryComp<ClothingComponent>(slot.ContainedEntity, out var clothingComp) ||
+                !TryComp<ItemStyleComponent>(slot.ContainedEntity, out var itemStyle) || 
+                !_inventory.TryGetContainingSlot(slot.ContainedEntity.Value, out var slotdef) ||
+                (slotdef.SlotFlags & clothingComp.Slots) == 0 || // for clothing being somehow stuffed into pockets
+                (slotdef.SlotFlags & itemStyle.Slots) == 0)      // for revolvers being stuffed into suit storage
+                continue;
+
+            comp.StyleCap = MathF.Max(comp.StyleCap + itemStyle.StyleCapIncrease, 0);
+            comp.StyleGain += itemStyle.StyleGainIncrease;
+        }
+        UpdateMobStyle(comp); // update style once again to make sure we don't go over cap.
+                              // Technically not needed(?) since it will be called just before the style is used.
     }
 }
 

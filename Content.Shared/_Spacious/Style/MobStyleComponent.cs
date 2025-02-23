@@ -16,13 +16,13 @@ namespace Content.Shared._Spacious.Style;
 public sealed partial class MobStyleComponent : Component
 {
     [DataField("styleCap"), AutoNetworkedField]
-    public float OriginalStyleCap = 0f;
+    public float InnateStyleCap = 0f;
 
     /// <remarks>
     /// Per second.
     /// </remarks>
     [DataField("styleGain"), AutoNetworkedField]
-    public float OriginalStyleGain = 0.5f;
+    public float InnateStyleGain = 0f;
 
     /// <summary>
     /// How much slickness is consumed every time the user dodges.
