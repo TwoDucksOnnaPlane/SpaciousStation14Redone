@@ -845,9 +845,9 @@
       sprite: Clothing/Head/Hats/jester.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/jester.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
+    - type: ItemStyle
+       styleCap: 10
+       styleGain: 2
 
 - type: entity
   parent: ClothingHeadHatJester

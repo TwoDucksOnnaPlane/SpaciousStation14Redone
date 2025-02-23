@@ -126,8 +126,8 @@
         - FullBodyOuter
         - WhitelistChameleon
         - HidesHarpyWings
-  - type: ItemStyle
-    styleCap: -25
+    - type: ItemStyle
+      styleCap: -25
 
 - type: entity
   parent: [ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing]
