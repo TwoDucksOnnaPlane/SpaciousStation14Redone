@@ -18,6 +18,7 @@
   - type: GunRequiresWield
   - type: AmmoCounter
   - type: Gun
+    styleCostMultiplier: 0.5
     fireRate: 5
     selectedMode: FullAuto
     availableModes:

@@ -20,6 +20,7 @@
     minAngle: -20
     maxAngle: -20
   - type: Gun
+    styleCostMultiplier: 0.4
     minAngle: 24
     maxAngle: 45
     angleIncrease: 4
