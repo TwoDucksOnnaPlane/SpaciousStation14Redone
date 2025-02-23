@@ -1155,9 +1155,9 @@
     - type: AddAccentClothing
       accent: ReplacementAccent
       replacement: cowboy
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
+    - type: ItemStyle
+      styleCap: 10
+      styleGain: 2
 
 - type: entity
   parent: ClothingHeadHatCowboyBrown
