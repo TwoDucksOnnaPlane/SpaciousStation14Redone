@@ -704,8 +704,8 @@ public sealed partial class TraitModifyUnarmed : TraitFunction
         {
             if (!entMan.TryGetComponent<MobStyleComponent>(mob, out var style))
                 return;
-            style.StyleCap += StyleCap;
-            style.StyleGain += StyleGain;
+            style.InnateStyleCap += StyleCap;
+            style.InnateStyleGain += StyleGain;
             style.BackupInnateStyleGain += BackupStyleGain;
             style.DodgeCostProjectile *= DodgeCostProjectile;
             style.DodgeCostExplosion *= DodgeCostExplosion;

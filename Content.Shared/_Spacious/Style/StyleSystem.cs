@@ -87,7 +87,7 @@ public sealed class StyleSystem : EntitySystem
         UpdateMobStyle(comp);
 
         // Dodges are disabled until style regenerates above zero.
-        if (comp.CurrentStyle < 0 || comp.StyleCap == 0)
+        if (comp.CurrentStyle <= 0 || comp.StyleCap == 0)
             return false; // ain't slick enuff pal'
 
         // Allows to "overdraft" style points by going into negatives.
@@ -144,11 +144,11 @@ public sealed class StyleSystem : EntitySystem
 
         if (comp.CurrentStyle < 0)
         {
-            // Calculate regeneration using the backup gain
-            float backupRegen = comp.BackupInnateStyleGain * totalTime;
+            float regenRate = MathF.Max(comp.BackupInnateStyleGain, comp.StyleGain); // deepseek fuckup 1
+            float backupRegen = regenRate * totalTime;
             float newStyle = comp.CurrentStyle + backupRegen;
 
-            if (newStyle >= 0)
+            if (newStyle >= 0 && comp.BackupInnateStyleGain > comp.StyleGain) // fuckup 2
             {
                 // Calculate time needed to reach zero and apply remaining time to normal gain
                 float timeToZero = (-comp.CurrentStyle) / comp.BackupInnateStyleGain;
@@ -157,7 +157,8 @@ public sealed class StyleSystem : EntitySystem
                 comp.CurrentStyle = 0;
                 // Apply normal gain for the remaining time
                 float normalGain = comp.StyleGain * remainingTime;
-                comp.CurrentStyle = MathF.Min(comp.CurrentStyle + normalGain, comp.StyleCap);
+                // fuckup 3
+                comp.CurrentStyle = MathF.Max(0, MathF.Min(comp.CurrentStyle + normalGain, comp.StyleCap));
             }
             else
             {
@@ -264,7 +265,7 @@ public sealed class StyleSystem : EntitySystem
 
 #if DEBUG
 
-    // Copypaste of UpdateMobStyleDebug, for showing style in real time without actually updating it every frame.
+    // Copypaste of UpdateMobStyleDebug, for showing style in real time (in VV) without actually updating it every frame.
     // For better utility, go to ViewVariablesInstanceObject.cs, line 109 and change the 500 delay to 1.
     public float UpdateMobStyleDebug(MobStyleComponent comp)
     {
@@ -273,11 +274,11 @@ public sealed class StyleSystem : EntitySystem
 
         if (CurrentStyle < 0)
         {
-            // Calculate regeneration using the backup gain
-            float backupRegen = comp.BackupInnateStyleGain * totalTime;
+            float regenRate = MathF.Max(comp.BackupInnateStyleGain, comp.StyleGain); // deepseek fuckup 1
+            float backupRegen = regenRate * totalTime;
             float newStyle = CurrentStyle + backupRegen;
 
-            if (newStyle >= 0)
+            if (newStyle >= 0 && comp.BackupInnateStyleGain > comp.StyleGain) // fuckup 2
             {
                 // Calculate time needed to reach zero and apply remaining time to normal gain
                 float timeToZero = (-CurrentStyle) / comp.BackupInnateStyleGain;
@@ -286,7 +287,9 @@ public sealed class StyleSystem : EntitySystem
                 CurrentStyle = 0;
                 // Apply normal gain for the remaining time
                 float normalGain = comp.StyleGain * remainingTime;
-                CurrentStyle = MathF.Min(CurrentStyle + normalGain, comp.StyleCap);
+                // fuckup 3, wasn't clamped between 0 and comp.StyleCap
+                CurrentStyle = MathF.Max(0, MathF.Min(CurrentStyle + normalGain, comp.StyleCap));
+
             }
             else
             {
