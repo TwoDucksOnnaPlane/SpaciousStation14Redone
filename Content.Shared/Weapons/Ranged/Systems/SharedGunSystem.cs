@@ -452,7 +452,10 @@ public abstract partial class SharedGunSystem : EntitySystem
         var projectile = EnsureComp<ProjectileComponent>(uid);
         Projectiles.SetShooter(uid, projectile, user ?? gunUid);
         projectile.Weapon = gunUid;
-        projectile.StyleCostMultiplier = Comp<GunComponent>(gunUid).StyleCostMultiplier; // Spacious edit
+
+        projectile.StyleCostMultiplier = 1;                             // Spacious edit
+        if(TryComp<GunComponent>(gunUid, out var gun))                  //
+            projectile.StyleCostMultiplier = gun.StyleCostMultiplier;   //
 
         TransformSystem.SetWorldRotation(uid, direction.ToWorldAngle() + projectile.Angle);
     }
