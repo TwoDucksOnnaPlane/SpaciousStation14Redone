@@ -55,10 +55,6 @@ public sealed partial class PullableComponent : Component
     [AutoNetworkedField, DataField]
     public float GrabEscapeChance = 1f;
 
-    [AutoNetworkedField]
-    public TimeSpan NextEscapeAttempt = TimeSpan.Zero;
-    // Goobstation end
-
     /// <summary>
     ///     Whether the entity is currently being actively pushed by the puller.
     ///     If true, the entity will be able to enter disposals upon colliding with them, and the like.
@@ -68,4 +64,7 @@ public sealed partial class PullableComponent : Component
     [DataField]
     public ProtoId<AlertPrototype> PulledAlert = "Pulled";
 
+    [AutoNetworkedField]
+    public TimeSpan NextEscapeAttempt = TimeSpan.Zero;
+    // Goobstation end
 }
