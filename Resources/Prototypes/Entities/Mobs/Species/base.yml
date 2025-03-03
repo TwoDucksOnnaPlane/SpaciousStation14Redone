@@ -244,6 +244,7 @@
     - DoorBumpOpener
   - type: Targeting
   - type: SurgeryTarget
+  - type: ExaminableCharacter # WWDP
 
 - type: entity
   save: false
