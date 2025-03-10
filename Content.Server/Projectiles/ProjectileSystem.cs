@@ -2,6 +2,7 @@ using Content.Server.Administration.Logs;
 using Content.Server.Damage.Systems;
 using Content.Server.Effects;
 using Content.Server.Weapons.Ranged.Systems;
+using Content.Shared._Shitmed.Targeting;
 using Content.Shared.Camera;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Events;
@@ -48,8 +49,15 @@ public sealed class ProjectileSystem : SharedProjectileSystem
         var ev = new ProjectileHitEvent(component.Damage, target, component.Shooter);
         RaiseLocalEvent(uid, ref ev);
 
+        // WWDP edit; bodypart targeting
+        TargetBodyPart? targetPart = null;
+
+        if (TryComp<TargetingComponent>(component.Shooter, out var targeting))
+            targetPart = targeting.Target;
+
         var otherName = ToPrettyString(target);
-        var modifiedDamage = _damageableSystem.TryChangeDamage(target, ev.Damage, component.IgnoreResistances, origin: component.Shooter);
+        var modifiedDamage = _damageableSystem.TryChangeDamage(target, ev.Damage, component.IgnoreResistances, origin: component.Shooter, targetPart: targetPart);
+        // WWDP edit end
         var deleted = Deleted(target);
 
         if (modifiedDamage is not null && EntityManager.EntityExists(component.Shooter))
