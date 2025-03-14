@@ -2,6 +2,7 @@ using Content.Shared._Goobstation.MartialArts.Events; // Goobstation - Martial A
 using Content.Shared.Contests; // Goobstation - Grab Intent
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics; // Goobstation - Grab Intent
+using Content.Shared.MouseRotator;
 using Content.Shared._White.Grab; // Goobstation
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
@@ -83,6 +84,7 @@ public sealed class PullingSystem : EntitySystem
     [Dependency] private readonly SharedCombatModeSystem _combatMode = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly ContestsSystem _contests = default!; // Goobstation - Grab Intent
+    [Dependency] private readonly RotateToFaceSystem _rotateTo = default!; // NETPUNK EDIT
 
     public override void Initialize()
     {
@@ -111,6 +113,7 @@ public sealed class PullingSystem : EntitySystem
 
         SubscribeLocalEvent<PullableComponent, StrappedEvent>(OnBuckled);
         SubscribeLocalEvent<PullableComponent, BuckledEvent>(OnGotBuckled);
+        SubscribeLocalEvent<PullerComponent, PullStoppedMessage>(OnPullerPullStopped);
 
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.MovePulledObject, new PointerInputCmdHandler(OnRequestMovePulledObject))
@@ -179,7 +182,19 @@ public sealed class PullingSystem : EntitySystem
             }
 
             if (pullerComp.PushingTowards is null)
+            {
+                if (HasComp<MouseRotatorComponent>(puller))
+                    continue;
+                if (!_timing.ApplyingState)
+                    EnsureComp<NoRotateOnMoveComponent>(puller);
+
+                var pulledCoords = _xformSys.GetMapCoordinates(pulled).Position;
+                var pullerCoords = _xformSys.GetMapCoordinates(puller).Position;
+
+                var angle = (pulledCoords - pullerCoords).ToWorldAngle().GetCardinalDir().ToAngle();
+                _rotateTo.TryFaceAngle(puller, angle);
                 continue;
+            }
 
             // If pushing but the target position is invalid, or the push action has expired or finished, stop pushing
             if (pullerComp.NextPushStop < _timing.CurTime
@@ -608,6 +623,15 @@ public sealed class PullingSystem : EntitySystem
         }
 
         TryStopPull(pullerComp.Pulling.Value, pullableComp, user: player, true); // Goobstation
+    }
+
+    private void OnPullerPullStopped(Entity<PullerComponent> ent, ref PullStoppedMessage args)
+    {
+        if (args.PulledUid == ent.Owner)
+            return;
+
+        if (!_timing.ApplyingState && !HasComp<MouseRotatorComponent>(ent))
+            RemCompDeferred<NoRotateOnMoveComponent>(ent);
     }
 
     public bool CanPull(EntityUid puller, EntityUid pullableUid, PullerComponent? pullerComp = null)
