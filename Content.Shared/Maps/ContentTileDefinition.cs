@@ -96,11 +96,10 @@ namespace Content.Shared.Maps
         public float? MobFriction { get; private set; }
 
         /// <summary>
-        ///     "Average" static coefficient of friction for assuming a steel tile. This is only used as a fallback for a fallback for a fallback,
-        ///     except in the case of Space Wind. This default value is assuming an interaction interface of "Rubber on steel tile".
+        ///     No-input friction override for mob mover in <see cref="SharedMoverController"/>
         /// </summary>
-        [DataField]
-        public float MobFrictionNoInput = 0.2f;
+        [DataField("mobFrictionNoInput")]
+        public float? MobFrictionNoInput { get; private set; }
 
         /// <summary>
         ///     Accel override for mob mover in <see cref="SharedMoverController"/>
