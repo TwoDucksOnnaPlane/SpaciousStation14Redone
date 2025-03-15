@@ -20,7 +20,6 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    styleCostMultiplier: 0.4
     fireRate: 2
     selectedMode: SemiAuto
     availableModes:
