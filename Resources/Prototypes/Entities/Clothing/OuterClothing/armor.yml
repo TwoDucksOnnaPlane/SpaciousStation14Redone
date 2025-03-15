@@ -31,8 +31,6 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
-  - type: ItemStyle
-    styleCap: -25
 
 #Alternate / slim basic armor vest
 - type: entity
@@ -68,8 +66,6 @@
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: GroupExamine
-  - type: ItemStyle
-    styleCap: -25
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, ClothingOuterEVASuitBase]
@@ -99,8 +95,6 @@
     walkModifier: 0.9
     sprintModifier: 0.7
   - type: GroupExamine
-  - type: ItemStyle
-    styleCap: -25
 
 - type: entity
   parent: ClothingOuterArmorBasic
@@ -261,8 +255,6 @@
   - type: Tag
     tags:
       - FullBodyOuter
-  - type: ItemStyle
-    styleCap: -25
 
 - type: entity
   parent: ClothingOuterArmorHeavy
@@ -333,8 +325,6 @@
   - type: ExplosionResistance
     damageCoefficient: 0.65
   - type: GroupExamine
-  - type: ItemStyle
-    styleCap: -25
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -415,5 +405,3 @@
   - type: GroupExamine
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
-  - type: ItemStyle
-    styleCap: -25

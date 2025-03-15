@@ -8,8 +8,6 @@
     sprite: Clothing/OuterClothing/Misc/apron.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/apron.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -22,8 +20,6 @@
     sprite: Clothing/OuterClothing/Misc/apronbar.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/apronbar.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -36,8 +32,6 @@
     sprite: Clothing/OuterClothing/Misc/apronbotanist.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/apronbotanist.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -50,8 +44,6 @@
     sprite: Clothing/OuterClothing/Misc/apronchef.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/apronchef.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -63,8 +55,6 @@
     sprite: Clothing/OuterClothing/Misc/chef.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/chef.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -76,8 +66,6 @@
     sprite: Clothing/OuterClothing/Misc/chef_nt.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/chef_nt.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -89,8 +77,6 @@
     sprite: Clothing/OuterClothing/Misc/chef_idris.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/chef_idris.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -102,8 +88,6 @@
     sprite: Clothing/OuterClothing/Misc/chef_orion.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/chef_orion.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -115,8 +99,6 @@
     sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/black_hoodie.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -128,8 +110,6 @@
     sprite: Clothing/OuterClothing/Misc/grey_hoodie.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/grey_hoodie.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -146,8 +126,6 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBaseToggleable
@@ -161,8 +139,6 @@
     sprite: Clothing/OuterClothing/Misc/chaplain_hoodie.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodChaplainHood
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -176,8 +152,6 @@
     sprite: Clothing/OuterClothing/Misc/classicponcho.rsi
   - type: AddAccentClothing
     accent: SpanishAccent
-  - type: ItemStyle
-    styleCap: 30
 
 - type: entity
   parent: ClothingOuterBase
@@ -189,8 +163,6 @@
     sprite: Clothing/OuterClothing/Misc/cultrobes.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/cultrobes.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -215,8 +187,6 @@
     sprite: Clothing/OuterClothing/Misc/poncho.rsi
   - type: AddAccentClothing
     accent: SpanishAccent
-  - type: ItemStyle
-    styleCap: 30
 
 - type: entity
   parent: ClothingOuterBase
@@ -458,8 +428,6 @@
     sprite: Clothing/OuterClothing/Misc/unathirobe.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/unathirobe.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 # - type: entity # TODO: There no use for it now... but pehaps we could turn it into a Anti-Psionic Clothing like headcage?
 #   parent: ClothingOuterBase
@@ -487,8 +455,6 @@
     sprite: Clothing/OuterClothing/Misc/suit_jacket.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/suit_jacket.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterSuitJacket]
@@ -505,8 +471,6 @@
     sprite: Clothing/OuterClothing/Misc/cardigan.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/cardigan.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: [ClothingOuterFoldableBaseOpened, ClothingOuterCardigan]
@@ -523,8 +487,6 @@
     sprite: Clothing/OuterClothing/Misc/cardigan_sweater.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/cardigan_sweater.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: [ClothingOuterFoldableBaseOpened, ClothingOuterCardiganSweater]
@@ -541,8 +503,6 @@
     sprite: Clothing/OuterClothing/Misc/cardigan_argyle.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/cardigan_argyle.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: [ClothingOuterFoldableBaseOpened, ClothingOuterCardiganArgyle]
@@ -559,8 +519,6 @@
     sprite: Clothing/OuterClothing/Misc/cardigan_slim.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/cardigan_slim.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: [ClothingOuterFoldableBaseOpened, ClothingOuterCardiganSlim]
@@ -577,8 +535,6 @@
     sprite: Clothing/OuterClothing/Misc/cowboy_duster.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/cowboy_duster.rsi
-  - type: ItemStyle
-    styleCap: 30
 
 - type: entity
   parent: ClothingOuterStorageFoldableBase
@@ -590,8 +546,6 @@
     sprite: Clothing/OuterClothing/Misc/blazer.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/blazer.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: [ClothingOuterFoldableBaseOpened, ClothingOuterBlazer]
@@ -608,8 +562,6 @@
     sprite: Clothing/OuterClothing/Misc/blazer_long.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/blazer_long.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: [ClothingOuterFoldableBaseOpened, ClothingOuterBlazerLong]
@@ -626,8 +578,6 @@
     sprite: Clothing/OuterClothing/Misc/blazer_formal.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/blazer_formal.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -639,8 +589,6 @@
     sprite: Clothing/OuterClothing/Misc/blazer_loose_sleeve.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/blazer_loose_sleeve.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -652,8 +600,6 @@
     sprite: Clothing/OuterClothing/Misc/blazer_flat_collar.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/blazer_flat_collar.rsi
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -665,5 +611,3 @@
     sprite: Clothing/OuterClothing/Misc/blazer_posh.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/blazer_posh.rsi
-  - type: ItemStyle
-    styleCap: 25

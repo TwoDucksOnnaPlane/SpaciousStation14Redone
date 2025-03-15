@@ -29,8 +29,6 @@
     - HidesHarpyWings
   - type: ClothingRequiredStepTriggerImmune
     slots: WITHOUT_POCKET
-  - type: ItemStyle
-    styleCap: -25
 
 - type: entity
   parent: ClothingOuterSuitBomb
@@ -88,8 +86,6 @@
     tags:
       - WhitelistChameleon
       - HidesHarpyWings
-  - type: ItemStyle
-    styleCap: -25
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
@@ -126,8 +122,6 @@
         - FullBodyOuter
         - WhitelistChameleon
         - HidesHarpyWings
-    - type: ItemStyle
-      styleCap: -25
 
 - type: entity
   parent: [ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing]
@@ -158,8 +152,6 @@
       - FullBodyOuter
       - WhitelistChameleon
       - HidesHarpyWings
-  - type: ItemStyle
-    styleCap: -25
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseToggleClothing]
@@ -219,8 +211,6 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellSmall
         disableEject: true
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase
@@ -237,8 +227,6 @@
   - type: Tag
     tags:
       - FullBodyOuter
-  - type: ItemStyle
-    styleCap: 25
 
 - type: entity
   parent: ClothingOuterBase

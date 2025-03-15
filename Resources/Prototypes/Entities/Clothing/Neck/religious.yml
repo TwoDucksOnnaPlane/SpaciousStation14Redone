@@ -8,8 +8,6 @@
     sprite: Clothing/Neck/Crucifixes/color.rsi
   - type: Clothing
     sprite: Clothing/Neck/Crucifixes/color.rsi
-  - type: ItemStyle
-    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -21,8 +19,6 @@
     sprite: Clothing/Neck/Crucifixes/color-inverted.rsi
   - type: Clothing
     sprite: Clothing/Neck/Crucifixes/color-inverted.rsi
-  - type: ItemStyle
-    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -34,8 +30,6 @@
     sprite: Clothing/Neck/Crucifixes/gold.rsi
   - type: Clothing
     sprite: Clothing/Neck/Crucifixes/gold.rsi
-  - type: ItemStyle
-    styleCap: 7
 
 - type: entity
   parent: ClothingNeckBase
@@ -47,8 +41,6 @@
     sprite: Clothing/Neck/Crucifixes/gold-inverted.rsi
   - type: Clothing
     sprite: Clothing/Neck/Crucifixes/gold-inverted.rsi
-  - type: ItemStyle
-    styleCap: 7
 
 - type: entity
   parent: ClothingNeckBase
@@ -60,8 +52,6 @@
     sprite: Clothing/Neck/Crucifixes/silver.rsi
   - type: Clothing
     sprite: Clothing/Neck/Crucifixes/silver.rsi
-  - type: ItemStyle
-    styleCap: 6
 
 - type: entity
   parent: ClothingNeckBase
@@ -73,8 +63,6 @@
     sprite: Clothing/Neck/Crucifixes/silver-inverted.rsi
   - type: Clothing
     sprite: Clothing/Neck/Crucifixes/silver-inverted.rsi
-  - type: ItemStyle
-    styleCap: 6
 
 - type: entity
   parent: ClothingNeckBase
@@ -86,8 +74,6 @@
     sprite: Clothing/Neck/Misc/scapular.rsi
   - type: Clothing
     sprite: Clothing/Neck/Misc/scapular.rsi
-  - type: ItemStyle
-    styleCap: 5
 
 - type: entity
   parent: ClothingNeckBase
@@ -99,5 +85,3 @@
     sprite: Clothing/Neck/Misc/tallit.rsi
   - type: Clothing
     sprite: Clothing/Neck/Misc/tallit.rsi
-  - type: ItemStyle
-    styleCap: -5
