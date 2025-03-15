@@ -24,5 +24,5 @@ public sealed partial class DamageOnHitComponent : Component
     // </summary>
     [DataField]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TargetBodyPart? TargetParts = TargetBodyPart.All; // WWDP body parts targeting
+    public List<TargetBodyPart>? TargetParts = null;
 }

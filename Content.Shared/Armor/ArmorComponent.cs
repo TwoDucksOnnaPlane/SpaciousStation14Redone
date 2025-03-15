@@ -1,5 +1,4 @@
-﻿using Content.Shared._Shitmed.Targeting;
-using Content.Shared.Damage;
+﻿using Content.Shared.Damage;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
@@ -24,12 +23,6 @@ public sealed partial class ArmorComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public float PriceMultiplier = 1;
-
-    /// <summary>
-    /// WWDP - What body parts this armor piece can protect.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public TargetBodyPart ProtectedArea;
 }
 
 /// <summary>
