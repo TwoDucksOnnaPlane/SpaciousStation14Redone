@@ -50,9 +50,6 @@
   - type: AnimatedEmotes
   - type: OwnInteractionVerbs
     allowedVerbs: [] # TODO: define something here, or don't.
-  - type: MobStyle
-    styleGain: 0.5 # innate gain and cap.
-    styleCap: 0    # Can be set higher for "innately stylish" mobs.
 
 - type: entity
   save: false

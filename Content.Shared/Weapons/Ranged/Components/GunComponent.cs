@@ -277,13 +277,6 @@ public sealed partial class GunComponent : Component
     /// </summary>
     [DataField]
     public float FireOnDropChance = 0.1f;
-
-    // Spacious
-    /// <summary>
-    /// Projectile damage multiplied by this value is the dodge cost of the projectile/hitscan ray.
-    /// </summary>
-    [DataField]
-    public float StyleCostMultiplier = 1f;
 }
 
 [Flags]
