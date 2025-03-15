@@ -98,7 +98,7 @@ public sealed partial class PullerComponent : Component
     public Dictionary<GrabStage, float> EscapeChances = new()
     {
         { GrabStage.No, 1f },
-        { GrabStage.Soft, 0.7f },
+        { GrabStage.Soft, 0.6f },
         { GrabStage.Hard, 0.4f },
         { GrabStage.Suffocate, 0.1f },
     };
@@ -119,7 +119,7 @@ public sealed partial class PullerComponent : Component
     };
 
     [DataField]
-    public float StaminaDamageOnThrown = 120f;
+    public float StaminaDamageOnThrown = 80f;
 
     [DataField]
     public float GrabThrownSpeed = 7f;
