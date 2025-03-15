@@ -678,21 +678,22 @@ public sealed partial class TraitModifyUnarmed : TraitFunction
         entityManager.Dirty(uid, melee);
     }
 
-// <summary>
-// Adds a Tag to something
-// </summary>
-[UsedImplicitly]
-public sealed partial class TraitAddTag : TraitFunction
-{
-    [DataField, AlwaysPushInheritance]
-    public List<ProtoId<TagPrototype>> Tags { get; private set; } = new();
-
-    public override void OnPlayerSpawn(EntityUid uid,
-        IComponentFactory factory,
-        IEntityManager entityManager,
-        ISerializationManager serializationManager)
+    // <summary>
+    // Adds a Tag to something
+    // </summary>
+    [UsedImplicitly]
+    public sealed partial class TraitAddTag : TraitFunction
     {
-        var tagSystem = entityManager.System<TagSystem>();
-        tagSystem.AddTags(uid, Tags);
+        [DataField, AlwaysPushInheritance]
+        public List<ProtoId<TagPrototype>> Tags { get; private set; } = new();
+
+        public override void OnPlayerSpawn(EntityUid uid,
+            IComponentFactory factory,
+            IEntityManager entityManager,
+            ISerializationManager serializationManager)
+        {
+            var tagSystem = entityManager.System<TagSystem>();
+            tagSystem.AddTags(uid, Tags);
+        }
     }
 }
