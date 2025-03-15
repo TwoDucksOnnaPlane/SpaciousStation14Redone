@@ -113,14 +113,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
                 age = Loc.GetString("identity-eye-shadowkin", ("color", color));
         }
 
-        // WWDP EDIT
-        string locale = "humanoid-appearance-component-examine";
+        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
 
-        if (args.Examiner == args.Examined) // Use the selfaware locale when examining yourself
-            locale += "-selfaware";
-
-        args.PushText(Loc.GetString(locale, ("user", identity), ("age", age), ("species", species)), 100); // priority for examine
-        // WWDP EDIT END
         if (component.DisplayPronouns != null)
             args.PushText(Loc.GetString("humanoid-appearance-component-examine-pronouns", ("user", identity), ("pronouns", component.DisplayPronouns)));
     }
