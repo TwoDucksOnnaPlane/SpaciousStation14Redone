@@ -12,7 +12,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/security.rsi
   - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
-    protectedArea: Body # WWDP
     modifiers:
       coefficients:
         Blunt: 0.70
@@ -57,7 +56,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/riot.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.4
@@ -83,7 +81,6 @@
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 1000
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.6
@@ -110,7 +107,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
   - type: Armor
-    protectedArea: Body
     modifiers:
       coefficients:
         Blunt: 0.9
@@ -136,7 +132,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/syndie-raid.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.35
@@ -204,7 +199,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/armor_reflec.rsi
   - type: Armor
-    protectedArea: BodyArms # WWDP
     modifiers:
       coefficients:
         Blunt: 0.9
@@ -228,7 +222,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/cult_armour.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.5
@@ -248,7 +241,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/heavy.rsi
   - type: Armor
-    protectedArea: FullBodyHandsFeet # WWDP
     modifiers:
       coefficients:
         Blunt: 0.2
@@ -319,7 +311,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/captain_carapace.rsi
   - type: Armor
-    protectedArea: Body # WWDP
     modifiers:
       coefficients:
         Blunt: 0.5
@@ -346,7 +337,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/lingarmor.rsi
   - type: Armor
-    protectedArea: FullBodyHandsFeet # WWDP
     modifiers:
       coefficients:
         Blunt: 0.5
@@ -378,7 +368,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/bone_armor.rsi
   - type: Armor
-    protectedArea: FullBodyHandsFeet # WWDP
     modifiers:
       coefficients:
         Blunt: 0.6
@@ -407,7 +396,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Armor/podwars_armor.rsi
   - type: Armor
-    protectedArea: FullBodyHandsFeet # WWDP
     modifiers:
       coefficients:
         Blunt: 0.5

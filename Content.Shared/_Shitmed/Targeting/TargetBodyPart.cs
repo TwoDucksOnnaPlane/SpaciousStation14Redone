@@ -30,12 +30,10 @@ public enum TargetBodyPart : ushort
 
     // WWDP edit; more groups for Armor ProtectedArea
     Body = Torso | Groin,
-    UpperBody = Torso | LeftArm | RightArm,
-    UpperBodyHands = Torso | LeftArm | RightArm | LeftHand | RightHand,
-    LowerBody = Groin | LeftLeg | RightLeg,
-    LowerBodyFeet = Groin | LeftLeg | RightLeg | LeftFoot | RightFoot,
-    FullBody = Torso | Groin | LeftArm | RightArm | LeftLeg | RightLeg,
-    FullBodyHandsFeet = Torso | Groin | LeftArm | RightArm | LeftHand | RightHand | LeftLeg | RightLeg | LeftFoot | RightFoot,
+    BodyArms = Torso | Groin | LeftArm | RightArm,
+    BodyArmsHands = Torso | Groin | LeftArm | RightArm | LeftHand | RightHand,
+    GroinLegsFeet = Groin | LeftLeg | RightLeg | LeftFoot | RightFoot,
+    LegsFeet = LeftLeg | RightLeg | LeftFoot | RightFoot,
     // WWDP edit end
 
     All = Head | Torso | Groin | LeftArm | LeftHand | RightArm | RightHand | LeftLeg | LeftFoot | RightLeg | RightFoot,

@@ -13,7 +13,6 @@
   - type: Item
     size: Normal
   - type: Armor
-    protectedArea: UpperBody # WWDP
     modifiers:
       coefficients:
         Slash: 0.95

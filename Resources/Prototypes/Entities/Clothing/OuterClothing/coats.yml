@@ -24,7 +24,6 @@
     - id: SmokingPipeFilledTobacco
     - id: FlippoEngravedLighter
   - type: Armor #same as regular sec armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.70
@@ -69,7 +68,6 @@
   id: ClothingOuterArmorHoS
   components:
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.7
@@ -86,7 +84,6 @@
   id: ClothingOuterArmorWarden
   components:
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.7
@@ -105,18 +102,7 @@
   - type: Sprite
     sprite: DeltaV/Clothing/OuterClothing/Coats/hos_trenchcoat.rsi # DeltaV - resprite
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/hos_trenchcoat.rsi
-  - type: Armor
-    protectedArea: FullBody # WWDP
-    modifiers:
-      coefficients:
-        Blunt: 0.70
-        Slash: 0.70
-        Piercing: 0.70
-        Heat: 0.70
-        Caustic: 0.75 #not the full 90% from ss13 because of the head
-  - type: ExplosionResistance
-    damageCoefficient: 0.90
+    sprite: DeltaV/Clothing/OuterClothing/Coats/hos_trenchcoat.rsi # DeltaV - resprite
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -155,7 +141,6 @@
   - type: TemperatureProtection
     coefficient: 0.1
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Slash: 0.95
@@ -180,7 +165,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -201,7 +185,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat_chem.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -222,7 +205,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat_viro.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -243,7 +225,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat_gene.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -264,7 +245,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat_cmo.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Slash: 0.95
@@ -287,7 +267,6 @@
   - type: Clothing
     sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi # DeltaV - Epistemic lab coat
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -308,7 +287,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat_robo.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -329,7 +307,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/rd_coat.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -361,16 +338,6 @@
     sprite: Clothing/OuterClothing/Coats/warden.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/warden.rsi
-  - type: Armor
-    protectedArea: FullBody # WWDP
-    modifiers:
-      coefficients:
-        Blunt: 0.70
-        Slash: 0.70
-        Piercing: 0.70
-        Heat: 0.70
-  - type: ExplosionResistance
-    damageCoefficient: 0.90
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -405,7 +372,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/dogi.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Blunt: 0.8
@@ -455,8 +421,7 @@
     sprite: Clothing/OuterClothing/Coats/brigmedic.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/brigmedic.rsi
-  - type: FullBody # DeltaV - tweak for Velta armour
-    protectedArea: BodyArms # WWDP
+  - type: Armor # DeltaV - tweak for Velta armour
     modifiers:
       coefficients:
         Blunt: 0.85
@@ -476,7 +441,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat_senior_researcher.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
@@ -492,7 +456,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/labcoat_senior_physician.rsi
   - type: Armor
-    protectedArea: FullBody # WWDP
     modifiers:
       coefficients:
         Caustic: 0.75
