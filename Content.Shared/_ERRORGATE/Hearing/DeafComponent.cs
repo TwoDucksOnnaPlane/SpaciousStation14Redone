@@ -19,5 +19,8 @@ public sealed partial class DeafComponent : Component
     [DataField]
     public float Duration = 0f; // In seconds
 
+    [DataField]
+    public bool BlockSounds = true;
+
     public CancellationTokenSource? TokenSource;
 }
