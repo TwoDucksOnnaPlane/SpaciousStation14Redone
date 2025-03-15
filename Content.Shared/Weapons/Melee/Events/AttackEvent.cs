@@ -1,5 +1,3 @@
-using Content.Shared._Shitmed.Targeting;
-using Content.Shared.Body.Part;
 using Content.Shared.Damage;
 using Robust.Shared.Map;
 using Robust.Shared.Serialization;
@@ -42,14 +40,11 @@ namespace Content.Shared.Weapons.Melee.Events
 
         public DamageSpecifier BonusDamage = new();
 
-        public TargetBodyPart? TargetPart;
-
-        public AttackedEvent(EntityUid used, EntityUid user, EntityCoordinates clickLocation, TargetBodyPart? targetPart)
+        public AttackedEvent(EntityUid used, EntityUid user, EntityCoordinates clickLocation)
         {
             Used = used;
             User = user;
             ClickLocation = clickLocation;
-            TargetPart = targetPart;
         }
     }
 }

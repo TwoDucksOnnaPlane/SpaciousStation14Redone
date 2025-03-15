@@ -201,15 +201,7 @@ public sealed partial class GunSystem : SharedGunSystem
 
                             FireEffects(fromEffect, result.Distance, dir.Normalized().ToAngle(), hitscan, hit);
 
-                            // WWDP edit; bodypart targeting
-                            TargetBodyPart targetPart = default;
-
-                            if (TryComp<TargetingComponent>(user, out var targeting))
-                                targetPart = targeting.Target;
-                            else
-                                targetPart = _targeting.GetRandomBodyPart();
-
-                            var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan.Reflective, dir, false, targetPart, hitscan.Damage, hit); // WD EDIT
+                            var ev = new HitScanReflectAttemptEvent(user, gunUid, hitscan.Reflective, dir, false);
                             RaiseLocalEvent(hit, ref ev);
 
                             if (!ev.Reflected)

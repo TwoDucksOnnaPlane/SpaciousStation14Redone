@@ -121,7 +121,6 @@
   - type: LightningTarget
     priority: 2
     lightningExplode: false
-  - type: CombatLogs # WWDP
 
 # Used for mobs that can enter combat mode and can attack.
 - type: entity
