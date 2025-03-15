@@ -1,6 +1,5 @@
 using Content.Shared.Damage;
 using Content.Shared.Inventory;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Content.Shared.Explosion;
 
@@ -9,7 +8,7 @@ namespace Content.Shared.Explosion;
 ///     damaged by one.
 /// </summary>
 [ByRefEvent]
-public record struct GetExplosionResistanceEvent(string ExplosionPrototype, DamageSpecifier? damage = null) : IInventoryRelayEvent
+public record struct GetExplosionResistanceEvent(string ExplosionPrototype) : IInventoryRelayEvent
 {
     /// <summary>
     ///     A coefficient applied to overall explosive damage.
@@ -17,20 +16,8 @@ public record struct GetExplosionResistanceEvent(string ExplosionPrototype, Dama
     public float DamageCoefficient = 1;
 
     public readonly string ExplosionPrototype = ExplosionPrototype;
-    SlotFlags IInventoryRelayEvent.TargetSlots =>  ~SlotFlags.POCKET;
 
-    // spacious
-    /// <summary>
-    /// If this is not null, this is the damage that the entity is about to get.
-    /// If null, the entity is being polled for it's explosion resistance for some other reason.
-    /// </summary>
-    public readonly DamageSpecifier? Damage = damage;
-    //spacious
-    /// <summary>
-    /// True if <see cref="Damage"/> is not null.
-    /// </summary>
-    [MemberNotNullWhen(true, nameof(Damage))]
-    public bool IsReal => Damage is not null;
+    SlotFlags IInventoryRelayEvent.TargetSlots =>  ~SlotFlags.POCKET;
 }
 
 /// <summary>

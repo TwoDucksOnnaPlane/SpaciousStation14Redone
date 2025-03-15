@@ -381,7 +381,7 @@ public sealed partial class ExplosionSystem
     {
         // TODO Explosion Performance
         // Cache this? I.e., instead of raising an event, check for a component?
-        var resistanceEv = new GetExplosionResistanceEvent(id, damage); // spacious edit
+        var resistanceEv = new GetExplosionResistanceEvent(id);
         RaiseLocalEvent(uid, ref resistanceEv);
         resistanceEv.DamageCoefficient = Math.Max(0, resistanceEv.DamageCoefficient);
 
