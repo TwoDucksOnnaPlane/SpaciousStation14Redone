@@ -1,9 +1,9 @@
-department-Cargo = Cargo
+department-Cargo = Trade Union
 department-Civilian = Civilian
 department-Command = Command
 department-Engineering = Engineering
 department-Medical = Medical
-department-Security = Security
+department-Security = Garrison
 department-Science = Science
 department-Silicon = Silicons
 department-Specific = Station specific
