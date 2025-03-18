@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Lifeweb-sprites at https://github.com/Pososaku/Lifeweb-sprites/blob/0908d2ccc18e12d881968d7067c76359804d16d0/hats.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tncaptain"
+    },
+    {
+      "name": "broken_tspacehelmet"
+    },
+    {
+      "name": "broken_tspacehelmetl0"
+    },
+    {
+      "name": "vtspacehelmet"
+    },
+    {
+      "name": "vtspacehelmetl0"
+    },
+    {
+      "name": "vtspacehelmetl1"
+    },
+    {
+      "name": "tspacehelmet"
+    },
+    {
+      "name": "tspacehelmetl0"
+    },
+    {
+      "name": "tspacehelmetl1"
+    },
+    {
+      "name": "bishophat"
+    },
+    {
+      "name": "2oldhat"
+    },
+    {
+      "name": "tophat"
+    },
+    {
+      "name": "tjubeteika"
+    },
+    {
+      "name": "cavecrown"
+    },
+    {
+      "name": "healerhat"
+    },
+    {
+      "name": "fisherhat"
+    },
+    {
+      "name": "hauberkhood"
+    },
+    {
+      "name": "wizard"
+    },
+    {
+      "name": "detective"
+    },
+    {
+      "name": "santa"
+    },
+    {
+      "name": "psihat"
+    },
+    {
+      "name": "cake0"
+    },
+    {
+      "name": "cake1"
+    },
+    {
+      "name": "captain"
+    },
+    {
+      "name": "centcom"
+    },
+    {
+      "name": "thunderdome"
+    },
+    {
+      "name": "chef"
+    },
+    {
+      "name": "bio_hood"
+    },
+    {
+      "name": "hevhelm"
+    },
+    {
+      "name": "nun"
+    },
+    {
+      "name": "hoscap"
+    },
+    {
+      "name": "eocap"
+    },
+    {
+      "name": "hardhat0"
+    },
+    {
+      "name": "hardhat1"
+    },
+    {
+      "name": "pwig"
+    },
+    {
+      "name": "fedora"
+    },
+    {
+      "name": "flat_cap"
+    },
+    {
+      "name": "welding"
+    },
+    {
+      "name": "weldingup"
+    },
+    {
+      "name": "bowler"
+    },
+    {
+      "name": "sovietushankadown"
+    },
+    {
+      "name": "sovietushankaup"
+    },
+    {
+      "name": "anom_hood"
+    },
+    {
+      "name": "hazhat_firered"
+    },
+    {
+      "name": "hazhat_orange"
+    },
+    {
+      "name": "hazhat_yellow"
+    },
+    {
+      "name": "hazhat_white"
+    },
+    {
+      "name": "hazhat_janitor"
+    },
+    {
+      "name": "tribhelm"
+    },
+    {
+      "name": "emergencyh"
+    },
+    {
+      "name": "ushankadown"
+    },
+    {
+      "name": "ushankaup"
+    },
+    {
+      "name": "combat"
+    },
+    {
+      "name": "hatblu"
+    },
+    {
+      "name": "hatfur"
+    },
+    {
+      "name": "papakha"
+    },
+    {
+      "name": "bag"
+    },
+    {
+      "name": "crown"
+    },
+    {
+      "name": "cerberus"
+    },
+    {
+      "name": "keeper"
+    },
+    {
+      "name": "jester"
+    },
+    {
+      "name": "ojester"
+    },
+    {
+      "name": "castellan"
+    },
+    {
+      "name": "cyberdeck"
+    },
+    {
+      "name": "soulbreaker0"
+    },
+    {
+      "name": "soulbreaker1"
+    },
+    {
+      "name": "santahat"
+    },
+    {
+      "name": "fighterhelmet"
+    },
+    {
+      "name": "pumpkin"
+    },
+    {
+      "name": "servant"
+    },
+    {
+      "name": "paladin1"
+    },
+    {
+      "name": "paladin0"
+    },
+    {
+      "name": "detectiveblack"
+    },
+    {
+      "name": "lhelmet"
+    },
+    {
+      "name": "insecure"
+    },
+    {
+      "name": "bardhat"
+    },
+    {
+      "name": "ahelm"
+    },
+    {
+      "name": "witchhunter"
+    },
+    {
+      "name": "oldhat"
+    },
+    {
+      "name": "siegehelmet"
+    },
+    {
+      "name": "newopen"
+    },
+    {
+      "name": "zhardhat0"
+    },
+    {
+      "name": "zhardhat1"
+    },
+    {
+      "name": "cargohat"
+    },
+    {
+      "name": "skullopen"
+    },
+    {
+      "name": "gskullopen"
+    },
+    {
+      "name": "leper"
+    },
+    {
+      "name": "pea1sant"
+    },
+    {
+      "name": "pea2sant"
+    },
+    {
+      "name": "obard"
+    },
+    {
+      "name": "sacrifice"
+    },
+    {
+      "name": "decenthat"
+    },
+    {
+      "name": "inqhat"
+    },
+    {
+      "name": "hennin"
+    },
+    {
+      "name": "ricehat"
+    },
+    {
+      "name": "pillbox"
+    },
+    {
+      "name": "smokingc"
+    },
+    {
+      "name": "minitop"
+    },
+    {
+      "name": "corno"
+    },
+    {
+      "name": "bighat"
+    },
+    {
+      "name": "plebhood"
+    },
+    {
+      "name": "armingcap"
+    },
+    {
+      "name": "fancyhat"
+    },
+    {
+      "name": "chaperon"
+    },
+    {
+      "name": "headband"
+    },
+    {
+      "name": "sny"
+    },
+    {
+      "name": "mindreader"
+    },
+    {
+      "name": "scarf"
+    },
+    {
+      "name": "hero0"
+    },
+    {
+      "name": "hero1"
+    },
+    {
+      "name": "zealot"
+    },
+    {
+      "name": "nushankadown"
+    },
+    {
+      "name": "nushankaup"
+    },
+    {
+      "name": "knight0"
+    },
+    {
+      "name": "knight1"
+    },
+    {
+      "name": "mijester"
+    },
+    {
+      "name": "hood"
+    }
+  ]
+}

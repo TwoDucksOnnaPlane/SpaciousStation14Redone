@@ -1,10 +1,10 @@
-department-Cargo = Cargo
-department-Civilian = Civilian
-department-Command = Command
+department-Cargo = Trade Union
+department-Civilian = Scum
+department-Command = Authority
 department-Engineering = Engineering
 department-Medical = Medical
-department-Security = Security
+department-Security = Garrison
 department-Science = Science
 department-Silicon = Silicons
 department-Specific = Station specific
-department-Dignitary = Dignitary
+department-Dignitary = Entourage

@@ -1,0 +1,2593 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Lifeweb-sprites at https://github.com/Pososaku/Lifeweb-sprites/blob/4e67a3650453c704be35f41f03cfa2773aa8cb7f/items_lefthand.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "nothing",
+      "directions": 4
+    },
+    {
+      "name": "chessboard",
+      "directions": 4
+    },
+    {
+      "name": "traxe",
+      "directions": 4
+    },
+    {
+      "name": "traxeb",
+      "directions": 4
+    },
+    {
+      "name": "copperaxe",
+      "directions": 4
+    },
+    {
+      "name": "copperaxeb",
+      "directions": 4
+    },
+    {
+      "name": "stoneaxe",
+      "directions": 4
+    },
+    {
+      "name": "stoneaxeb",
+      "directions": 4
+    },
+    {
+      "name": "rapier",
+      "directions": 4
+    },
+    {
+      "name": "rapierb",
+      "directions": 4
+    },
+    {
+      "name": "xbaliset",
+      "directions": 4
+    },
+    {
+      "name": "sweetbread"
+    },
+    {
+      "name": "poncho",
+      "directions": 4
+    },
+    {
+      "name": "brush",
+      "directions": 4
+    },
+    {
+      "name": "candelabrum3",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "candelabrum2",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "candelabrum1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "candelabrum0",
+      "directions": 4
+    },
+    {
+      "name": "boneknife",
+      "directions": 4
+    },
+    {
+      "name": "boneknifeb",
+      "directions": 4
+    },
+    {
+      "name": "censer",
+      "directions": 4
+    },
+    {
+      "name": "artaxe",
+      "directions": 4
+    },
+    {
+      "name": "artaxeb",
+      "directions": 4
+    },
+    {
+      "name": "commstation",
+      "directions": 4
+    },
+    {
+      "name": "net_hands",
+      "directions": 4
+    },
+    {
+      "name": "head",
+      "directions": 4,
+      "delays": [
+        [
+          0.4,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.4,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.4,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.1
+        ],
+        [
+          0.4,
+          0.2,
+          0.1,
+          0.2,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "falchion",
+      "directions": 4
+    },
+    {
+      "name": "falchionb",
+      "directions": 4
+    },
+    {
+      "name": "cleaver",
+      "directions": 4
+    },
+    {
+      "name": "cleaverb",
+      "directions": 4
+    },
+    {
+      "name": "glowstick",
+      "directions": 4
+    },
+    {
+      "name": "pjack",
+      "directions": 4
+    },
+    {
+      "name": "fishingrod",
+      "directions": 4
+    },
+    {
+      "name": "spatula",
+      "directions": 4
+    },
+    {
+      "name": "hair",
+      "directions": 4
+    },
+    {
+      "name": "candle0",
+      "directions": 4
+    },
+    {
+      "name": "ham",
+      "directions": 4
+    },
+    {
+      "name": "candle1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "template",
+      "directions": 4
+    },
+    {
+      "name": "bflail",
+      "directions": 4
+    },
+    {
+      "name": "bflailb",
+      "directions": 4
+    },
+    {
+      "name": "boombox",
+      "directions": 4
+    },
+    {
+      "name": "an_tank",
+      "directions": 4
+    },
+    {
+      "name": "armor",
+      "directions": 4
+    },
+    {
+      "name": "assembly",
+      "directions": 4
+    },
+    {
+      "name": "atoxinbottle",
+      "directions": 4
+    },
+    {
+      "name": "pitchfork",
+      "directions": 4
+    },
+    {
+      "name": "pitchforkb",
+      "directions": 4
+    },
+    {
+      "name": "dreamcatcher",
+      "directions": 4
+    },
+    {
+      "name": "trident",
+      "directions": 4
+    },
+    {
+      "name": "bklevec",
+      "directions": 4
+    },
+    {
+      "name": "bklevec_blood",
+      "directions": 4
+    },
+    {
+      "name": "sheath0",
+      "directions": 4
+    },
+    {
+      "name": "sheath1",
+      "directions": 4
+    },
+    {
+      "name": "tribal_spear",
+      "directions": 4
+    },
+    {
+      "name": "tribal_spearb",
+      "directions": 4
+    },
+    {
+      "name": "tridentb",
+      "directions": 4
+    },
+    {
+      "name": "b_shoesold",
+      "directions": 4
+    },
+    {
+      "name": "candelabrum3",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "candelabrum2",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "candelabrum1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "candelabrum0",
+      "directions": 4
+    },
+    {
+      "name": "b_suit",
+      "directions": 4
+    },
+    {
+      "name": "lb_suit",
+      "directions": 4
+    },
+    {
+      "name": "backpack",
+      "directions": 4
+    },
+    {
+      "name": "blackjack",
+      "directions": 4
+    },
+    {
+      "name": "beer",
+      "directions": 4
+    },
+    {
+      "name": "bgloves",
+      "directions": 4
+    },
+    {
+      "name": "goldcoin",
+      "directions": 4
+    },
+    {
+      "name": "sledge",
+      "directions": 4
+    },
+    {
+      "name": "lever",
+      "directions": 4
+    },
+    {
+      "name": "leverb",
+      "directions": 4
+    },
+    {
+      "name": "bio_hood",
+      "directions": 4
+    },
+    {
+      "name": "bl_shoesold",
+      "directions": 4
+    },
+    {
+      "name": "vcharge",
+      "directions": 4
+    },
+    {
+      "name": "warbow",
+      "directions": 4
+    },
+    {
+      "name": "bumcoat"
+    },
+    {
+      "name": "bl_suit",
+      "directions": 4
+    },
+    {
+      "name": "ypracticus",
+      "directions": 4
+    },
+    {
+      "name": "baroncloak",
+      "directions": 4
+    },
+    {
+      "name": "cradle",
+      "directions": 4
+    },
+    {
+      "name": "blindfold",
+      "directions": 4
+    },
+    {
+      "name": "broken_beer",
+      "directions": 4
+    },
+    {
+      "name": "brutepack",
+      "directions": 4
+    },
+    {
+      "name": "c_tube",
+      "directions": 4
+    },
+    {
+      "name": "bow",
+      "directions": 4
+    },
+    {
+      "name": "card-id",
+      "directions": 4
+    },
+    {
+      "name": "cell",
+      "directions": 4
+    },
+    {
+      "name": "clipboard",
+      "directions": 4
+    },
+    {
+      "name": "coil",
+      "directions": 4
+    },
+    {
+      "name": "coil-wire",
+      "directions": 4
+    },
+    {
+      "name": "jetpack",
+      "directions": 4
+    },
+    {
+      "name": "coolant-c",
+      "directions": 4
+    },
+    {
+      "name": "cutters",
+      "directions": 4
+    },
+    {
+      "name": "cbuckler",
+      "directions": 4
+    },
+    {
+      "name": "cbuckler_u",
+      "directions": 4
+    },
+    {
+      "name": "bardiche",
+      "directions": 4
+    },
+    {
+      "name": "bardicheb",
+      "directions": 4
+    },
+    {
+      "name": "dg_suit",
+      "directions": 4
+    },
+    {
+      "name": "dropper",
+      "directions": 4
+    },
+    {
+      "name": "earmuffs",
+      "directions": 4
+    },
+    {
+      "name": "electropack",
+      "directions": 4
+    },
+    {
+      "name": "cleaner",
+      "directions": 4
+    },
+    {
+      "name": "fire_extinguisher",
+      "directions": 4
+    },
+    {
+      "name": "crutch",
+      "directions": 4
+    },
+    {
+      "name": "sstake",
+      "directions": 4
+    },
+    {
+      "name": "sstakeb",
+      "directions": 4
+    },
+    {
+      "name": "wstake",
+      "directions": 4
+    },
+    {
+      "name": "wstakeb",
+      "directions": 4
+    },
+    {
+      "name": "fire_suit",
+      "directions": 4
+    },
+    {
+      "name": "firstaid",
+      "directions": 4
+    },
+    {
+      "name": "firstaid-ointment",
+      "directions": 4
+    },
+    {
+      "name": "firstaid-toxin",
+      "directions": 4
+    },
+    {
+      "name": "emp",
+      "directions": 4
+    },
+    {
+      "name": "flashbang",
+      "directions": 4
+    },
+    {
+      "name": "flight0",
+      "directions": 4
+    },
+    {
+      "name": "flight1",
+      "directions": 4
+    },
+    {
+      "name": "church_candle0",
+      "directions": 4
+    },
+    {
+      "name": "church_candle1",
+      "directions": 4,
+      "delays": [
+        [
+          1,
+          0.1
+        ],
+        [
+          1,
+          0.1
+        ],
+        [
+          1,
+          0.1
+        ],
+        [
+          1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "dinner_candle0",
+      "directions": 4
+    },
+    {
+      "name": "dinner_candle1",
+      "directions": 4,
+      "delays": [
+        [
+          1,
+          0.1
+        ],
+        [
+          1,
+          0.1
+        ],
+        [
+          1,
+          0.1
+        ],
+        [
+          1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "tiny_candle0",
+      "directions": 4
+    },
+    {
+      "name": "tiny_candle1",
+      "directions": 4
+    },
+    {
+      "name": "g_suit",
+      "directions": 4
+    },
+    {
+      "name": "gas_mask",
+      "directions": 4
+    },
+    {
+      "name": "gift",
+      "directions": 4
+    },
+    {
+      "name": "glasses",
+      "directions": 4
+    },
+    {
+      "name": "gy_suit",
+      "directions": 4
+    },
+    {
+      "name": "handcuff",
+      "directions": 4
+    },
+    {
+      "name": "headset",
+      "directions": 4
+    },
+    {
+      "name": "healthanalyzer",
+      "directions": 4
+    },
+    {
+      "name": "helmet",
+      "directions": 4
+    },
+    {
+      "name": "implantcase",
+      "directions": 4
+    },
+    {
+      "name": "jetpack_s",
+      "directions": 4
+    },
+    {
+      "name": "labcoat",
+      "directions": 4
+    },
+    {
+      "name": "labcoat_cmo",
+      "directions": 4
+    },
+    {
+      "name": "lgloves",
+      "directions": 4
+    },
+    {
+      "name": "m_mask",
+      "directions": 4
+    },
+    {
+      "name": "medibottle",
+      "directions": 4
+    },
+    {
+      "name": "multitool",
+      "directions": 4
+    },
+    {
+      "name": "muzzle",
+      "directions": 4
+    },
+    {
+      "name": "ointment",
+      "directions": 4
+    },
+    {
+      "name": "oxygen",
+      "directions": 4
+    },
+    {
+      "name": "oxygen-c",
+      "directions": 4
+    },
+    {
+      "name": "bowl",
+      "directions": 4
+    },
+    {
+      "name": "paintcan",
+      "directions": 4
+    },
+    {
+      "name": "paper",
+      "directions": 4
+    },
+    {
+      "name": "pen",
+      "directions": 4
+    },
+    {
+      "name": "pill",
+      "directions": 4
+    },
+    {
+      "name": "plasma",
+      "directions": 4
+    },
+    {
+      "name": "plasma-c",
+      "directions": 4
+    },
+    {
+      "name": "rack_parts",
+      "directions": 4
+    },
+    {
+      "name": "radio",
+      "directions": 4
+    },
+    {
+      "name": "rejuvbottle",
+      "directions": 4
+    },
+    {
+      "name": "sunglasses",
+      "directions": 4
+    },
+    {
+      "name": "s_mask",
+      "directions": 4
+    },
+    {
+      "name": "crowbar",
+      "directions": 4
+    },
+    {
+      "name": "screwdriver",
+      "directions": 4
+    },
+    {
+      "name": "shard-glass",
+      "directions": 4
+    },
+    {
+      "name": "sheet-glass",
+      "directions": 4
+    },
+    {
+      "name": "sheet-metal",
+      "directions": 4
+    },
+    {
+      "name": "sheet-rglass",
+      "directions": 4
+    },
+    {
+      "name": "signaler",
+      "directions": 4
+    },
+    {
+      "name": "swat_gl",
+      "directions": 4
+    },
+    {
+      "name": "swat_hel",
+      "directions": 4
+    },
+    {
+      "name": "syringe_0",
+      "directions": 4
+    },
+    {
+      "name": "syringe_1",
+      "directions": 4
+    },
+    {
+      "name": "syringe_5",
+      "directions": 4
+    },
+    {
+      "name": "syringe_10",
+      "directions": 4
+    },
+    {
+      "name": "syringe_15",
+      "directions": 4
+    },
+    {
+      "name": "syringe_kit",
+      "directions": 4
+    },
+    {
+      "name": "table_parts",
+      "directions": 4
+    },
+    {
+      "name": "tile",
+      "directions": 4
+    },
+    {
+      "name": "toolbox_yellow",
+      "directions": 4
+    },
+    {
+      "name": "toxinbottle",
+      "directions": 4
+    },
+    {
+      "name": "wrap_paper",
+      "directions": 4
+    },
+    {
+      "name": "bucket",
+      "directions": 4
+    },
+    {
+      "name": "wrench",
+      "directions": 4
+    },
+    {
+      "name": "y_suit",
+      "directions": 4
+    },
+    {
+      "name": "ygloves",
+      "directions": 4
+    },
+    {
+      "name": "flamethrower0",
+      "directions": 4
+    },
+    {
+      "name": "toolbox_blue",
+      "directions": 4
+    },
+    {
+      "name": "flamethrower1",
+      "directions": 4
+    },
+    {
+      "name": "space_helmet_syndicate1",
+      "directions": 4
+    },
+    {
+      "name": "space_helmet_syndicate",
+      "directions": 4
+    },
+    {
+      "name": "axe0",
+      "directions": 4
+    },
+    {
+      "name": "axe1",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "ba_suit",
+      "directions": 4
+    },
+    {
+      "name": "wcoat",
+      "directions": 4
+    },
+    {
+      "name": "cakehat0",
+      "directions": 4
+    },
+    {
+      "name": "cakehat1",
+      "directions": 4
+    },
+    {
+      "name": "bombvest",
+      "directions": 4
+    },
+    {
+      "name": "dnainjector",
+      "directions": 4
+    },
+    {
+      "name": "tdgreen",
+      "directions": 4
+    },
+    {
+      "name": "tdred",
+      "directions": 4
+    },
+    {
+      "name": "tdhelm",
+      "directions": 4
+    },
+    {
+      "name": "contliquid",
+      "directions": 4
+    },
+    {
+      "name": "contsolid",
+      "directions": 4
+    },
+    {
+      "name": "contvapour",
+      "directions": 4
+    },
+    {
+      "name": "beaker",
+      "directions": 4
+    },
+    {
+      "name": "wizshoe",
+      "directions": 4
+    },
+    {
+      "name": "wizrobe",
+      "directions": 4
+    },
+    {
+      "name": "wizhat",
+      "directions": 4
+    },
+    {
+      "name": "janitor",
+      "directions": 4
+    },
+    {
+      "name": "mop",
+      "directions": 4
+    },
+    {
+      "name": "broom",
+      "directions": 4
+    },
+    {
+      "name": "caution",
+      "directions": 4
+    },
+    {
+      "name": "pwig",
+      "directions": 4
+    },
+    {
+      "name": "judge",
+      "directions": 4
+    },
+    {
+      "name": "galoshes",
+      "directions": 4
+    },
+    {
+      "name": "gas_alt",
+      "directions": 4
+    },
+    {
+      "name": "det_hat",
+      "directions": 4
+    },
+    {
+      "name": "det",
+      "directions": 4
+    },
+    {
+      "name": "det_suit",
+      "directions": 4
+    },
+    {
+      "name": "egg",
+      "directions": 4
+    },
+    {
+      "name": "egg2",
+      "directions": 4
+    },
+    {
+      "name": "egg1",
+      "directions": 4
+    },
+    {
+      "name": "egg3",
+      "directions": 4
+    },
+    {
+      "name": "egg4",
+      "directions": 4
+    },
+    {
+      "name": "egg5",
+      "directions": 4
+    },
+    {
+      "name": "toolbox_blue",
+      "directions": 4
+    },
+    {
+      "name": "owl_mask",
+      "directions": 4
+    },
+    {
+      "name": "greatcoat",
+      "directions": 4
+    },
+    {
+      "name": "clown",
+      "directions": 4
+    },
+    {
+      "name": "clown_hat",
+      "directions": 4
+    },
+    {
+      "name": "clown_shoes",
+      "directions": 4
+    },
+    {
+      "name": "johnny",
+      "directions": 4
+    },
+    {
+      "name": "johnny_coat",
+      "directions": 4
+    },
+    {
+      "name": "rcd",
+      "directions": 4
+    },
+    {
+      "name": "rcdammo",
+      "directions": 4
+    },
+    {
+      "name": "buildpipe",
+      "directions": 4
+    },
+    {
+      "name": "analyzer",
+      "directions": 4
+    },
+    {
+      "name": "baton",
+      "directions": 4
+    },
+    {
+      "name": "stick1",
+      "directions": 4
+    },
+    {
+      "name": "bio_orange",
+      "directions": 4
+    },
+    {
+      "name": "bio_suit",
+      "directions": 4
+    },
+    {
+      "name": "electronic",
+      "directions": 4
+    },
+    {
+      "name": "gun",
+      "directions": 4
+    },
+    {
+      "name": "o_suit",
+      "directions": 4
+    },
+    {
+      "name": "owl",
+      "directions": 4
+    },
+    {
+      "name": "p_suit",
+      "directions": 4
+    },
+    {
+      "name": "r_feet",
+      "directions": 4
+    },
+    {
+      "name": "r_hands",
+      "directions": 4
+    },
+    {
+      "name": "r_head",
+      "directions": 4
+    },
+    {
+      "name": "r_suit",
+      "directions": 4
+    },
+    {
+      "name": "ro_suit",
+      "directions": 4
+    },
+    {
+      "name": "rods",
+      "directions": 4
+    },
+    {
+      "name": "s_suit",
+      "directions": 4
+    },
+    {
+      "name": "santa",
+      "directions": 4
+    },
+    {
+      "name": "santahat",
+      "directions": 4
+    },
+    {
+      "name": "sl_suit",
+      "directions": 4
+    },
+    {
+      "name": "space_suit_syndicate",
+      "directions": 4
+    },
+    {
+      "name": "space_suit_syndicate1",
+      "directions": 4
+    },
+    {
+      "name": "staff",
+      "directions": 4
+    },
+    {
+      "name": "straight_jacket",
+      "directions": 4
+    },
+    {
+      "name": "sword0",
+      "directions": 4
+    },
+    {
+      "name": "that",
+      "directions": 4
+    },
+    {
+      "name": "w_shoes",
+      "directions": 4
+    },
+    {
+      "name": "w_suit",
+      "directions": 4
+    },
+    {
+      "name": "welder",
+      "directions": 4
+    },
+    {
+      "name": "welder1",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "death_commando_mask",
+      "directions": 4
+    },
+    {
+      "name": "death_commando_suit",
+      "directions": 4
+    },
+    {
+      "name": "caparmor",
+      "directions": 4
+    },
+    {
+      "name": "centcom",
+      "directions": 4
+    },
+    {
+      "name": "caphat",
+      "directions": 4
+    },
+    {
+      "name": "centhat",
+      "directions": 4
+    },
+    {
+      "name": "gold_id",
+      "directions": 4
+    },
+    {
+      "name": "lawyer_black",
+      "directions": 4
+    },
+    {
+      "name": "lawyer_red",
+      "directions": 4
+    },
+    {
+      "name": "lawyer_blue",
+      "directions": 4
+    },
+    {
+      "name": "briefcase",
+      "directions": 4
+    },
+    {
+      "name": "briefcase_black",
+      "directions": 4
+    },
+    {
+      "name": "psyche",
+      "directions": 4
+    },
+    {
+      "name": "candy",
+      "directions": 4
+    },
+    {
+      "name": "chips",
+      "directions": 4
+    },
+    {
+      "name": "coffee",
+      "directions": 4
+    },
+    {
+      "name": "r_shoes",
+      "directions": 4
+    },
+    {
+      "name": "bike_horn",
+      "directions": 4
+    },
+    {
+      "name": "vialgreen",
+      "directions": 4
+    },
+    {
+      "name": "vialblue",
+      "directions": 4
+    },
+    {
+      "name": "brain2",
+      "directions": 4
+    },
+    {
+      "name": "scalpel",
+      "directions": 4
+    },
+    {
+      "name": "saw1",
+      "directions": 4
+    },
+    {
+      "name": "emergency",
+      "directions": 4
+    },
+    {
+      "name": "b_shoes",
+      "directions": 4
+    },
+    {
+      "name": "bl_shoes",
+      "directions": 4
+    },
+    {
+      "name": "o_shoes",
+      "directions": 4
+    },
+    {
+      "name": "o_shoes1",
+      "directions": 4
+    },
+    {
+      "name": "pie",
+      "directions": 4
+    },
+    {
+      "name": "vhammer",
+      "directions": 4
+    },
+    {
+      "name": "vhelmet",
+      "directions": 4
+    },
+    {
+      "name": "chainmail",
+      "directions": 4
+    },
+    {
+      "name": "chef",
+      "directions": 4
+    },
+    {
+      "name": "chefhat",
+      "directions": 4
+    },
+    {
+      "name": "rolling_pin",
+      "directions": 4
+    },
+    {
+      "name": "burger",
+      "directions": 4
+    },
+    {
+      "name": "cola",
+      "directions": 4
+    },
+    {
+      "name": "donut1",
+      "directions": 4
+    },
+    {
+      "name": "donut2",
+      "directions": 4
+    },
+    {
+      "name": "faggot",
+      "directions": 4
+    },
+    {
+      "name": "fork",
+      "directions": 4
+    },
+    {
+      "name": "spoon",
+      "directions": 4
+    },
+    {
+      "name": "butcher_knife",
+      "directions": 4
+    },
+    {
+      "name": "sec-case",
+      "directions": 4
+    },
+    {
+      "name": "cigoff",
+      "directions": 4
+    },
+    {
+      "name": "cigon",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "zippoon",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "zippo",
+      "directions": 4
+    },
+    {
+      "name": "b_mask",
+      "directions": 4
+    },
+    {
+      "name": "bedsheet",
+      "directions": 4
+    },
+    {
+      "name": "stamp",
+      "directions": 4
+    },
+    {
+      "name": "cigpacket",
+      "directions": 4
+    },
+    {
+      "name": "bible",
+      "directions": 4
+    },
+    {
+      "name": "classic_baton",
+      "directions": 4
+    },
+    {
+      "name": "brick",
+      "directions": 4
+    },
+    {
+      "name": "mousetrap",
+      "directions": 4
+    },
+    {
+      "name": "lipstick",
+      "directions": 4
+    },
+    {
+      "name": "lipstickopen",
+      "directions": 4
+    },
+    {
+      "name": "welding",
+      "directions": 4
+    },
+    {
+      "name": "hacktool",
+      "directions": 4
+    },
+    {
+      "name": "anom_suit",
+      "directions": 4
+    },
+    {
+      "name": "anom_hood",
+      "directions": 4
+    },
+    {
+      "name": "c4small",
+      "directions": 4
+    },
+    {
+      "name": "c-4detonator",
+      "directions": 4
+    },
+    {
+      "name": "c-4large",
+      "directions": 4
+    },
+    {
+      "name": "redgloves",
+      "directions": 4
+    },
+    {
+      "name": "greengloves",
+      "directions": 4
+    },
+    {
+      "name": "greenbook",
+      "directions": 4
+    },
+    {
+      "name": "bluebook",
+      "directions": 4
+    },
+    {
+      "name": "yellowbook",
+      "directions": 4
+    },
+    {
+      "name": "redbook",
+      "directions": 4
+    },
+    {
+      "name": "magbook",
+      "directions": 4
+    },
+    {
+      "name": "indigobook",
+      "directions": 4
+    },
+    {
+      "name": "orangebook",
+      "directions": 4
+    },
+    {
+      "name": "cyanbook",
+      "directions": 4
+    },
+    {
+      "name": "seagrnbook",
+      "directions": 4
+    },
+    {
+      "name": "hazsuit_white",
+      "directions": 4
+    },
+    {
+      "name": "hazhat_white",
+      "directions": 4
+    },
+    {
+      "name": "pickaxe",
+      "directions": 4
+    },
+    {
+      "name": "pickaxe1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ball",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "emergencyh",
+      "directions": 4
+    },
+    {
+      "name": "s_helmet",
+      "directions": 4
+    },
+    {
+      "name": "emergencysuit",
+      "directions": 4
+    },
+    {
+      "name": "sword1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "backpack_eng",
+      "directions": 4
+    },
+    {
+      "name": "securitypack",
+      "directions": 4
+    },
+    {
+      "name": "medpack",
+      "directions": 4
+    },
+    {
+      "name": "medicalpack",
+      "directions": 4
+    },
+    {
+      "name": "knife",
+      "directions": 4
+    },
+    {
+      "name": "knifeb",
+      "directions": 4
+    },
+    {
+      "name": "dagger",
+      "directions": 4
+    },
+    {
+      "name": "daggerb",
+      "directions": 4
+    },
+    {
+      "name": "knifer",
+      "directions": 4
+    },
+    {
+      "name": "secsoft",
+      "directions": 4
+    },
+    {
+      "name": "trashbag",
+      "directions": 4
+    },
+    {
+      "name": "stick",
+      "directions": 4
+    },
+    {
+      "name": "satchel",
+      "directions": 4
+    },
+    {
+      "name": "smallgun",
+      "directions": 4
+    },
+    {
+      "name": "stool",
+      "directions": 4
+    },
+    {
+      "name": "claymore",
+      "directions": 4
+    },
+    {
+      "name": "claymoreb",
+      "directions": 4
+    },
+    {
+      "name": "goldenclaymore",
+      "directions": 4
+    },
+    {
+      "name": "goldenclaymoreb",
+      "directions": 4
+    },
+    {
+      "name": "biggun",
+      "directions": 4
+    },
+    {
+      "name": "shotgun",
+      "directions": 4
+    },
+    {
+      "name": "pickaxe",
+      "directions": 4
+    },
+    {
+      "name": "blueprints",
+      "directions": 4
+    },
+    {
+      "name": "shovel",
+      "directions": 4
+    },
+    {
+      "name": "beer_b",
+      "directions": 4
+    },
+    {
+      "name": "club",
+      "directions": 4
+    },
+    {
+      "name": "xmace",
+      "directions": 4
+    },
+    {
+      "name": "xclub",
+      "directions": 4
+    },
+    {
+      "name": "xclubb",
+      "directions": 4
+    },
+    {
+      "name": "bag",
+      "directions": 4
+    },
+    {
+      "name": "hatchet",
+      "directions": 4
+    },
+    {
+      "name": "hatchetb",
+      "directions": 4
+    },
+    {
+      "name": "sabre",
+      "directions": 4
+    },
+    {
+      "name": "sabreb",
+      "directions": 4
+    },
+    {
+      "name": "clubb",
+      "directions": 4
+    },
+    {
+      "name": "balalaika",
+      "directions": 4
+    },
+    {
+      "name": "torch1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "torch0",
+      "directions": 4
+    },
+    {
+      "name": "scalpel",
+      "directions": 4
+    },
+    {
+      "name": "limb",
+      "directions": 4
+    },
+    {
+      "name": "bone",
+      "directions": 4
+    },
+    {
+      "name": "gshield",
+      "directions": 4
+    },
+    {
+      "name": "golf_club",
+      "directions": 4
+    },
+    {
+      "name": "golf_clubb",
+      "directions": 4
+    },
+    {
+      "name": "hammer",
+      "directions": 4
+    },
+    {
+      "name": "hammerb",
+      "directions": 4
+    },
+    {
+      "name": "hatchet",
+      "directions": 4
+    },
+    {
+      "name": "adshield",
+      "directions": 4
+    },
+    {
+      "name": "adshield_u",
+      "directions": 4
+    },
+    {
+      "name": "hatchetb",
+      "directions": 4,
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.6,
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.6,
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.6,
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "buckler",
+      "directions": 4
+    },
+    {
+      "name": "buckler_u",
+      "directions": 4
+    },
+    {
+      "name": "wbuckler",
+      "directions": 4
+    },
+    {
+      "name": "wbuckler_u",
+      "directions": 4
+    },
+    {
+      "name": "baliset",
+      "directions": 4
+    },
+    {
+      "name": "wsword",
+      "directions": 4
+    },
+    {
+      "name": "pan",
+      "directions": 4
+    },
+    {
+      "name": "wjar",
+      "directions": 4
+    },
+    {
+      "name": "ggobl",
+      "directions": 4
+    },
+    {
+      "name": "sgobl",
+      "directions": 4
+    },
+    {
+      "name": "lightbringer",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "lamp1",
+      "directions": 4
+    },
+    {
+      "name": "lamp0",
+      "directions": 4
+    },
+    {
+      "name": "pan",
+      "directions": 4
+    },
+    {
+      "name": "tbear",
+      "directions": 4
+    },
+    {
+      "name": "crossbow",
+      "directions": 4
+    },
+    {
+      "name": "scup",
+      "directions": 4
+    },
+    {
+      "name": "bowl",
+      "directions": 4
+    },
+    {
+      "name": "tray",
+      "directions": 4
+    },
+    {
+      "name": "rope",
+      "directions": 4
+    },
+    {
+      "name": "teapot",
+      "directions": 4
+    },
+    {
+      "name": "gshield_u",
+      "directions": 4
+    },
+    {
+      "name": "paladin_shield",
+      "directions": 4
+    },
+    {
+      "name": "paladin_shield_u",
+      "directions": 4
+    },
+    {
+      "name": "wbox",
+      "directions": 4
+    },
+    {
+      "name": "lbuckler",
+      "directions": 4
+    },
+    {
+      "name": "jackboots",
+      "directions": 4
+    },
+    {
+      "name": "horn",
+      "directions": 4
+    },
+    {
+      "name": "logs",
+      "directions": 4
+    },
+    {
+      "name": "tray_shield",
+      "directions": 4
+    },
+    {
+      "name": "tray_shield_u",
+      "directions": 4
+    },
+    {
+      "name": "t_staff0",
+      "directions": 4
+    },
+    {
+      "name": "m41a",
+      "directions": 4
+    },
+    {
+      "name": "monkstaff",
+      "directions": 4
+    },
+    {
+      "name": "spear",
+      "directions": 4
+    },
+    {
+      "name": "shatch",
+      "directions": 4
+    },
+    {
+      "name": "wstick",
+      "directions": 4
+    },
+    {
+      "name": "flail",
+      "directions": 4
+    },
+    {
+      "name": "flailb",
+      "directions": 4
+    },
+    {
+      "name": "chain",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "icross",
+      "directions": 4
+    },
+    {
+      "name": "icrossb",
+      "directions": 4
+    },
+    {
+      "name": "bastard",
+      "directions": 4
+    },
+    {
+      "name": "bastardb",
+      "directions": 4
+    },
+    {
+      "name": "wdclub",
+      "directions": 4
+    },
+    {
+      "name": "wdclubb",
+      "directions": 4
+    },
+    {
+      "name": "caduceus",
+      "directions": 4
+    },
+    {
+      "name": "boneclub",
+      "directions": 4
+    },
+    {
+      "name": "boneclubb",
+      "directions": 4
+    },
+    {
+      "name": "t_staff1",
+      "directions": 4
+    },
+    {
+      "name": "bayan",
+      "directions": 4
+    },
+    {
+      "name": "flare0",
+      "directions": 4
+    },
+    {
+      "name": "flare1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "largeshield",
+      "directions": 4
+    },
+    {
+      "name": "largeshieldo",
+      "directions": 4
+    },
+    {
+      "name": "largeshield_u",
+      "directions": 4
+    },
+    {
+      "name": "bucklero",
+      "directions": 4
+    },
+    {
+      "name": "judgearmor",
+      "directions": 4
+    },
+    {
+      "name": "cat",
+      "directions": 4
+    },
+    {
+      "name": "mcam",
+      "directions": 4
+    },
+    {
+      "name": "hypnoflash",
+      "directions": 4
+    },
+    {
+      "name": "flute",
+      "directions": 4
+    },
+    {
+      "name": "chalice",
+      "directions": 4
+    },
+    {
+      "name": "camera",
+      "directions": 4
+    },
+    {
+      "name": "savaxe",
+      "directions": 4
+    },
+    {
+      "name": "savaxeb",
+      "directions": 4
+    },
+    {
+      "name": "savage",
+      "directions": 4
+    },
+    {
+      "name": "scissors",
+      "directions": 4
+    },
+    {
+      "name": "scissorsb",
+      "directions": 4
+    },
+    {
+      "name": "chainsaw",
+      "directions": 4
+    },
+    {
+      "name": "chainsawb",
+      "directions": 4
+    },
+    {
+      "name": "bonesaw",
+      "directions": 4
+    },
+    {
+      "name": "bonesawb",
+      "directions": 4
+    },
+    {
+      "name": "bonecane",
+      "directions": 4
+    },
+    {
+      "name": "klevec",
+      "directions": 4
+    },
+    {
+      "name": "klevec_blood",
+      "directions": 4
+    },
+    {
+      "name": "kramm",
+      "directions": 4
+    },
+    {
+      "name": "xpulse",
+      "directions": 4
+    },
+    {
+      "name": "gravcutter",
+      "directions": 4
+    },
+    {
+      "name": "classic",
+      "directions": 4
+    },
+    {
+      "name": "xlaser",
+      "directions": 4
+    },
+    {
+      "name": "syren",
+      "directions": 4
+    },
+    {
+      "name": "haston",
+      "directions": 4
+    },
+    {
+      "name": "laser",
+      "directions": 4
+    },
+    {
+      "name": "syringegun",
+      "directions": 4
+    },
+    {
+      "name": "shotgun2",
+      "directions": 4
+    },
+    {
+      "name": "revolver2",
+      "directions": 4
+    },
+    {
+      "name": "detective",
+      "directions": 4
+    },
+    {
+      "name": "revolver3",
+      "directions": 4
+    },
+    {
+      "name": "smg",
+      "directions": 4
+    },
+    {
+      "name": "talon",
+      "directions": 4
+    },
+    {
+      "name": "pulse",
+      "directions": 4
+    },
+    {
+      "name": "bigpistol",
+      "directions": 4
+    },
+    {
+      "name": "noctis",
+      "directions": 4
+    },
+    {
+      "name": "stunner",
+      "directions": 4
+    },
+    {
+      "name": "flamer",
+      "directions": 4
+    },
+    {
+      "name": "sparq",
+      "directions": 4
+    },
+    {
+      "name": "syringer",
+      "directions": 4
+    },
+    {
+      "name": "grindr",
+      "directions": 4
+    },
+    {
+      "name": "cannonball",
+      "directions": 4
+    },
+    {
+      "name": "bbgun",
+      "directions": 4
+    },
+    {
+      "name": "card",
+      "directions": 4
+    },
+    {
+      "name": "blooper",
+      "directions": 4
+    },
+    {
+      "name": "musket",
+      "directions": 4
+    },
+    {
+      "name": "sawed",
+      "directions": 4
+    },
+    {
+      "name": "stunrifle",
+      "directions": 4
+    },
+    {
+      "name": "gravrifle",
+      "directions": 4
+    },
+    {
+      "name": "lfuel",
+      "directions": 4
+    },
+    {
+      "name": "wglass",
+      "directions": 4
+    }
+  ]
+}

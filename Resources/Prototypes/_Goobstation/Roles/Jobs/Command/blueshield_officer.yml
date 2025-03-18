@@ -1,7 +1,7 @@
 - type: job
   id: BlueshieldOfficer
-  name: Blueshield Officer
-  description: "Act as a bodyguard and advisor for Command and CentCom VIPs."
+  name: Praetor
+  description: "Protect the Consul and First Officer"
   playTimeTracker: JobBlueshieldOfficer
   requirements:
     - !type:CharacterDepartmentTimeRequirement
@@ -68,6 +68,7 @@
     gloves: ClothingHandsGlovesCombat
     id: BlueshieldPDA
     pocket1: UniqueBlueshieldOfficerLockerTeleporter
+    pocket2: BluespaceLifelineImplanter
 
     #outerClothing: ClothingBlueshieldArmourVest
     #ears: ClothingHeadsetAltCommand

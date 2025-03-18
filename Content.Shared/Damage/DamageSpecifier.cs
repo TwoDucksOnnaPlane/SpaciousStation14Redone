@@ -55,36 +55,6 @@ namespace Content.Shared.Damage
             return total;
         }
 
-		// Spacious
-        /// <summary>
-        ///     Returns a sum of the positive damage values.
-        /// </summary>
-        public FixedPoint2 GetTotalPositive()
-        {
-            var total = FixedPoint2.Zero;
-            foreach (var value in DamageDict.Values)
-            {
-                if(value > 0)
-                    total += value;
-            }
-            return total;
-        }
-
-		// Spacious
-        /// <summary>
-        ///     Returns a sum of the negative damage values.
-        /// </summary>
-        public FixedPoint2 GetTotalNegative()
-        {
-            var total = FixedPoint2.Zero;
-            foreach (var value in DamageDict.Values)
-            {
-                if (value < 0)
-                    total += value;
-            }
-            return total;
-        }
-
         /// <summary>
         /// Returns true if the specifier contains any positive damage values.
         /// Differs from <see cref="Empty"/> as a damage specifier might contain entries with zeroes.

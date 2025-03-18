@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Lifeweb-sprites at https://github.com/Pososaku/Lifeweb-sprites/blob/ae52d34b6aeeda518671dc5efc4c931d62bc6983/uniforms.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pink"
+    },
+    {
+      "name": "black"
+    },
+    {
+      "name": "white"
+    },
+    {
+      "name": "detective"
+    },
+    {
+      "name": "practicus"
+    },
+    {
+      "name": "clown"
+    },
+    {
+      "name": "patient"
+    },
+    {
+      "name": "syndicate"
+    },
+    {
+      "name": "soviet"
+    },
+    {
+      "name": "classic_suit"
+    },
+    {
+      "name": "clshirt"
+    },
+    {
+      "name": "meister"
+    },
+    {
+      "name": "waiter"
+    },
+    {
+      "name": "yorange"
+    },
+    {
+      "name": "yjanitor"
+    },
+    {
+      "name": "scrubsblue"
+    },
+    {
+      "name": "ycargo"
+    },
+    {
+      "name": "ymeister"
+    },
+    {
+      "name": "yar"
+    },
+    {
+      "name": "ychef"
+    },
+    {
+      "name": "mortician"
+    },
+    {
+      "name": "common"
+    },
+    {
+      "name": "cargo"
+    },
+    {
+      "name": "jester"
+    },
+    {
+      "name": "psych"
+    },
+    {
+      "name": "xmigrant"
+    },
+    {
+      "name": "ypracticus"
+    },
+    {
+      "name": "yorphan"
+    },
+    {
+      "name": "consyte"
+    },
+    {
+      "name": "opcams"
+    },
+    {
+      "name": "general"
+    },
+    {
+      "name": "migrant"
+    },
+    {
+      "name": "bt"
+    },
+    {
+      "name": "migrant_o"
+    },
+    {
+      "name": "migrant2"
+    },
+    {
+      "name": "migrant2_o"
+    },
+    {
+      "name": "thief"
+    },
+    {
+      "name": "insecure"
+    },
+    {
+      "name": "letro"
+    },
+    {
+      "name": "adv"
+    },
+    {
+      "name": "zcargo"
+    },
+    {
+      "name": "cap_suit"
+    },
+    {
+      "name": "cadet"
+    },
+    {
+      "name": "urchin"
+    },
+    {
+      "name": "butler"
+    },
+    {
+      "name": "doktor"
+    },
+    {
+      "name": "boss"
+    },
+    {
+      "name": "ravenhearter"
+    },
+    {
+      "name": "pra"
+    },
+    {
+      "name": "innkeeper"
+    },
+    {
+      "name": "tube_dress"
+    },
+    {
+      "name": "dirtpant"
+    }
+  ]
+}

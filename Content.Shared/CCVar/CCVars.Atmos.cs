@@ -5,6 +5,13 @@ namespace Content.Shared.CCVar;
 public sealed partial class CCVars
 {
     /// <summary>
+    ///     Whether pipes will unanchor on ANY conflicting connection. May break maps.
+    ///     If false, allows you to stack pipes as long as new directions are added (i.e. in a new pipe rotation, layer or multi-Z link), otherwise unanchoring them.
+    /// </summary>
+    public static readonly CVarDef<bool> StrictPipeStacking =
+        CVarDef.Create("atmos.strict_pipe_stacking", false, CVar.SERVERONLY);
+
+    /// <summary>
     ///     Whether gas differences will move entities.
     /// </summary>
     public static readonly CVarDef<bool> SpaceWind =
@@ -78,7 +85,7 @@ public sealed partial class CCVars
     ///     Also looks weird on slow spacing for unrelated reasons. If you do want to enable this, you should probably turn on instaspacing.
     /// </summary>
     public static readonly CVarDef<bool> MonstermosRipTiles =
-        CVarDef.Create("atmos.monstermos_rip_tiles", true, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_rip_tiles", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     Taken as the cube of a tile's mass, this acts as a minimum threshold of mass for which air pressure calculates whether or not to rip a tile from the floor

@@ -144,13 +144,13 @@ public sealed partial class CCVars
     /// If roles should be restricted based on time.
     /// </summary>
     public static readonly CVarDef<bool>
-        GameRoleTimers = CVarDef.Create("game.role_timers", true, CVar.SERVER | CVar.REPLICATED);
+        GameRoleTimers = CVarDef.Create("game.role_timers", false, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     /// Whether or not disconnecting inside of a cryopod should remove the character or just store them until they reconnect.
     /// </summary>
     public static readonly CVarDef<bool>
-        GameCryoSleepRejoining = CVarDef.Create("game.cryo_sleep_rejoining", false, CVar.SERVER | CVar.REPLICATED);
+        GameCryoSleepRejoining = CVarDef.Create("game.cryo_sleep_rejoining", true, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     ///     When enabled, guests will be assigned permanent UIDs and will have their preferences stored.
@@ -319,7 +319,7 @@ public sealed partial class CCVars
     ///     If you are intending to decrease the trait points availability, or modify the costs of traits, consider temporarily disabling this.
     /// </summary>
     public static readonly CVarDef<bool> TraitsPunishCheaters =
-        CVarDef.Create("game.traits_punish_cheaters", false, CVar.REPLICATED);
+        CVarDef.Create("game.traits_punish_cheaters", true, CVar.REPLICATED);
 
     /// <summary>
     ///     Whether to allow characters to select loadout items.
@@ -338,13 +338,13 @@ public sealed partial class CCVars
     ///     Whether to repeat eating doafters after completion
     /// </summary>
     public static readonly CVarDef<bool> GameAutoEatFood =
-        CVarDef.Create("game.auto_eat_food", false, CVar.REPLICATED);
+        CVarDef.Create("game.auto_eat_food", true, CVar.REPLICATED);
 
     /// <summary>
     ///     Whether to repeat drinking doafters after completion
     /// </summary>
     public static readonly CVarDef<bool> GameAutoEatDrinks =
-        CVarDef.Create("game.auto_eat_drinks", false, CVar.REPLICATED);
+        CVarDef.Create("game.auto_eat_drinks", true, CVar.REPLICATED);
 
     /// <summary>
     ///     Whether item slots, such as power cell slots or AME fuel cell slots, should support quick swap if it is not otherwise specified in their YAML prototype.
@@ -385,6 +385,14 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<string> RoundEndSoundCollection =
         CVarDef.Create("game.round_end_sound_collection", "RoundEnd", CVar.SERVERONLY);
+
+    /// <summary>
+    /// Whether or not to add every player as a global override to PVS at round end.
+    /// This will allow all players to see their clothing in the round screen player list screen,
+    /// but may cause lag during round end with very high player counts.
+    /// </summary>
+    public static readonly CVarDef<bool> RoundEndPVSOverrides =
+        CVarDef.Create("game.round_end_pvs_overrides", true, CVar.SERVERONLY);
 
     /// <summary>
     /// Set to true to enable the dynamic hostname system.

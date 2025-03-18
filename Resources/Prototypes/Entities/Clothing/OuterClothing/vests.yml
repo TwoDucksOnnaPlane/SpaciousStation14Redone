@@ -18,8 +18,6 @@
         Heat: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
-  - type: ItemStyle
-    styleCap: -25
 
 #Mercenary web vest
 - type: entity
@@ -62,8 +60,6 @@
         Heat: 0.80
   - type: ExplosionResistance
     damageCoefficient: 0.90
-  - type: ItemStyle
-    styleCap: -25
 
 #Hazard vest
 - type: entity
@@ -79,8 +75,6 @@
   - type: Tag
     tags:
     - HiViz
-  - type: ItemStyle
-    styleCap: 10
 
 #(Bartender) vest
 - type: entity
@@ -93,8 +87,6 @@
     sprite: Clothing/OuterClothing/Vests/vest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest.rsi
-  - type: ItemStyle
-    styleCap: 10
 
 - type: entity
   parent: ClothingOuterBase
@@ -106,8 +98,6 @@
     sprite: Clothing/OuterClothing/Vests/vest_nt.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest_nt.rsi
-  - type: ItemStyle
-    styleCap: 10
 
 - type: entity
   parent: ClothingOuterBase
@@ -119,8 +109,6 @@
     sprite: Clothing/OuterClothing/Vests/vest_idris.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest_idris.rsi
-  - type: ItemStyle
-    styleCap: 10
 
 - type: entity
   parent: ClothingOuterBase
@@ -132,8 +120,6 @@
     sprite: Clothing/OuterClothing/Vests/vest_orion.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest_orion.rsi
-  - type: ItemStyle
-    styleCap: 10
 
 - type: entity
   parent: ClothingOuterBase
@@ -145,8 +131,6 @@
     sprite: Clothing/OuterClothing/Vests/vest_colorable.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest_colorable.rsi
-  - type: ItemStyle
-    styleCap: 10
 
 - type: entity
   parent: ClothingOuterFoldableBase
@@ -158,5 +142,3 @@
     sprite: Clothing/OuterClothing/Vests/vest_thick.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/vest_thick.rsi
-  - type: ItemStyle
-    styleCap: 15

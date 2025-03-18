@@ -23,7 +23,6 @@
     - Belt
   - type: AmmoCounter
   - type: Gun
-    styleCostMultiplier: 2
     selectedMode: SemiAuto
     fireRate: 1.5
     availableModes:
