@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Farweb at https://github.com/mcschwa/Farweb/blob/574a2107babcb3e9f732a3139d851fcc6907f288/icons/mob/uniform.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "medical_s",
+      "directions": 4
+    },
+    {
+      "name": "medical_short_s",
+      "directions": 4
+    },
+    {
+      "name": "cmo_s",
+      "directions": 4
+    },
+    {
+      "name": "grey_s",
+      "directions": 4
+    },
+    {
+      "name": "hop_s",
+      "directions": 4
+    },
+    {
+      "name": "chapblack_s",
+      "directions": 4
+    },
+    {
+      "name": "secred_s",
+      "directions": 4
+    },
+    {
+      "name": "clown_s",
+      "directions": 4
+    },
+    {
+      "name": "janitor_s",
+      "directions": 4
+    },
+    {
+      "name": "cargo_s",
+      "directions": 4
+    },
+    {
+      "name": "hydroponics_s",
+      "directions": 4
+    },
+    {
+      "name": "soviet_s",
+      "directions": 4
+    },
+    {
+      "name": "miner_s",
+      "directions": 4
+    },
+    {
+      "name": "captain_green_s",
+      "directions": 4
+    },
+    {
+      "name": "jester_s",
+      "directions": 4
+    },
+    {
+      "name": "child_grey_s",
+      "directions": 4
+    },
+    {
+      "name": "baron_s",
+      "directions": 4
+    },
+    {
+      "name": "outlaw_s",
+      "directions": 4
+    },
+    {
+      "name": "common_s",
+      "directions": 4
+    },
+    {
+      "name": "soulbreaker_s",
+      "directions": 4
+    },
+    {
+      "name": "gink_s",
+      "directions": 4
+    },
+    {
+      "name": "migover",
+      "directions": 4
+    },
+    {
+      "name": "migrant",
+      "directions": 4
+    },
+    {
+      "name": "butler_s",
+      "directions": 4
+    },
+    {
+      "name": "butler",
+      "directions": 4
+    },
+    {
+      "name": "performer_s",
+      "directions": 4
+    },
+    {
+      "name": "consyte_s",
+      "directions": 4
+    },
+    {
+      "name": "oldordinator_s",
+      "directions": 4
+    },
+    {
+      "name": "ordinator_s",
+      "directions": 4
+    },
+    {
+      "name": "practicus_s",
+      "directions": 4
+    },
+    {
+      "name": "child_heir_s",
+      "directions": 4
+    },
+    {
+      "name": "gragagraga_s"
+    },
+    {
+      "name": "psyuniform_s",
+      "directions": 4
+    },
+    {
+      "name": "urchin_s",
+      "directions": 4
+    },
+    {
+      "name": "new_cut_s",
+      "directions": 4
+    },
+    {
+      "name": "new_cut_alt_s",
+      "directions": 4
+    },
+    {
+      "name": "sailorshirt_s",
+      "directions": 4
+    },
+    {
+      "name": "ordinatorlt_s",
+      "directions": 4
+    },
+    {
+      "name": "hunter_s",
+      "directions": 4
+    },
+    {
+      "name": "girlkeep_s",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,752 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Lifeweb-sprites at https://github.com/Pososaku/Lifeweb-sprites/blob/6f168ba0bcddba7f63799367576a9698e9b22044/gun.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "revolver2"
+    },
+    {
+      "name": "revolver2_open1"
+    },
+    {
+      "name": "revolver2_open2"
+    },
+    {
+      "name": "revolver2_open0"
+    },
+    {
+      "name": "detective"
+    },
+    {
+      "name": "detective_open0"
+    },
+    {
+      "name": "detective_open1"
+    },
+    {
+      "name": "detective_open2"
+    },
+    {
+      "name": "detective_open3"
+    },
+    {
+      "name": "detective_open4"
+    },
+    {
+      "name": "oldpainpistol_empty"
+    },
+    {
+      "name": "revolver3"
+    },
+    {
+      "name": "revolver3_open0"
+    },
+    {
+      "name": "revolver3_open1"
+    },
+    {
+      "name": "revolver3_open2"
+    },
+    {
+      "name": "stunnerlas"
+    },
+    {
+      "name": "xpulse_empty"
+    },
+    {
+      "name": "xpulse100",
+      "delays": [
+        [
+          0.01,
+          0.01
+        ]
+      ]
+    },
+    {
+      "name": "xpulse75",
+      "delays": [
+        [
+          0.05,
+          0.05
+        ]
+      ]
+    },
+    {
+      "name": "xpulse50",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xpulse25",
+      "delays": [
+        [
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "xpulse0"
+    },
+    {
+      "name": "machine1"
+    },
+    {
+      "name": "machineb"
+    },
+    {
+      "name": "machine0"
+    },
+    {
+      "name": "machine_empty"
+    },
+    {
+      "name": "bowel"
+    },
+    {
+      "name": "gravcutter"
+    },
+    {
+      "name": "classic_safe",
+      "delays": [
+        [
+          0.1,
+          0.01
+        ]
+      ]
+    },
+    {
+      "name": "classic100"
+    },
+    {
+      "name": "classic75",
+      "delays": [
+        [
+          0.1,
+          0.030000001
+        ]
+      ]
+    },
+    {
+      "name": "classic50",
+      "delays": [
+        [
+          0.1,
+          0.030000001
+        ]
+      ]
+    },
+    {
+      "name": "classic25",
+      "delays": [
+        [
+          0.1,
+          0.030000001
+        ]
+      ]
+    },
+    {
+      "name": "classic0"
+    },
+    {
+      "name": "xlaser_empty"
+    },
+    {
+      "name": "xlaser0",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xlaser25",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xlaser50"
+    },
+    {
+      "name": "xlaser75"
+    },
+    {
+      "name": "xlaser100"
+    },
+    {
+      "name": "classic_empty"
+    },
+    {
+      "name": "syren0"
+    },
+    {
+      "name": "syren1"
+    },
+    {
+      "name": "haston"
+    },
+    {
+      "name": "laser_empty"
+    },
+    {
+      "name": "laser0",
+      "delays": [
+        [
+          0.4,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "laser25",
+      "delays": [
+        [
+          0.4,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "laser50",
+      "delays": [
+        [
+          0.4,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "laser75",
+      "delays": [
+        [
+          0.4,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "laser100",
+      "delays": [
+        [
+          0.4,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "crossbow2"
+    },
+    {
+      "name": "syringegun_empty"
+    },
+    {
+      "name": "syringegun"
+    },
+    {
+      "name": "energykill"
+    },
+    {
+      "name": "energystun"
+    },
+    {
+      "name": "nenergy-g",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "nenergy-f",
+      "delays": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "nenergy-c",
+      "delays": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "oldshotgun"
+    },
+    {
+      "name": "shotgun"
+    },
+    {
+      "name": "shotgun2"
+    },
+    {
+      "name": "smg0"
+    },
+    {
+      "name": "smg1"
+    },
+    {
+      "name": "smg_empty"
+    },
+    {
+      "name": "smg_drum"
+    },
+    {
+      "name": "pulse_empty"
+    },
+    {
+      "name": "pulse100"
+    },
+    {
+      "name": "pulse75"
+    },
+    {
+      "name": "pulse50"
+    },
+    {
+      "name": "pulse25"
+    },
+    {
+      "name": "pulse0"
+    },
+    {
+      "name": "energy_empty"
+    },
+    {
+      "name": "energy25"
+    },
+    {
+      "name": "energy50"
+    },
+    {
+      "name": "energy75"
+    },
+    {
+      "name": "energy100"
+    },
+    {
+      "name": "energy0"
+    },
+    {
+      "name": "pistol0"
+    },
+    {
+      "name": "pistol1"
+    },
+    {
+      "name": "pistol_empty"
+    },
+    {
+      "name": "revolver"
+    },
+    {
+      "name": "redtoy"
+    },
+    {
+      "name": "bluetoy"
+    },
+    {
+      "name": "gravpulse"
+    },
+    {
+      "name": "gravpulse_empty"
+    },
+    {
+      "name": "taser100"
+    },
+    {
+      "name": "taser75"
+    },
+    {
+      "name": "taser50"
+    },
+    {
+      "name": "taser25"
+    },
+    {
+      "name": "taser0"
+    },
+    {
+      "name": "taser_empty",
+      "delays": [
+        [
+          0.4,
+          0.3,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "duelista"
+    },
+    {
+      "name": "rifle"
+    },
+    {
+      "name": "smallpistol0"
+    },
+    {
+      "name": "smallpistol1"
+    },
+    {
+      "name": "smallpistol_empty"
+    },
+    {
+      "name": "stunner"
+    },
+    {
+      "name": "flamer",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "heavylaser_empty"
+    },
+    {
+      "name": "heavylaser0"
+    },
+    {
+      "name": "heavylaser1",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "painpistol0"
+    },
+    {
+      "name": "painpistol1"
+    },
+    {
+      "name": "painpistol_empty"
+    },
+    {
+      "name": "painpistolx"
+    },
+    {
+      "name": "subgun"
+    },
+    {
+      "name": "grinder0",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "grinder1"
+    },
+    {
+      "name": "grinder_empty"
+    },
+    {
+      "name": "tribpistol0"
+    },
+    {
+      "name": "tribpistol1"
+    },
+    {
+      "name": "tribpistol_empty"
+    },
+    {
+      "name": "sawed"
+    },
+    {
+      "name": "sawed_open0"
+    },
+    {
+      "name": "sawed_open1"
+    },
+    {
+      "name": "sawed_open2"
+    },
+    {
+      "name": "m41a0"
+    },
+    {
+      "name": "m41a_empty"
+    },
+    {
+      "name": "m41a1",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "mother0"
+    },
+    {
+      "name": "mother1"
+    },
+    {
+      "name": "mother_empty"
+    },
+    {
+      "name": "itaser_empty"
+    },
+    {
+      "name": "itaser0"
+    },
+    {
+      "name": "itaser25",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "itaser50"
+    },
+    {
+      "name": "itaser75"
+    },
+    {
+      "name": "itaser100"
+    },
+    {
+      "name": "stunrifle"
+    },
+    {
+      "name": "gravrifle"
+    },
+    {
+      "name": "gravrifle_empty"
+    },
+    {
+      "name": "baction"
+    },
+    {
+      "name": "obaction"
+    },
+    {
+      "name": "baction2"
+    },
+    {
+      "name": "obaction2"
+    },
+    {
+      "name": "bayonett"
+    },
+    {
+      "name": "0"
+    },
+    {
+      "name": "stribpistol0"
+    },
+    {
+      "name": "stribpistol1"
+    },
+    {
+      "name": "stribpistol_empty"
+    },
+    {
+      "name": "hunter1"
+    },
+    {
+      "name": "hunter0"
+    },
+    {
+      "name": "hunter_empty"
+    },
+    {
+      "name": "blooper1"
+    },
+    {
+      "name": "blooper0"
+    },
+    {
+      "name": "duelista"
+    },
+    {
+      "name": "duelista_open0"
+    },
+    {
+      "name": "duelista_open1"
+    },
+    {
+      "name": "musket0"
+    },
+    {
+      "name": "musket1"
+    },
+    {
+      "name": "musket_fuse"
+    },
+    {
+      "name": "musket_fuse_lit"
+    },
+    {
+      "name": "musket_fuse0"
+    },
+    {
+      "name": "musket_ramrod"
+    },
+    {
+      "name": "5fuse0"
+    },
+    {
+      "name": "5fuse1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "4fuse0"
+    },
+    {
+      "name": "4fuse1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "3fuse0"
+    },
+    {
+      "name": "3fuse1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "2fuse0"
+    },
+    {
+      "name": "2fuse1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "1fuse0"
+    },
+    {
+      "name": "1fuse1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ramrod"
+    },
+    {
+      "name": "msmg1"
+    },
+    {
+      "name": "msmg0"
+    },
+    {
+      "name": "msmg_empty"
+    },
+    {
+      "name": "grinder_dirt"
+    },
+    {
+      "name": "richter"
+    },
+    {
+      "name": "richter_open0"
+    },
+    {
+      "name": "richter_open1"
+    },
+    {
+      "name": "richter_open2"
+    },
+    {
+      "name": "arbo0"
+    },
+    {
+      "name": "arbo1"
+    },
+    {
+      "name": "arbo_empty"
+    },
+    {
+      "name": "bbgun"
+    },
+    {
+      "name": "bbgun_open0"
+    },
+    {
+      "name": "bbgun_open1"
+    },
+    {
+      "name": "wangler0"
+    },
+    {
+      "name": "wangler1"
+    },
+    {
+      "name": "wangler_empty"
+    },
+    {
+      "name": "gsmallpistol0"
+    },
+    {
+      "name": "gsmallpistol1"
+    },
+    {
+      "name": "gsmallpistol_empty"
+    }
+  ]
+}

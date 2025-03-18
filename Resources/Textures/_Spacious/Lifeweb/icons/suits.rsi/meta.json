@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Lifeweb-sprites at https://github.com/Pososaku/Lifeweb-sprites/blob/ae52d34b6aeeda518671dc5efc4c931d62bc6983/suits.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "armor"
+    },
+    {
+      "name": "bplate"
+    },
+    {
+      "name": "bio_suit"
+    },
+    {
+      "name": "labcoat"
+    },
+    {
+      "name": "vest"
+    },
+    {
+      "name": "apron"
+    },
+    {
+      "name": "yapron"
+    },
+    {
+      "name": "chef"
+    },
+    {
+      "name": "straightjacket"
+    },
+    {
+      "name": "tspacesuit"
+    },
+    {
+      "name": "nun"
+    },
+    {
+      "name": "fjacket"
+    },
+    {
+      "name": "anom_suit"
+    },
+    {
+      "name": "khan"
+    },
+    {
+      "name": "ads"
+    },
+    {
+      "name": "hazmat_yellow"
+    },
+    {
+      "name": "hazmat_white"
+    },
+    {
+      "name": "hazmat_janitor"
+    },
+    {
+      "name": "hazmat_security"
+    },
+    {
+      "name": "emergencysuit"
+    },
+    {
+      "name": "apronchef"
+    },
+    {
+      "name": "chickensuit"
+    },
+    {
+      "name": "jacket"
+    },
+    {
+      "name": "cultrobe"
+    },
+    {
+      "name": "toyblue"
+    },
+    {
+      "name": "toyred"
+    },
+    {
+      "name": "combat"
+    },
+    {
+      "name": "jacket_o"
+    },
+    {
+      "name": "inquisitor"
+    },
+    {
+      "name": "yemergencysuit"
+    },
+    {
+      "name": "arbiter"
+    },
+    {
+      "name": "sunshine"
+    },
+    {
+      "name": "holidaypriest"
+    },
+    {
+      "name": "baron"
+    },
+    {
+      "name": "advisor"
+    },
+    {
+      "name": "trinet"
+    },
+    {
+      "name": "mortician"
+    },
+    {
+      "name": "mortician_hooded"
+    },
+    {
+      "name": "serpentis"
+    },
+    {
+      "name": "cerberus"
+    },
+    {
+      "name": "ccerberus"
+    },
+    {
+      "name": "ychef"
+    },
+    {
+      "name": "zdress"
+    },
+    {
+      "name": "bmerc"
+    },
+    {
+      "name": "rmerc"
+    },
+    {
+      "name": "xdress"
+    },
+    {
+      "name": "noble_jacket"
+    },
+    {
+      "name": "baroness"
+    },
+    {
+      "name": "gatekeeper"
+    },
+    {
+      "name": "castellan"
+    },
+    {
+      "name": "meister"
+    },
+    {
+      "name": "hausite"
+    },
+    {
+      "name": "disciple"
+    },
+    {
+      "name": "chemsis"
+    },
+    {
+      "name": "merchant"
+    },
+    {
+      "name": "archivist"
+    },
+    {
+      "name": "hand"
+    },
+    {
+      "name": "merc"
+    },
+    {
+      "name": "consyte"
+    },
+    {
+      "name": "witch"
+    },
+    {
+      "name": "cons"
+    },
+    {
+      "name": "ydress"
+    },
+    {
+      "name": "heirdress"
+    },
+    {
+      "name": "soulbreaker"
+    },
+    {
+      "name": "carmor"
+    },
+    {
+      "name": "fetish"
+    },
+    {
+      "name": "servant"
+    },
+    {
+      "name": "opvest"
+    },
+    {
+      "name": "chide"
+    },
+    {
+      "name": "hide"
+    },
+    {
+      "name": "paladin"
+    },
+    {
+      "name": "thief"
+    },
+    {
+      "name": "ironplate"
+    },
+    {
+      "name": "iplate"
+    },
+    {
+      "name": "aplate"
+    },
+    {
+      "name": "servdress"
+    },
+    {
+      "name": "monk"
+    },
+    {
+      "name": "insecure"
+    },
+    {
+      "name": "latex"
+    },
+    {
+      "name": "lordhand"
+    },
+    {
+      "name": "bfather"
+    },
+    {
+      "name": "ravcoat"
+    },
+    {
+      "name": "bastard"
+    },
+    {
+      "name": "newbishop"
+    },
+    {
+      "name": "squire"
+    },
+    {
+      "name": "dress"
+    },
+    {
+      "name": "veteran"
+    },
+    {
+      "name": "garmor"
+    },
+    {
+      "name": "girlkeep"
+    },
+    {
+      "name": "bumcoat"
+    },
+    {
+      "name": "bdress"
+    },
+    {
+      "name": "ndress"
+    },
+    {
+      "name": "miner"
+    },
+    {
+      "name": "yminer"
+    },
+    {
+      "name": "nmerc"
+    },
+    {
+      "name": "lrobe"
+    },
+    {
+      "name": "achild"
+    },
+    {
+      "name": "captain"
+    },
+    {
+      "name": "wizard"
+    },
+    {
+      "name": "leper"
+    },
+    {
+      "name": "countess"
+    },
+    {
+      "name": "obard"
+    },
+    {
+      "name": "lostgirl"
+    },
+    {
+      "name": "leja"
+    },
+    {
+      "name": "ycensor"
+    },
+    {
+      "name": "parka"
+    },
+    {
+      "name": "parka2"
+    },
+    {
+      "name": "parka3"
+    },
+    {
+      "name": "hauberk"
+    },
+    {
+      "name": "tabard"
+    },
+    {
+      "name": "ctabard"
+    },
+    {
+      "name": "otabard"
+    },
+    {
+      "name": "dtabard"
+    },
+    {
+      "name": "etabard"
+    },
+    {
+      "name": "butler"
+    },
+    {
+      "name": "poncho"
+    },
+    {
+      "name": "0gambeson"
+    },
+    {
+      "name": "judge"
+    },
+    {
+      "name": "ostaf"
+    },
+    {
+      "name": "redjacket"
+    },
+    {
+      "name": "inspector"
+    },
+    {
+      "name": "inq"
+    },
+    {
+      "name": "armitage"
+    },
+    {
+      "name": "savage"
+    },
+    {
+      "name": "inndress"
+    },
+    {
+      "name": "smoosh"
+    },
+    {
+      "name": "arlarmor"
+    },
+    {
+      "name": "performer"
+    },
+    {
+      "name": "zealot"
+    },
+    {
+      "name": "minitank"
+    },
+    {
+      "name": "dungeoneer"
+    },
+    {
+      "name": "baccusrobe"
+    },
+    {
+      "name": "grosthrobe"
+    },
+    {
+      "name": "xomrobe"
+    },
+    {
+      "name": "peasant_a"
+    },
+    {
+      "name": "peasant_b"
+    },
+    {
+      "name": "underking"
+    },
+    {
+      "name": "slaverobe"
+    },
+    {
+      "name": "seer"
+    },
+    {
+      "name": "romantic"
+    },
+    {
+      "name": "lounge_coat"
+    },
+    {
+      "name": "gambeson"
+    },
+    {
+      "name": "crop_jacket"
+    },
+    {
+      "name": "bone_mail"
+    },
+    {
+      "name": "knight"
+    },
+    {
+      "name": "fanatic"
+    },
+    {
+      "name": "bodyguard"
+    },
+    {
+      "name": "blue_chokha",
+      "directions": 4
+    },
+    {
+      "name": "inqvest"
+    },
+    {
+      "name": "fur_chokha",
+      "directions": 4
+    },
+    {
+      "name": "red_chokha",
+      "directions": 4
+    },
+    {
+      "name": "mijester"
+    },
+    {
+      "name": "patri"
+    },
+    {
+      "name": "rugged"
+    },
+    {
+      "name": "hotmaid"
+    },
+    {
+      "name": "seductress"
+    },
+    {
+      "name": "domina"
+    },
+    {
+      "name": "guest"
+    }
+  ]
+}

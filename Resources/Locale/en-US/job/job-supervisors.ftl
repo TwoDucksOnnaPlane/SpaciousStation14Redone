@@ -1,4 +1,4 @@
-job-supervisors-centcom = Central Command
+job-supervisors-centcom = High Command
 job-supervisors-captain = the Consul
 job-supervisors-hop = the First Officer
 job-supervisors-hos = the Marshal
@@ -12,4 +12,4 @@ job-supervisors-medicine = medical doctors, chemists, and the chief medical offi
 job-supervisors-security = Enforcers, the Master-at-Arms, and the Marshal
 job-supervisors-science = scientists, and the mystagogue
 job-supervisors-hire = whoever hires you
-job-supervisors-everyone = absolutely everyone
+job-supervisors-everyone = Nobody.
