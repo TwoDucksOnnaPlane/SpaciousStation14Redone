@@ -1,4 +1,4 @@
 department-Epistemics = Epistemics
-department-Logistics = Logistics
+department-Logistics = Trade Union
 department-Justice = Justice
 

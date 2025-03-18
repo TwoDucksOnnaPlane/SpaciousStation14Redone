@@ -259,9 +259,6 @@
     proto: robot
   - type: IdentityBlocker
   - type: IngestionBlocker
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -303,9 +300,6 @@
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadHatChef
@@ -352,9 +346,6 @@
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -366,9 +357,6 @@
     sprite: Clothing/Head/Hats/greyfedora.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/greyfedora.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -380,9 +368,6 @@
     sprite: Clothing/Head/Hats/fez.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/fez.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -426,9 +411,6 @@
     sprite: Clothing/Head/Hats/outlawhat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/outlawhat.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -521,9 +503,6 @@
     sprite: Clothing/Head/Hats/sombrero.rsi
   - type: AddAccentClothing
     accent: SpanishAccent
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -578,9 +557,6 @@
     - ClothMade
     - HamsterWearable
     - WhitelistChameleon
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: [ClothingHeadBase, BaseFoldable]
@@ -606,9 +582,6 @@
     - state: icon-up
       map: ["foldedLayer"]
       visible: false
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 
 - type: entity
@@ -787,9 +760,6 @@
     sprite: Clothing/Head/Hats/fishcap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/fishcap.rsi
-  - type: ItemStyle
-    styleCap: 20
-    styleGain: 4
 
 - type: entity
   parent: ClothingHeadBase
@@ -817,9 +787,6 @@
     sprite: Clothing/Head/Hats/rasta.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/rasta.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -831,9 +798,6 @@
     sprite: Clothing/Head/Hats/safarihat.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/safarihat.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -845,9 +809,6 @@
       sprite: Clothing/Head/Hats/jester.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/jester.rsi
-    - type: ItemStyle
-      styleCap: 10
-      styleGain: 2
 
 - type: entity
   parent: ClothingHeadHatJester
@@ -884,9 +845,6 @@
     sprite: Clothing/Head/Hats/piratetricord.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/piratetricord.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -928,9 +886,6 @@
     sprite: Clothing/Head/Hats/syndiecap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/syndiecap.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -942,9 +897,6 @@
     sprite: Clothing/Head/Hats/syndiecap_maa.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/syndiecap_maa.rsi
-  - type: ItemStyle
-    styleCap: 20
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -956,9 +908,6 @@
     sprite: Clothing/Head/Hats/tacticalmaidheadband.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/tacticalmaidheadband.rsi
-  - type: ItemStyle
-    styleCap: 15
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -1121,9 +1070,6 @@
     sprite: Clothing/Head/Hats/greyflatcap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/greyflatcap.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -1138,9 +1084,6 @@
     sprite: Clothing/Head/Hats/brownflatcap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/brownflatcap.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -1155,9 +1098,6 @@
     - type: AddAccentClothing
       accent: ReplacementAccent
       replacement: cowboy
-    - type: ItemStyle
-      styleCap: 10
-      styleGain: 2
 
 - type: entity
   parent: ClothingHeadHatCowboyBrown
@@ -1273,9 +1213,6 @@
     sprite: Clothing/Head/Hats/flatcap_nt.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/flatcap_nt.rsi
-  - type: ItemStyle
-    styleCap: 5
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -1286,9 +1223,6 @@
     sprite: Clothing/Head/Hats/flatcap_idris.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/flatcap_idris.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -1299,9 +1233,6 @@
     sprite: Clothing/Head/Hats/flatcap_orion.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/flatcap_orion.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2
 
 - type: entity
   parent: ClothingHeadBase
@@ -1402,6 +1333,3 @@
     sprite: _Nuclear14/Clothing/Head/FalloutHats/mountiehat.rsi
   - type: Clothing
     sprite: _Nuclear14/Clothing/Head/FalloutHats/mountiehat.rsi
-  - type: ItemStyle
-    styleCap: 10
-    styleGain: 2

@@ -1,0 +1,622 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Farweb at https://github.com/mcschwa/Farweb/blob/574a2107babcb3e9f732a3139d851fcc6907f288/icons/mob/suit.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "armor",
+      "directions": 4
+    },
+    {
+      "name": "bulletproof",
+      "directions": 4
+    },
+    {
+      "name": "space",
+      "directions": 4
+    },
+    {
+      "name": "straight_jacket",
+      "directions": 4
+    },
+    {
+      "name": "vest",
+      "directions": 4
+    },
+    {
+      "name": "bombvest",
+      "directions": 4
+    },
+    {
+      "name": "apron",
+      "directions": 4
+    },
+    {
+      "name": "labcoat_cmo",
+      "directions": 4
+    },
+    {
+      "name": "jensencoat",
+      "directions": 4
+    },
+    {
+      "name": "girlkeep",
+      "directions": 4
+    },
+    {
+      "name": "wifechef",
+      "directions": 4
+    },
+    {
+      "name": "webbing",
+      "directions": 4
+    },
+    {
+      "name": "golem"
+    },
+    {
+      "name": "gentlecoat",
+      "directions": 4
+    },
+    {
+      "name": "leather_jacket",
+      "directions": 4
+    },
+    {
+      "name": "meister",
+      "directions": 4
+    },
+    {
+      "name": "misero",
+      "directions": 4
+    },
+    {
+      "name": "chef",
+      "directions": 4
+    },
+    {
+      "name": "trader",
+      "directions": 4
+    },
+    {
+      "name": "leather",
+      "directions": 4
+    },
+    {
+      "name": "churchcoat",
+      "directions": 4
+    },
+    {
+      "name": "meiscloak",
+      "directions": 4
+    },
+    {
+      "name": "furcoat",
+      "directions": 4
+    },
+    {
+      "name": "kidcoat",
+      "directions": 4
+    },
+    {
+      "name": "baron",
+      "directions": 4
+    },
+    {
+      "name": "miner",
+      "directions": 4
+    },
+    {
+      "name": "chemsis",
+      "directions": 4
+    },
+    {
+      "name": "serpent",
+      "directions": 4
+    },
+    {
+      "name": "ordjacket",
+      "directions": 4
+    },
+    {
+      "name": "esculap",
+      "directions": 4
+    },
+    {
+      "name": "bishop",
+      "directions": 4
+    },
+    {
+      "name": "nun",
+      "directions": 4
+    },
+    {
+      "name": "sheriff",
+      "directions": 4
+    },
+    {
+      "name": "baroness",
+      "directions": 4
+    },
+    {
+      "name": "maid",
+      "directions": 4
+    },
+    {
+      "name": "ironplate",
+      "directions": 4
+    },
+    {
+      "name": "ironbplate",
+      "directions": 4
+    },
+    {
+      "name": "thanati_hood",
+      "directions": 4
+    },
+    {
+      "name": "yapron",
+      "directions": 4
+    },
+    {
+      "name": "disciple",
+      "directions": 4
+    },
+    {
+      "name": "soulbreaker",
+      "directions": 4
+    },
+    {
+      "name": "mortus-hooded",
+      "directions": 4
+    },
+    {
+      "name": "mortus",
+      "directions": 4
+    },
+    {
+      "name": "bodyguard",
+      "directions": 4
+    },
+    {
+      "name": "oldflakjacket",
+      "directions": 4
+    },
+    {
+      "name": "coatjacket",
+      "directions": 4
+    },
+    {
+      "name": "flakjacket",
+      "directions": 4
+    },
+    {
+      "name": "knight",
+      "directions": 4
+    },
+    {
+      "name": "combat",
+      "directions": 4
+    },
+    {
+      "name": "butler",
+      "directions": 4
+    },
+    {
+      "name": "rugged",
+      "directions": 4
+    },
+    {
+      "name": "monk",
+      "directions": 4
+    },
+    {
+      "name": "monk-hooded",
+      "directions": 4
+    },
+    {
+      "name": "leper",
+      "directions": 4
+    },
+    {
+      "name": "armitage",
+      "directions": 4
+    },
+    {
+      "name": "bfather",
+      "directions": 4
+    },
+    {
+      "name": "thief",
+      "directions": 4
+    },
+    {
+      "name": "thief-hooded",
+      "directions": 4
+    },
+    {
+      "name": "lordhand",
+      "directions": 4
+    },
+    {
+      "name": "ladyballat",
+      "directions": 4
+    },
+    {
+      "name": "aplate",
+      "directions": 4
+    },
+    {
+      "name": "guest",
+      "directions": 4
+    },
+    {
+      "name": "golden_breastplate",
+      "directions": 4
+    },
+    {
+      "name": "successordress",
+      "directions": 4
+    },
+    {
+      "name": "jester",
+      "directions": 4
+    },
+    {
+      "name": "performer",
+      "directions": 4
+    },
+    {
+      "name": "domina",
+      "directions": 4
+    },
+    {
+      "name": "seductress",
+      "directions": 4
+    },
+    {
+      "name": "fetish",
+      "directions": 4
+    },
+    {
+      "name": "oldrmerc",
+      "directions": 4
+    },
+    {
+      "name": "chickensuit",
+      "directions": 4
+    },
+    {
+      "name": "oldbmerc",
+      "directions": 4
+    },
+    {
+      "name": "countess",
+      "directions": 4
+    },
+    {
+      "name": "chaplain_hoodie",
+      "directions": 4
+    },
+    {
+      "name": "donor_slojanko_revealingdress",
+      "directions": 4
+    },
+    {
+      "name": "donor_absenceofwords_blackcapehood",
+      "directions": 4
+    },
+    {
+      "name": "donor_absenceofwords_blackcape",
+      "directions": 4
+    },
+    {
+      "name": "patriarch",
+      "directions": 4
+    },
+    {
+      "name": "inspector",
+      "directions": 4
+    },
+    {
+      "name": "inndress",
+      "directions": 4
+    },
+    {
+      "name": "mortician",
+      "directions": 4
+    },
+    {
+      "name": "mortician-hood",
+      "directions": 4
+    },
+    {
+      "name": "hand",
+      "directions": 4
+    },
+    {
+      "name": "dress",
+      "directions": 4
+    },
+    {
+      "name": "redjacket",
+      "directions": 4
+    },
+    {
+      "name": "yminer",
+      "directions": 4
+    },
+    {
+      "name": "comissar",
+      "directions": 4
+    },
+    {
+      "name": "inquisitor",
+      "directions": 4
+    },
+    {
+      "name": "witch_m",
+      "directions": 4
+    },
+    {
+      "name": "servant_m",
+      "directions": 4
+    },
+    {
+      "name": "thief_m",
+      "directions": 4
+    },
+    {
+      "name": "yorphan_m_c",
+      "directions": 4
+    },
+    {
+      "name": "cargo_m",
+      "directions": 4
+    },
+    {
+      "name": "servdress_m",
+      "directions": 4
+    },
+    {
+      "name": "clown_f",
+      "directions": 4
+    },
+    {
+      "name": "practicus_s",
+      "directions": 4
+    },
+    {
+      "name": "meister_s",
+      "directions": 4
+    },
+    {
+      "name": "waiter_s",
+      "directions": 4
+    },
+    {
+      "name": "leja",
+      "directions": 4
+    },
+    {
+      "name": "lord",
+      "directions": 4
+    },
+    {
+      "name": "pusher_open",
+      "directions": 4
+    },
+    {
+      "name": "pusher_closed",
+      "directions": 4
+    },
+    {
+      "name": "censor",
+      "directions": 4
+    },
+    {
+      "name": "marduk",
+      "directions": 4
+    },
+    {
+      "name": "secarmoralt",
+      "directions": 4
+    },
+    {
+      "name": "marduk_alt",
+      "directions": 4
+    },
+    {
+      "name": "marduk_alt2",
+      "directions": 4
+    },
+    {
+      "name": "incarn",
+      "directions": 4
+    },
+    {
+      "name": "wow",
+      "directions": 4
+    },
+    {
+      "name": "military_jacket",
+      "directions": 4
+    },
+    {
+      "name": "squire",
+      "directions": 4
+    },
+    {
+      "name": "ironcuirass",
+      "directions": 4
+    },
+    {
+      "name": "ravcoat",
+      "directions": 4
+    },
+    {
+      "name": "veteran",
+      "directions": 4
+    },
+    {
+      "name": "bastard_m",
+      "directions": 4
+    },
+    {
+      "name": "squire_a",
+      "directions": 4
+    },
+    {
+      "name": "secarmor_comrade",
+      "directions": 4
+    },
+    {
+      "name": "secarmor_villain",
+      "directions": 4
+    },
+    {
+      "name": "secarmor",
+      "directions": 4
+    },
+    {
+      "name": "ycensor",
+      "directions": 4
+    },
+    {
+      "name": "trustworthycerberus",
+      "directions": 4
+    },
+    {
+      "name": "catcerb",
+      "directions": 4
+    },
+    {
+      "name": "gatekeeper",
+      "directions": 4
+    },
+    {
+      "name": "labcoat",
+      "directions": 4
+    },
+    {
+      "name": "new_cut",
+      "directions": 4
+    },
+    {
+      "name": "new_cut_alt",
+      "directions": 4
+    },
+    {
+      "name": "new_cut_alt2",
+      "directions": 4
+    },
+    {
+      "name": "veteran_bum",
+      "directions": 4
+    },
+    {
+      "name": "advisor",
+      "directions": 4
+    },
+    {
+      "name": "sailorcoat",
+      "directions": 4
+    },
+    {
+      "name": "cerberusold",
+      "directions": 4
+    },
+    {
+      "name": "ccerberus",
+      "directions": 4
+    },
+    {
+      "name": "veterantiamat",
+      "directions": 4
+    },
+    {
+      "name": "tiamatarmor",
+      "directions": 4
+    },
+    {
+      "name": "firethorner",
+      "directions": 4
+    },
+    {
+      "name": "francisco",
+      "directions": 4
+    },
+    {
+      "name": "obard",
+      "directions": 4
+    },
+    {
+      "name": "veterancerb",
+      "directions": 4
+    },
+    {
+      "name": "churchcoatalt",
+      "directions": 4
+    },
+    {
+      "name": "churchcoatalt2",
+      "directions": 4
+    },
+    {
+      "name": "hauberk",
+      "directions": 4
+    },
+    {
+      "name": "anom_suit",
+      "directions": 4
+    },
+    {
+      "name": "thanatiblack_hood",
+      "directions": 4
+    },
+    {
+      "name": "chariot",
+      "directions": 4
+    },
+    {
+      "name": "fjacket",
+      "directions": 4
+    },
+    {
+      "name": "countheir",
+      "directions": 4
+    },
+    {
+      "name": "sunshine",
+      "directions": 4
+    },
+    {
+      "name": "huntercoat",
+      "directions": 4
+    },
+    {
+      "name": "thanati",
+      "directions": 4
+    },
+    {
+      "name": "thanatiblack",
+      "directions": 4
+    },
+    {
+      "name": "zealot",
+      "directions": 4
+    },
+    {
+      "name": "rmerc",
+      "directions": 4
+    },
+    {
+      "name": "bmerc",
+      "directions": 4
+    }
+  ]
+}

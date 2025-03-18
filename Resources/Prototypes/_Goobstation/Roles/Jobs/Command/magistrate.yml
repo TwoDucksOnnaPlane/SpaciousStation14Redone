@@ -1,7 +1,7 @@
 - type: job
   id: Magistrate
-  name: Magistrate
-  description: "Ensure Space Law is being followed, Uphold Justice and Legality, Hold Hearings and Trials, Follow SOP, Ensure Command is Following Space Law."
+  name: Meister
+  description: "Act as the advisor to the Consul. Ensure he acts dignified and rational."
   playTimeTracker: JobMagistrate
   requirements:
     - !type:CharacterDepartmentTimeRequirement

@@ -1,0 +1,1276 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": "Taken from Lifeweb-sprites at https://github.com/Pososaku/Lifeweb-sprites/blob/ae52d34b6aeeda518671dc5efc4c931d62bc6983/weapons.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "sword0"
+    },
+    {
+      "name": "razor1"
+    },
+    {
+      "name": "razor0"
+    },
+    {
+      "name": "razor1b"
+    },
+    {
+      "name": "torchwall1",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "wsword"
+    },
+    {
+      "name": "traxe"
+    },
+    {
+      "name": "traxe_blood"
+    },
+    {
+      "name": "wspoon"
+    },
+    {
+      "name": "wspoon_blood"
+    },
+    {
+      "name": "saxe"
+    },
+    {
+      "name": "saxe_blood"
+    },
+    {
+      "name": "cbuckler"
+    },
+    {
+      "name": "tribunalknife",
+      "directions": 4
+    },
+    {
+      "name": "silverstake"
+    },
+    {
+      "name": "silverstake_blood"
+    },
+    {
+      "name": "tribunalknife_blood",
+      "directions": 4
+    },
+    {
+      "name": "count_banner"
+    },
+    {
+      "name": "flag_gm"
+    },
+    {
+      "name": "flag_gmo"
+    },
+    {
+      "name": "stuckpickaxe"
+    },
+    {
+      "name": "adshield"
+    },
+    {
+      "name": "carverhammer"
+    },
+    {
+      "name": "carverhammer_blood"
+    },
+    {
+      "name": "blackjack"
+    },
+    {
+      "name": "copperskinning"
+    },
+    {
+      "name": "copperskinning_blood"
+    },
+    {
+      "name": "paxe"
+    },
+    {
+      "name": "paxe_blood"
+    },
+    {
+      "name": "skinning"
+    },
+    {
+      "name": "skinning_blood"
+    },
+    {
+      "name": "sbastard"
+    },
+    {
+      "name": "sbastard_blood"
+    },
+    {
+      "name": "gladius"
+    },
+    {
+      "name": "gladius_blood"
+    },
+    {
+      "name": "athrowing"
+    },
+    {
+      "name": "athrowing_blood"
+    },
+    {
+      "name": "artknife"
+    },
+    {
+      "name": "artknife_blood"
+    },
+    {
+      "name": "artiaxe_sloopoke"
+    },
+    {
+      "name": "artiaxe2"
+    },
+    {
+      "name": "artiaxe2_blood"
+    },
+    {
+      "name": "throwing"
+    },
+    {
+      "name": "throwing_blood"
+    },
+    {
+      "name": "sthrowing"
+    },
+    {
+      "name": "sthrowing_blood"
+    },
+    {
+      "name": "net",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "net2"
+    },
+    {
+      "name": "net_hands"
+    },
+    {
+      "name": "flag"
+    },
+    {
+      "name": "woodenstaff"
+    },
+    {
+      "name": "trident"
+    },
+    {
+      "name": "trident_blood"
+    },
+    {
+      "name": "frag1"
+    },
+    {
+      "name": "frag2"
+    },
+    {
+      "name": "frag3"
+    },
+    {
+      "name": "torchwall",
+      "directions": 4
+    },
+    {
+      "name": "torchwall0",
+      "directions": 4
+    },
+    {
+      "name": "archtarget"
+    },
+    {
+      "name": "archtargetarrow"
+    },
+    {
+      "name": "mb"
+    },
+    {
+      "name": "mb_blood"
+    },
+    {
+      "name": "artifactpickaxe"
+    },
+    {
+      "name": "artifactpickaxe_blood"
+    },
+    {
+      "name": "caduceus"
+    },
+    {
+      "name": "caduceus_blood"
+    },
+    {
+      "name": "scimitar_sh0"
+    },
+    {
+      "name": "scimitar_sh4"
+    },
+    {
+      "name": "steelmace"
+    },
+    {
+      "name": "steelmace_blood"
+    },
+    {
+      "name": "sword1",
+      "delays": [
+        [
+          0.02,
+          0.02
+        ]
+      ]
+    },
+    {
+      "name": "bflail"
+    },
+    {
+      "name": "bflail_blood"
+    },
+    {
+      "name": "iflail"
+    },
+    {
+      "name": "iflail_blood"
+    },
+    {
+      "name": "flail"
+    },
+    {
+      "name": "flail_blood"
+    },
+    {
+      "name": "snakerapier"
+    },
+    {
+      "name": "snakerapier_blood"
+    },
+    {
+      "name": "boneknife"
+    },
+    {
+      "name": "siegesword"
+    },
+    {
+      "name": "siegesword_blood"
+    },
+    {
+      "name": "canopener"
+    },
+    {
+      "name": "canopener_blood"
+    },
+    {
+      "name": "boneknife_blood"
+    },
+    {
+      "name": "combataxe"
+    },
+    {
+      "name": "combataxe_blood"
+    },
+    {
+      "name": "bardiche"
+    },
+    {
+      "name": "bardiche_blood"
+    },
+    {
+      "name": "adambolt"
+    },
+    {
+      "name": "brokenbolt"
+    },
+    {
+      "name": "ironbolt"
+    },
+    {
+      "name": "superbolt"
+    },
+    {
+      "name": "bonebolt"
+    },
+    {
+      "name": "woodenbolt"
+    },
+    {
+      "name": "copperbolt"
+    },
+    {
+      "name": "silverbolt"
+    },
+    {
+      "name": "chain"
+    },
+    {
+      "name": "chain_blood"
+    },
+    {
+      "name": "stunbaton_active",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "insecure_baton"
+    },
+    {
+      "name": "shitpool0"
+    },
+    {
+      "name": "shitpool1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "whip1"
+    },
+    {
+      "name": "garrote"
+    },
+    {
+      "name": "stunbaton"
+    },
+    {
+      "name": "hoe"
+    },
+    {
+      "name": "pipe"
+    },
+    {
+      "name": "hunting",
+      "directions": 4
+    },
+    {
+      "name": "falchion"
+    },
+    {
+      "name": "falchion_blood"
+    },
+    {
+      "name": "broadsword"
+    },
+    {
+      "name": "axe2"
+    },
+    {
+      "name": "axe2_blood"
+    },
+    {
+      "name": "pdagger"
+    },
+    {
+      "name": "pdagger_blood"
+    },
+    {
+      "name": "icross"
+    },
+    {
+      "name": "icross_blood"
+    },
+    {
+      "name": "cleaver"
+    },
+    {
+      "name": "cleaver_blood"
+    },
+    {
+      "name": "sabre"
+    },
+    {
+      "name": "sabre_blood"
+    },
+    {
+      "name": "bonecane"
+    },
+    {
+      "name": "sabre_old"
+    },
+    {
+      "name": "oclub"
+    },
+    {
+      "name": "oclub_blood"
+    },
+    {
+      "name": "club"
+    },
+    {
+      "name": "club_blood"
+    },
+    {
+      "name": "pitchfork"
+    },
+    {
+      "name": "pitchfork_blood"
+    },
+    {
+      "name": "dagger",
+      "directions": 4
+    },
+    {
+      "name": "axe"
+    },
+    {
+      "name": "axe_blood"
+    },
+    {
+      "name": "dagger_blood",
+      "directions": 4
+    },
+    {
+      "name": "tongs"
+    },
+    {
+      "name": "tongsr"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "tongs_ingot1"
+    },
+    {
+      "name": "bastard"
+    },
+    {
+      "name": "bastard_blood"
+    },
+    {
+      "name": "tongs_ingot0"
+    },
+    {
+      "name": "hunting_blood",
+      "directions": 4
+    },
+    {
+      "name": "flare-on",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "torch1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "torch0"
+    },
+    {
+      "name": "fireplace0"
+    },
+    {
+      "name": "dagger_sheath1"
+    },
+    {
+      "name": "dagger_sheath0"
+    },
+    {
+      "name": "shovel0"
+    },
+    {
+      "name": "shovel1",
+      "delays": [
+        [
+          0.4,
+          0.1,
+          0.1,
+          0.3,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "shovel2"
+    },
+    {
+      "name": "sword"
+    },
+    {
+      "name": "sword_blood"
+    },
+    {
+      "name": "fishingrod0"
+    },
+    {
+      "name": "fishingrod1",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "golf_club"
+    },
+    {
+      "name": "golf_club_blood"
+    },
+    {
+      "name": "0sledgehammer"
+    },
+    {
+      "name": "0sledgehammer_blood"
+    },
+    {
+      "name": "sledgehammer"
+    },
+    {
+      "name": "sledgehammer_blood"
+    },
+    {
+      "name": "irapier_sh1"
+    },
+    {
+      "name": "irapier_sh0"
+    },
+    {
+      "name": "rapier2"
+    },
+    {
+      "name": "rapier2_blood"
+    },
+    {
+      "name": "combat",
+      "directions": 4
+    },
+    {
+      "name": "combat_blood",
+      "directions": 4
+    },
+    {
+      "name": "fireplace1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "campfire0"
+    },
+    {
+      "name": "campfire_onlit",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "campfire1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "campfire_o",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "itorch0"
+    },
+    {
+      "name": "itorch1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "wstake"
+    },
+    {
+      "name": "wstake_blood"
+    },
+    {
+      "name": "gluepool0"
+    },
+    {
+      "name": "gluepool1"
+    },
+    {
+      "name": "combat_sh1"
+    },
+    {
+      "name": "combat_sh2"
+    },
+    {
+      "name": "combat_sh0"
+    },
+    {
+      "name": "broadsword_blood"
+    },
+    {
+      "name": "sword_sh1"
+    },
+    {
+      "name": "sword_sh2"
+    },
+    {
+      "name": "sword_sh3"
+    },
+    {
+      "name": "sword_sh5"
+    },
+    {
+      "name": "sword_sh6"
+    },
+    {
+      "name": "sword_sh7"
+    },
+    {
+      "name": "sword_sh8"
+    },
+    {
+      "name": "sword_sh9"
+    },
+    {
+      "name": "sword_sh10"
+    },
+    {
+      "name": "sword_sh11"
+    },
+    {
+      "name": "sword_sh12"
+    },
+    {
+      "name": "sword_sh13"
+    },
+    {
+      "name": "sword_sh14"
+    },
+    {
+      "name": "sword_sh15"
+    },
+    {
+      "name": "sword_sh0"
+    },
+    {
+      "name": "spear_floor",
+      "directions": 4
+    },
+    {
+      "name": "bigsword"
+    },
+    {
+      "name": "broom"
+    },
+    {
+      "name": "bigsword_floor"
+    },
+    {
+      "name": "bigsword_blood"
+    },
+    {
+      "name": "bigsword_floor_blood"
+    },
+    {
+      "name": "empty",
+      "directions": 4
+    },
+    {
+      "name": "buckler"
+    },
+    {
+      "name": "buckler2"
+    },
+    {
+      "name": "bucklero"
+    },
+    {
+      "name": "largeshield"
+    },
+    {
+      "name": "largeshieldo"
+    },
+    {
+      "name": "largeshield_u",
+      "directions": 4
+    },
+    {
+      "name": "largeshield2"
+    },
+    {
+      "name": "largeshield_u2",
+      "directions": 4
+    },
+    {
+      "name": "buckler_u",
+      "directions": 4
+    },
+    {
+      "name": "largeshield22"
+    },
+    {
+      "name": "censer"
+    },
+    {
+      "name": "gcenser"
+    },
+    {
+      "name": "pyreplace0"
+    },
+    {
+      "name": "pyreplace1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bow"
+    },
+    {
+      "name": "warbow"
+    },
+    {
+      "name": "boneflail"
+    },
+    {
+      "name": "boneflail_blood"
+    },
+    {
+      "name": "arrow"
+    },
+    {
+      "name": "ironarrow"
+    },
+    {
+      "name": "bodkinarrow"
+    },
+    {
+      "name": "bonearrow"
+    },
+    {
+      "name": "brokenarrow"
+    },
+    {
+      "name": "silverarrow"
+    },
+    {
+      "name": "quiver0"
+    },
+    {
+      "name": "quiver4"
+    },
+    {
+      "name": "quiver3"
+    },
+    {
+      "name": "quiver2"
+    },
+    {
+      "name": "quiver1"
+    },
+    {
+      "name": "masonhammer"
+    },
+    {
+      "name": "masonhammer_blood"
+    },
+    {
+      "name": "thanati"
+    },
+    {
+      "name": "thanati_blood"
+    },
+    {
+      "name": "wstake_ground"
+    },
+    {
+      "name": "wclub"
+    },
+    {
+      "name": "wclub_blood"
+    },
+    {
+      "name": "coppersword"
+    },
+    {
+      "name": "coppersword_blood"
+    },
+    {
+      "name": "coppersword2"
+    },
+    {
+      "name": "goldensword"
+    },
+    {
+      "name": "goldensword_blood"
+    },
+    {
+      "name": "rapier"
+    },
+    {
+      "name": "rapier_blood"
+    },
+    {
+      "name": "silverdagger",
+      "directions": 4
+    },
+    {
+      "name": "silverdagger_blood",
+      "directions": 4
+    },
+    {
+      "name": "steeldagger",
+      "directions": 4
+    },
+    {
+      "name": "steeldagger_blood",
+      "directions": 4
+    },
+    {
+      "name": "nest"
+    },
+    {
+      "name": "crutch"
+    },
+    {
+      "name": "copperdagger",
+      "directions": 4
+    },
+    {
+      "name": "copperdagger_blood",
+      "directions": 4
+    },
+    {
+      "name": "wbuckler"
+    },
+    {
+      "name": "lbuckler"
+    },
+    {
+      "name": "shielda1"
+    },
+    {
+      "name": "shielda2"
+    },
+    {
+      "name": "shielda3"
+    },
+    {
+      "name": "shielda4"
+    },
+    {
+      "name": "adsword"
+    },
+    {
+      "name": "adsword_blood"
+    },
+    {
+      "name": "club0"
+    },
+    {
+      "name": "ibow"
+    },
+    {
+      "name": "adagger",
+      "directions": 4
+    },
+    {
+      "name": "adagger_blood",
+      "directions": 4
+    },
+    {
+      "name": "artifact"
+    },
+    {
+      "name": "artifact_blood"
+    },
+    {
+      "name": "lightbringer",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "crossbow0"
+    },
+    {
+      "name": "crossbow1"
+    },
+    {
+      "name": "sclub"
+    },
+    {
+      "name": "sclub_blood"
+    },
+    {
+      "name": "rustybroadsword"
+    },
+    {
+      "name": "rustysabre"
+    },
+    {
+      "name": "rustyrapier"
+    },
+    {
+      "name": "rustyaxe"
+    },
+    {
+      "name": "rustybroadsword_blood"
+    },
+    {
+      "name": "rustysabre_blood"
+    },
+    {
+      "name": "rustyrapier_blood"
+    },
+    {
+      "name": "rustyaxe_blood"
+    },
+    {
+      "name": "lamp0"
+    },
+    {
+      "name": "lamp12"
+    },
+    {
+      "name": "lamp1",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "silversword"
+    },
+    {
+      "name": "silversword_blood"
+    },
+    {
+      "name": "mechanisms"
+    },
+    {
+      "name": "mechanisms2"
+    },
+    {
+      "name": "dart"
+    },
+    {
+      "name": "copperknife",
+      "directions": 4
+    },
+    {
+      "name": "copperknife_blood",
+      "directions": 4
+    },
+    {
+      "name": "boneclub"
+    },
+    {
+      "name": "boneclub_blood"
+    },
+    {
+      "name": "campfire21",
+      "delays": [
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "campfire20"
+    },
+    {
+      "name": "rope"
+    },
+    {
+      "name": "paladin_shield"
+    },
+    {
+      "name": "horn"
+    },
+    {
+      "name": "horn2"
+    },
+    {
+      "name": "tray_shield"
+    },
+    {
+      "name": ""
+    },
+    {
+      "name": "lclub"
+    },
+    {
+      "name": "lclub_blood"
+    },
+    {
+      "name": "ibow0"
+    },
+    {
+      "name": "ibow1"
+    },
+    {
+      "name": "ibow2"
+    },
+    {
+      "name": "ibow3"
+    },
+    {
+      "name": "ibow4"
+    },
+    {
+      "name": "ibow_wbow"
+    },
+    {
+      "name": "monkstaff"
+    },
+    {
+      "name": "o0"
+    },
+    {
+      "name": "o1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "lever"
+    },
+    {
+      "name": "lever_blood"
+    },
+    {
+      "name": "stick"
+    },
+    {
+      "name": "stick_blood"
+    },
+    {
+      "name": "sticks"
+    },
+    {
+      "name": "law"
+    },
+    {
+      "name": "law_blood"
+    },
+    {
+      "name": "wspear"
+    },
+    {
+      "name": "wspear_blood"
+    },
+    {
+      "name": "obsknife"
+    },
+    {
+      "name": "obsknife_blood"
+    },
+    {
+      "name": "scimitar"
+    },
+    {
+      "name": "scimitar_blood"
+    },
+    {
+      "name": "axepickaxe"
+    },
+    {
+      "name": "axepickaxe_blood"
+    },
+    {
+      "name": "club2"
+    },
+    {
+      "name": "club2_blood"
+    },
+    {
+      "name": "shocker"
+    },
+    {
+      "name": "combat2",
+      "directions": 4
+    },
+    {
+      "name": "combat2_blood",
+      "directions": 4
+    },
+    {
+      "name": "gshield"
+    },
+    {
+      "name": "l_adagger_blood",
+      "directions": 4
+    },
+    {
+      "name": "t_staff1"
+    },
+    {
+      "name": "t_staff0"
+    },
+    {
+      "name": "chessboard"
+    },
+    {
+      "name": "savaxe"
+    },
+    {
+      "name": "savaxe_blood"
+    },
+    {
+      "name": "scissors"
+    },
+    {
+      "name": "scissors_blood"
+    },
+    {
+      "name": "klevec"
+    },
+    {
+      "name": "klevec_blood"
+    },
+    {
+      "name": "spearstrapi"
+    },
+    {
+      "name": "spearstrap"
+    },
+    {
+      "name": "yspear"
+    },
+    {
+      "name": "yspear_blood"
+    },
+    {
+      "name": "cspear"
+    },
+    {
+      "name": "cspear_blood"
+    },
+    {
+      "name": "spear"
+    },
+    {
+      "name": "spear_blood"
+    },
+    {
+      "name": "adspear"
+    },
+    {
+      "name": "adspear_blood"
+    },
+    {
+      "name": "tribal_spear"
+    },
+    {
+      "name": "tribal_spear_blood"
+    }
+  ]
+}
