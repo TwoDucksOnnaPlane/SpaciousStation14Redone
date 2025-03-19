@@ -13,11 +13,10 @@
     sprite: Clothing/OuterClothing/Armor/security.rsi
   - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
     modifiers:
-      coefficients:
-        Blunt: 0.70
-        Slash: 0.70
-        Piercing: 0.70 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
-        Heat: 0.80
+      flatReductions:
+        Blunt: 10
+        Slash: 10
+        Piercing: 10
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: Fixtures
@@ -57,10 +56,10 @@
     sprite: Clothing/OuterClothing/Armor/riot.rsi
   - type: Armor
     modifiers:
+      flatReductions:
+        Blunt: 15
+        Slash: 15
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.7
         Heat: 0.9
         Caustic: 0.9
   - type: ExplosionResistance
@@ -82,10 +81,11 @@
     lowPressureMultiplier: 1000
   - type: Armor
     modifiers:
+      flatReductions:
+        Blunt: 10
+        Slash: 10
+        Piercing: 10
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
         Heat: 0.85
         Radiation: 0.75
         Caustic: 0.85
@@ -108,10 +108,11 @@
     sprite: Clothing/OuterClothing/Armor/bulletproof.rsi
   - type: Armor
     modifiers:
+      flatReductions:
+        Blunt: 5
+        Slash: 5
+        Piercing: 15
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.4
         Heat: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.80
