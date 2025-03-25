@@ -121,6 +121,7 @@
     - TauCetiBasic
     - RobotTalk
   - type: PsionicInsulation
+  - type: TileMovement
 
 - type: entity
   parent: MobSiliconBase
