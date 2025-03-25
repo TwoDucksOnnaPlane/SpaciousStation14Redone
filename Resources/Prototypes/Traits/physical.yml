@@ -588,7 +588,7 @@
 - type: trait
   id: CyberEyes
   category: Physical
-  points: -4
+  points: -1
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -664,7 +664,7 @@
 - type: trait
   id: CyberEyesMedical
   category: Physical
-  points: -2
+  points: -1
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -692,7 +692,7 @@
 - type: trait
   id: CyberEyesDiagnostic
   category: Physical
-  points: -2
+  points: -1
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
@@ -716,9 +716,42 @@
           - Silicon
 
 - type: trait
-  id: CyberEyesOmni
+  id: CyberEyesMedDiag
   category: Physical
   points: -3
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+    - !type:CharacterTraitRequirement
+      traits:
+        - CyberEyes
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - CyberEyesOmni
+        - CyberEyesSecurity
+        - CyberEyesMedical
+        - CyberEyesDiagnostic
+  functions:
+    - !type:TraitAddComponent
+      components:
+        - type: SolutionScanner
+        - type: EyeProtection
+        - type: ShowHealthIcons
+          damageContainers:
+          - Biological
+        - type: ShowHealthBars
+          damageContainers:
+          - Biological
+          - Inorganic
+          - Silicon
+
+- type: trait
+  id: CyberEyesOmni
+  category: Physical
+  points: -4
   requirements:
     - !type:CharacterJobRequirement
       inverted: true

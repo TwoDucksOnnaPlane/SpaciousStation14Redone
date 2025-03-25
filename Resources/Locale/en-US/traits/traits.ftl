@@ -477,11 +477,15 @@ trait-description-CyberEyesSecurity =
 
 trait-name-CyberEyesMedical = Cyber-Eyes: MedHud Module
 trait-description-CyberEyesMedical =
-    Your Cyber-Eyes have been upgraded to include a built-in Medical Hud, and a Chemical Analysis Hud, allowing you to track the relative health condition of biological organisms, and discern the chemicals in any solution. 
+    Your Cyber-Eyes have been upgraded to include a built-in Medical Hud, and a Chemical Analysis Hud, allowing you to track the relative health condition of biological organisms, and discern the chemicals in any solution.
 
 trait-name-CyberEyesDiagnostic = Cyber-Eyes: Diagnostics Module
 trait-description-CyberEyesDiagnostic =
     Your Cyber-Eyes have been upgraded to include a built-in Diagnostic Hud and flare shielding, allowing you to track the condition of synthetic entities, and providing eye protection against welding arcs.
+
+trait-name-CyberEyesMedDiag = Cyber-Eyes: Medical Diagnostics Module
+trait-description-CyberEyesMedDiag =
+    Your Cyber-Eyes have been upgraded to include a built-in Diagnostic Hud and flare shielding, allowing you to track the condition of both biological and synthetic entities, alongside providing welding protection and a reagent scanner.
 
 trait-name-CyberEyesOmni = Cyber-Eyes: Premium Suite Module
 trait-description-CyberEyesOmni =
@@ -568,7 +572,7 @@ trait-description-SecurityEyesModule =
 
 trait-name-MedicalEyesModule = I.P.C Eye Module: Medical
 trait-description-MedicalEyesModule =
-    Your Cyber-Eyes have been upgraded to include a built-in Medical Hud, and a Chemical Analysis Hud, allowing you to track the relative health condition of biological organisms, and discern the chemicals in any solution. 
+    Your Cyber-Eyes have been upgraded to include a built-in Medical Hud, and a Chemical Analysis Hud, allowing you to track the relative health condition of biological organisms, and discern the chemicals in any solution.
 
 trait-name-DiagnosticEyesModule = I.P.C Eye Module: Diagnostics
 trait-description-DiagnosticEyesModule =
