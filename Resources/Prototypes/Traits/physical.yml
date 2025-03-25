@@ -781,6 +781,9 @@
         - type: ShowHealthIcons
           damageContainers:
           - Biological
+        - type: FlashImmunity
+          damageContainers:
+          - Biological
         - type: ShowHealthBars
           damageContainers:
           - Biological
@@ -984,6 +987,7 @@
         - type: ShowJobIcons
         - type: ShowMindShieldIcons
         - type: ShowCriminalRecordIcons
+        - type: FlashImmunity
 
 - type: trait
   id: MedicalEyesModule
