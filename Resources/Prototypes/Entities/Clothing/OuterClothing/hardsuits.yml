@@ -285,13 +285,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.65
         Caustic: 0.7
+        Heat: 0.7 # Goobstation
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurity
@@ -318,9 +319,10 @@
         Blunt: 0.8
         Slash: 0.8
         Piercing: 0.7
+        Heat: 0.7 # Goobstation
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBrigmedic
@@ -350,9 +352,10 @@
         Slash: 0.6
         Piercing: 0.6
         Caustic: 0.7
+        Heat: 0.7 # Goobstation
   - type: ClothingSpeedModifier
-    walkModifier: 0.7
-    sprintModifier: 0.7
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitWarden
@@ -542,9 +545,10 @@
         Piercing: 0.5
         Radiation: 0.5
         Caustic: 0.6
+        Heat: 0.6 # Goobstation
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSecurityRed
@@ -717,7 +721,7 @@
     size: Huge
   - type: ClothingSpeedModifier
     walkModifier: 1.0
-    sprintModifier: 1.0
+    sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
@@ -751,7 +755,7 @@
         Caustic: 0.4
   - type: ClothingSpeedModifier
     walkModifier: 1.0
-    sprintModifier: 1.0
+    sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
@@ -787,7 +791,7 @@
         Caustic: 0.2
   - type: ClothingSpeedModifier
     walkModifier: 0.9
-    sprintModifier: 0.65
+    sprintModifier: 0.6
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
@@ -882,8 +886,8 @@
         Heat: 0.4
         Caustic: 0.75
   - type: ClothingSpeedModifier
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.65
+    sprintModifier: 0.65
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitPirateEVA
