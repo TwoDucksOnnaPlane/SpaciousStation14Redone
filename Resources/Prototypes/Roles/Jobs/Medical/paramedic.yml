@@ -1,6 +1,6 @@
 - type: job
   id: Paramedic
-  name: job-name-paramedic
+  name: Cutter
   description: job-description-paramedic
   playTimeTracker: JobParamedic
   requirements:
