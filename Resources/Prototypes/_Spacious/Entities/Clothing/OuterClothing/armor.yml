@@ -1,0 +1,48 @@
+- type: entity
+  parent: [ ClothingOuterBaseMedium , AllowSuitStorageClothing ]
+  id: ClothingApothecaryRobe
+  name: apothecary's robes
+  description: The apothecary's robes, carefully crafted to hide his form.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/OuterClothing/Jackets/apothecary.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/OuterClothing/Jackets/apothecary.rsi
+  - type: Item
+    size: Normal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.6
+  - type: TemperatureProtection
+    coefficient: 0.1
+
+- type: entity
+  parent: [ ClothingOuterBaseMedium , AllowSuitStorageClothing ]
+  id: ClothingPhysicianRobe
+  name: physician's robes
+  description: A physician's robes, you don't think you've ever seen them without these.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/OuterClothing/Jackets/physician.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/OuterClothing/Jackets/physician.rsi
+  - type: Item
+    size: Normal
+  - type: TemperatureProtection
+    coefficient: 0.1
+
+- type: entity
+  parent: [ ClothingOuterBaseMedium , AllowSuitStorageClothing ]
+  id: ClothingMstrSurgeonRobe
+  name: master surgeon's robes
+  description: The master surgeon's robes, what a sight to behold.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/OuterClothing/Jackets/master_surgeon.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/OuterClothing/Jackets/master_surgeon.rsi
+  - type: Item
+    size: Normal
+  - type: TemperatureProtection
+    coefficient: 0.1

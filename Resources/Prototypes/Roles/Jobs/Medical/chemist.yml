@@ -1,6 +1,6 @@
 - type: job
   id: Chemist
-  name: job-name-chemist
+  name: Apothecary
   description: job-description-chemist
   playTimeTracker: JobChemist
   requirements:

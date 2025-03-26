@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingApothecaryScrubs
+  name: apothecary's scrubs
+  description: The green scrubs of an apothecary, designed to make them seem more friendly.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Uniforms/Scrubs/apothecary_scrubs.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Uniforms/Scrubs/apothecary_scrubs.rsi

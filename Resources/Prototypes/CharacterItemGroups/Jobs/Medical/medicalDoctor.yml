@@ -40,28 +40,34 @@
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutMedicalHeadNurse
+      id: LoadoutMedicalPhysicianHood
 
 #- type: characterItemGroup
 #  id: LoadoutMedicalDoctorId
 #  maxItems: 1
 #  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutMedicalDoctorNeck
-#  maxItems: 1
-#  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutMedicalDoctorMask
-#  maxItems: 1
-#  items:
-#
-#- type: characterItemGroup
-#  id: LoadoutMedicalDoctorOuter
-#  maxItems: 1
-#  items:
-#
+
+- type: characterItemGroup
+  id: LoadoutMedicalDoctorNeck
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutMedicalPhysicianCollar
+
+- type: characterItemGroup
+  id: LoadoutMedicalDoctorMask
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutMedicalPhysicianMask
+
+- type: characterItemGroup
+  id: LoadoutMedicalDoctorOuter
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutMedicalPhysicianRobes
+
 #- type: characterItemGroup
 #  id: LoadoutMedicalDoctorShoes
 #  maxItems: 1

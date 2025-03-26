@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingMstrSurgeonCollar
+  name: master surgeon's collar
+  description: A stiff collar, designed to keep blood from splattering on the surgeon's neck.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Neck/mstrsurgeon_collar.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingPhysicianCollar
+  name: physician's collar
+  description: A collar most likely worn to look nice, likely does little to stop the blood from splattering.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Cloaks/physician_collar.rsi

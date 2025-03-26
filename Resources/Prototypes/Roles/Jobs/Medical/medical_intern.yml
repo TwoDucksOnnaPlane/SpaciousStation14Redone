@@ -1,6 +1,6 @@
 - type: job
   id: MedicalIntern
-  name: job-name-intern
+  name: Barber-Surgeon
   description: job-description-intern
   playTimeTracker: JobMedicalIntern
   requirements:

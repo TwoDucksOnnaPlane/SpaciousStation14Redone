@@ -2,7 +2,7 @@
 
 - type: job
   id: ChiefMedicalOfficer
-  name: job-name-cmo
+  name: Master Surgeon
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
