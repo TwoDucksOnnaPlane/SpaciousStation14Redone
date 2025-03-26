@@ -1,12 +1,10 @@
-using System.Linq;
 using System.Numerics;
+using System.Linq;
 using Content.Server.Cargo.Systems;
 using Content.Shared.Contests;
 using Content.Server.Power.EntitySystems;
-using Content.Server.Weapons.Ranged.Components;
-using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
-using Content.Shared.Database;
+using Content.Shared.Damage.Components;
 using Content.Shared.Effects;
 using Content.Shared.Projectiles;
 using Content.Shared.Weapons.Melee;
@@ -15,14 +13,15 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Weapons.Reflect;
-using Content.Shared.Damage.Components;
-using Robust.Shared.Audio;
+using Content.Shared.Damage;
+using Content.Shared.Database;
+using Robust.Shared.Containers;
 using Robust.Shared.Map;
-using Robust.Shared.Physics;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Containers;
+using Robust.Shared.Physics;
 using Content.Shared._Lavaland.Weapons.Ranged.Events; // Lavaland Change
 
 namespace Content.Server.Weapons.Ranged.Systems;
@@ -359,47 +358,18 @@ public sealed partial class GunSystem : SharedGunSystem
 
     protected override void Popup(string message, EntityUid? uid, EntityUid? user) { }
 
-    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null)
+    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null, EntityUid? player = null)
     {
         var filter = Filter.Pvs(gunUid, entityManager: EntityManager);
-
         if (TryComp<ActorComponent>(user, out var actor))
+            filter.RemovePlayer(actor.PlayerSession);
+
+        if (GunPrediction && TryComp(player, out actor))
             filter.RemovePlayer(actor.PlayerSession);
 
         RaiseNetworkEvent(message, filter);
     }
 
-    public void PlayImpactSound(EntityUid otherEntity, DamageSpecifier? modifiedDamage, SoundSpecifier? weaponSound, bool forceWeaponSound)
-    {
-        DebugTools.Assert(!Deleted(otherEntity), "Impact sound entity was deleted");
-
-        // Like projectiles and melee,
-        // 1. Entity specific sound
-        // 2. Ammo's sound
-        // 3. Nothing
-        var playedSound = false;
-
-        if (!forceWeaponSound && modifiedDamage != null && modifiedDamage.GetTotal() > 0 && TryComp<RangedDamageSoundComponent>(otherEntity, out var rangedSound))
-        {
-            var type = SharedMeleeWeaponSystem.GetHighestDamageSound(modifiedDamage, ProtoManager);
-
-            if (type != null && rangedSound.SoundTypes?.TryGetValue(type, out var damageSoundType) == true)
-            {
-                Audio.PlayPvs(damageSoundType, otherEntity, AudioParams.Default.WithVariation(DamagePitchVariation));
-                playedSound = true;
-            }
-            else if (type != null && rangedSound.SoundGroups?.TryGetValue(type, out var damageSoundGroup) == true)
-            {
-                Audio.PlayPvs(damageSoundGroup, otherEntity, AudioParams.Default.WithVariation(DamagePitchVariation));
-                playedSound = true;
-            }
-        }
-
-        if (!playedSound && weaponSound != null)
-        {
-            Audio.PlayPvs(weaponSound, otherEntity);
-        }
-    }
 
     // TODO: Pseudo RNG so the client can predict these.
     #region Hitscan effects
