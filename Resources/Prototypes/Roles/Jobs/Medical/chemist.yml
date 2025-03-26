@@ -26,12 +26,15 @@
   subGear:
   - ChemistPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitChemistry
+    jumpsuit: ClothingApothecaryScrubs
     back: ClothingBackpackChemistryFilled
-    shoes: ClothingShoesColorWhite
+    shoes: ClothingShoesApothecaryBoots
     id: ChemistryPDA
     ears: ClothingHeadsetMedical
-  innerClothingSkirt: ClothingUniformJumpskirtChemistry
+    hat: ClothingApothecaryHood
+    gloves: ClothingApothecaryGloves
+    outer: ClothingApothecaryRobe
+  innerClothingSkirt: ClothingApothecaryScrubs
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled
 
