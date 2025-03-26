@@ -57,15 +57,6 @@
         mask:
           - Impassable
           - BulletImpassable
-    fly-by: &flybyfixture  # Second fixture (correctly indented)
-      shape: !type:PhysShapeCircle
-        radius: 1.5
-      layer:
-        - Impassable
-        - MidImpassable
-        - HighImpassable
-        - LowImpassable
-      hard: False
 
 - type: entity
   id: BaseBulletTrigger # Trigger-on-collide bullets
@@ -246,7 +237,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 30
@@ -289,7 +279,6 @@
         mask:
         - Impassable
         - BulletImpassable
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 20
@@ -328,7 +317,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 1
@@ -405,7 +393,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: StaminaDamageOnCollide
     damage: 40
   - type: Projectile
@@ -993,7 +980,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 15
@@ -1074,7 +1060,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
     impactEffect: BulletImpactEffectRedDisabler
     damage:
@@ -1112,7 +1097,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: Projectile
     impactEffect: BulletImpactEffectOrangeDisabler
