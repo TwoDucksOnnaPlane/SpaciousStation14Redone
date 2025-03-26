@@ -54,8 +54,8 @@
 
 # Head
 - type: loadout
-  id: LoadoutMedicalHeadNurse
-  category: JobsMedicalAUncategorized
+  id: LoadoutMedicalPhysicianHood
+  category: JobsMedicalMedicalDoctor
   cost: 0
   exclusive: true
   requirements:
@@ -65,15 +65,54 @@
       jobs:
         - MedicalDoctor
   items:
-    - ClothingHeadNurseHat
+    - ClothingPhysicianHood
 
 # Id
 
 # Neck
+- type: loadout
+  id: LoadoutMedicalPhysicianCollar
+  category: JobsMedicalMedicalDoctor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalDoctorNeck
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+  items:
+    - ClothingPhysicianCollar
 
 # Mask
+- type: loadout
+  id: LoadoutMedicalPhysicianMask
+  category: JobsMedicalMedicalDoctor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalDoctorMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+  items:
+    - ClothingPhysicianMask
 
 # Outer
+- type: loadout
+  id: LoadoutMedicalPhysicianRobes
+  category: JobsMedicalMedicalDoctor
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutMedicalDoctorOuter
+    - !type:CharacterJobRequirement
+      jobs:
+        - MedicalDoctor
+  items:
+    - ClothingPhysicianRobe
 
 # Shoes
 

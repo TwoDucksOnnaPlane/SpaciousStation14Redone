@@ -40,7 +40,7 @@
 
 # Head
 - type: loadout
-  id: LoadoutCommandCMOHatBeret
+  id: LoadoutCommandMstrSurgeonHood
   category: JobsMedicalChiefMedicalOfficer
   cost: 0
   exclusive: true
@@ -51,20 +51,7 @@
       jobs:
         - ChiefMedicalOfficer
   items:
-    - ClothingHeadHatBeretCmo
-
-- type: loadout
-  id: LoadoutClothingHeadMirror
-  category: JobsMedicalChiefMedicalOfficer
-  cost: 0
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChiefMedicalOfficerHead
-    - !type:CharacterJobRequirement
-      jobs:
-        - ChiefMedicalOfficer
-  items:
-    - ClothingHeadMirror
+    - ClothingMstrSurgeonHood
 
 # Id
 - type: loadout
@@ -86,7 +73,7 @@
 
 # Neck
 - type: loadout
-  id: LoadoutCommandCMONeckMantle
+  id: LoadoutCommandMstrSurgeonCollar
   category: JobsMedicalChiefMedicalOfficer
   cost: 0
   exclusive: true
@@ -97,41 +84,25 @@
       jobs:
         - ChiefMedicalOfficer
   items:
-    - ClothingNeckMantleCMO
-
-- type: loadout
-  id: LoadoutCommandCMONeckCloak
-  category: JobsMedicalChiefMedicalOfficer
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChiefMedicalOfficerNeck
-    - !type:CharacterJobRequirement
-      jobs:
-        - ChiefMedicalOfficer
-  items:
-    - ClothingCloakCmo
-
-- type: loadout
-  id: LoadoutChiefMedicalOfficerNeckMedalMedical
-  category: JobsMedicalChiefMedicalOfficer
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChiefMedicalOfficerNeck
-    - !type:CharacterJobRequirement
-      jobs:
-        - ChiefMedicalOfficer
-  items:
-    - ClothingNeckMedicalmedal
+    - ClothingMstrSurgeonCollar
 
 # Mask
+- type: loadout
+  id: LoadoutCommandMstrSurgeonMask
+  category: JobsMedicalChiefMedicalOfficer
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutChiefMedicalOfficerMask
+    - !type:CharacterJobRequirement
+      jobs:
+        - ChiefMedicalOfficer
+  items:
+    - ClothingMstrSurgeonMask
 
 # Outer
 - type: loadout
-  id: LoadoutCommandCMOOuterWinter
+  id: LoadoutCommandMstrSurgeonRobes
   category: JobsMedicalChiefMedicalOfficer
   cost: 0
   requirements:
@@ -141,36 +112,9 @@
       jobs:
         - ChiefMedicalOfficer
   items:
-    - ClothingOuterWinterCMO
-
-- type: loadout
-  id: LoadoutCommandCMOOuterLab
-  category: JobsMedicalChiefMedicalOfficer
-  cost: 0
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChiefMedicalOfficerOuter
-    - !type:CharacterJobRequirement
-      jobs:
-        - ChiefMedicalOfficer
-  items:
-    - ClothingOuterCoatLabCmo
+    - ClothingMstrSurgeonRobe
 
 # Shoes
-- type: loadout
-  id: LoadoutCommandCMOShoesBootsWinter
-  category: JobsMedicalChiefMedicalOfficer
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChiefMedicalOfficerShoes
-    - !type:CharacterJobRequirement
-      jobs:
-        - ChiefMedicalOfficer
-  items:
-    - ClothingShoesBootsWinterChiefMedicalOfficer
-
 - type: loadout
   id: LoadoutChiefMedicalOfficerShoesLaceup
   category: JobsCommandCaptain

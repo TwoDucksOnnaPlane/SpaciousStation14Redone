@@ -1,6 +1,6 @@
 - type: job
   id: Paramedic
-  name: job-name-paramedic
+  name: Cutter
   description: job-description-paramedic
   playTimeTracker: JobParamedic
   requirements:
@@ -34,15 +34,19 @@
   subGear:
   - ParamedicPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitParamedic
+    jumpsuit: UniformScrubsColorBlack
     back: ClothingBackpackParamedicFilledDV
-    shoes: ClothingShoesColorBlue
+    shoes: ClothingShoesBootsLaceup
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalEMTFilled
     pocket1: HandheldGPSBasic
     pocket2: HandheldCrewMonitor
-  innerClothingSkirt: ClothingUniformJumpskirtParamedic
+    gloves: ClothingPhysicianGloves
+    outer: ClothingPhysicianRobes
+    neck: ClothingPhysicianCollar
+    head: ClothingPhysicianHood
+  innerClothingSkirt: UniformScrubsColorBlack
   satchel: ClothingBackpackSatchelParamedicFilledDV
   duffelbag: ClothingBackpackDuffelParamedicFilledDV
 

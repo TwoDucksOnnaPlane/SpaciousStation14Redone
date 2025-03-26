@@ -1,6 +1,6 @@
 - type: job
   id: MedicalDoctor
-  name: job-name-doctor
+  name: Physician
   description: job-description-doctor
   playTimeTracker: JobMedicalDoctor
   requirements:
@@ -28,12 +28,17 @@
   subGear:
   - DoctorPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    jumpsuit: UniformScrubsColorBlack
     back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorWhite
+    shoes: ClothingShoesBootsLaceup
     id: MedicalPDA
     ears: ClothingHeadsetMedical
-  innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
+    hat: ClothingPhysicianHood
+    mask: ClothingPhysicianMask
+    neck: ClothingPhysicianCollar
+    gloves: ClothingPhysicianGloves
+    outer: ClothingPhysicianRobes
+  innerClothingSkirt: UniformScrubsColorBlack
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled
 

@@ -2,7 +2,7 @@
 
 - type: job
   id: ChiefMedicalOfficer
-  name: job-name-cmo
+  name: Master Surgeon
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
@@ -49,12 +49,17 @@
   subGear:
   - CMOPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCMO
+    jumpsuit: UniformScrubsColorCybersun
     back: ClothingBackpackCMOFilled
-    shoes: ClothingShoesColorBrown
+    shoes: ClothingShoesBootsLaceup
     id: CMOPDA
     ears: ClothingHeadsetAltMedical # Goobstation
-  innerClothingSkirt: ClothingUniformJumpskirtCMO
+    mask: ClothingMstrSurgeonMask
+    hat: ClothingMstrSurgeonHood
+    neck: ClothingMstrSurgeonCollar
+    gloves: ClothingMstrSurgeonGloves
+    outer: ClothingMstrSurgeonRobe
+  innerClothingSkirt: UniformScrubsColorCybersun
   satchel: ClothingBackpackSatchelCMOFilled
   duffelbag: ClothingBackpackDuffelCMOFilled
 

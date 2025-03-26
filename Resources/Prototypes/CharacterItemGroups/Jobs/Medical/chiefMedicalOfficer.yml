@@ -38,7 +38,7 @@
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutCommandCMOHatBeret
+      id: LoadoutCommandMstrSurgeonHood
 
 - type: characterItemGroup
   id: LoadoutChiefMedicalOfficerId
@@ -54,32 +54,26 @@
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutCommandCMONeckMantle
-    - type: loadout
-      id: LoadoutCommandCMONeckCloak
-    - type: loadout
-      id: LoadoutChiefMedicalOfficerNeckMedalMedical
+      id: LoadoutCommandMstrSurgeonCollar
 
-#- type: characterItemGroup
-#  id: LoadoutChiefMedicalOfficerMask
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutChiefMedicalOfficerMask
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutCommandMstrSurgeonMask
+
 - type: characterItemGroup
   id: LoadoutChiefMedicalOfficerOuter
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutCommandCMOOuterWinter
-    - type: loadout
-      id: LoadoutCommandCMOOuterLab
+      id: LoadoutCommandMstrSurgeonRobes
 
 - type: characterItemGroup
   id: LoadoutChiefMedicalOfficerShoes
   maxItems: 1
   items:
-    - type: loadout
-      id: LoadoutCommandCMOShoesBootsWinter
     - type: loadout
       id: LoadoutChiefMedicalOfficerShoesLaceup
     - type: loadout

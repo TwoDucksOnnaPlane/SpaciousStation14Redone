@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMstrSurgeonMask
+  name: master surgeon's mask
+  description: The mask worn by the Master Surgeon, it's a mystery how it landed in your hands seeing as it's usually attached to their skull.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Mask/mstrsurgeon_mask.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Mask/mstrsurgeon_mask.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: Glued
+  - type: HideLayerClothing
+    slots:
+    - Snout
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingPhysicianMask
+  name: physician's mask
+  description: A mask worn by a physician, typically attached to their face. Quite interesting that you got one.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Mask/physician_mask.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Mask/physician_mask.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: Glued
+  - type: HideLayerClothing
+    slots:
+    - Snout

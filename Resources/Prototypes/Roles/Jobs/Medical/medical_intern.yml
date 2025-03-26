@@ -1,6 +1,6 @@
 - type: job
   id: MedicalIntern
-  name: job-name-intern
+  name: Barber-Surgeon
   description: job-description-intern
   playTimeTracker: JobMedicalIntern
   requirements:
@@ -27,12 +27,14 @@
   subGear:
   - DoctorPlasmamanGear
   equipment:
-    jumpsuit: UniformScrubsColorBlue # DeltaV - Intern starts with blue scrubs
+    jumpsuit: UniformScrubsColorBlack # Spacious - Scrubs changed to black
     back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorWhite
+    shoes: ClothingShoesBootsLaceup
     id: MedicalInternPDA
     ears: ClothingHeadsetMedical
     pocket2: BookMedicalReferenceBook
+    gloves: ClothingPhysicianGloves
+    outer: ClothingPhysicianRobes
   # innerClothingSkirt: ClothingUniformJumpskirtColorWhite # DeltaV
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled
