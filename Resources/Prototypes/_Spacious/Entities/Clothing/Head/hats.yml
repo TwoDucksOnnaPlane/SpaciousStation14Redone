@@ -21,9 +21,9 @@
   description: A red hood for the Master Surgeon, hides the blood.
   components:
   - type: Sprite
-    sprite: _Spacious/Clothing/Hats/mstrsurgeonhood.rsi
+    sprite: _Spacious/Clothing/Hats/mstrsurgeon_hood.rsi
   - type: Clothing
-    sprite: _Spacious/Clothing/Hats/mstrsurgeonhood.rsi
+    sprite: _Spacious/Clothing/Hats/mstrsurgeon_hood.rsi
 
 - type: entity
   parent: [ ClothingHeadBase , ClothingOuterStorageFoldableBaseOpened]
