@@ -25,7 +25,7 @@
   - type: Clothing
     sprite: _Spacious/Clothing/Hats/mstrsurgeonhood.rsi
 
-- type:
+- type: entity
   parent: [ ClothingHeadBase , ClothingOuterStorageFoldableBaseOpened]
   id: ClothingMstrSurgeonHoodOpen
   name: master surgeon's hood
