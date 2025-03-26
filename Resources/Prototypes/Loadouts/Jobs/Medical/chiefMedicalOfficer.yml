@@ -94,7 +94,7 @@
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutChiefMedicalOfficerMask
-    - !type: !type:CharacterJobRequirement
+    - !type:CharacterJobRequirement
       jobs:
         - ChiefMedicalOfficer
   items:
