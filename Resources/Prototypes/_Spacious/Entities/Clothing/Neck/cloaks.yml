@@ -5,7 +5,7 @@
   description: A stiff collar, designed to keep blood from splattering on the surgeon's neck.
   components:
   - type: Sprite
-    sprite: _Spacious/Clothing/Neck/mstrsurgeon_collar.rsi
+    sprite: _Spacious/Clothing/Cloaks/mstrsurgeon_collar.rsi
   - type: StealTarget
     stealGroup: HeadCloak
 
