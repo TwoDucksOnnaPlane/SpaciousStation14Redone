@@ -26,6 +26,7 @@
   - type: Clothing
     sprite: _Spacious/Clothing/Hands/Gloves/mstrsurgeon_gloves.rsi
   - type: GloveHeatResistance
+    heatResistance: 1400
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-brown

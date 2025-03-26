@@ -274,7 +274,7 @@
 # Shoes
 - type: loadout
   id: LoadoutMedicalApothecaryBoots
-  category: JobsMedicalAUncategorized
+  category: JobsMedicalChemist
   cost: 0
   exclusive: true
   requirements:

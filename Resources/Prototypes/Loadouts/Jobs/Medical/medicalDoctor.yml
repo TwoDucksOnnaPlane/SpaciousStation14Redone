@@ -81,7 +81,8 @@
     - !type:CharacterJobRequirement
       jobs:
         - MedicalDoctor
-  items: ClothingPhysicianCollar
+  items:
+    - ClothingPhysicianCollar
 
 # Mask
 - type: loadout
