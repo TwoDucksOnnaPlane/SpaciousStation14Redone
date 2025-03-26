@@ -1,9 +1,11 @@
 using System.Linq;
+using Content.Server._ERRORGATE.Hearing;
 using Content.Server.Flash.Components;
 using Content.Shared.Flash.Components;
 using Content.Server.Light.EntitySystems;
 using Content.Server.Popups;
 using Content.Server.Stunnable;
+using Content.Shared._Goobstation.Flashbang;
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Eye.Blinding.Components;
@@ -25,6 +27,7 @@ using InventoryComponent = Content.Shared.Inventory.InventoryComponent;
 using Content.Shared.Traits.Assorted.Components;
 using Robust.Shared.Random;
 using Content.Shared.Eye.Blinding.Systems;
+using Content.Shared._ERRORGATE.Hearing;
 
 namespace Content.Server.Flash
 {
@@ -144,6 +147,12 @@ namespace Content.Server.Flash
             flashable.Duration = flashDuration / 1000f; // TODO: Make this sane...
             Dirty(target, flashable);
 
+            if (HasComp<HearingComponent>(target))
+            {
+                var deafen = new HearingChangedEvent(target, false, false, flashDuration / 1000f, "You can't hear anything!");
+                RaiseLocalEvent(target, deafen);
+            }
+
             if (TryComp<BlindableComponent>(target, out var blindable)
                 && !blindable.IsBlind
                 && _random.Prob(flashable.EyeDamageChance))
@@ -187,6 +196,9 @@ namespace Content.Server.Flash
 
                 // They shouldn't have flash removed in between right?
                 Flash(entity, user, source, duration, slowTo, displayPopup, flashableQuery.GetComponent(entity));
+
+                var distance = (mapPosition.Position - _transform.GetMapCoordinates(entity).Position).Length(); // Goobstation
+                RaiseLocalEvent(source, new AreaFlashEvent(range, distance, entity)); // Goobstation
             }
 
             _audio.PlayPvs(sound, source, AudioParams.Default.WithVolume(1f).WithMaxDistance(3f));

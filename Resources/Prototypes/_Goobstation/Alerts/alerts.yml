@@ -17,3 +17,11 @@
   description: alerts-modsuit-power-desc
   minSeverity: 0
   maxSeverity: 5
+
+- type: alert
+  id: KnockedDown
+  icons:
+  - sprite: /Textures/Objects/Weapons/Melee/stunbaton.rsi #Should probably draw a proper icon
+    state: stunbaton_off
+  name: alerts-knocked-down-name
+  description: alerts-knocked-down-desc

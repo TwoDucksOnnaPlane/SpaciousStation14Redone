@@ -7,6 +7,7 @@ using Content.Server.Power.Components;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Projectiles;
 using Content.Server.Weapons.Ranged.Systems;
+using Content.Shared.Weapons.Ranged;
 using Content.Shared.Database;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
@@ -295,8 +296,17 @@ namespace Content.Server.Singularity.EntitySystems
             _projectile.SetShooter(ent, proj, uid);
 
             var targetPos = new EntityCoordinates(uid, new Vector2(0, -1));
+            var ammoList = new List<(EntityUid? Entity, IShootable Shootable)> { (ent, null!) };
 
-            _gun.Shoot(uid, gunComponent, ent, xform.Coordinates, targetPos, out _);
+            _gun.Shoot(
+                uid,
+                gunComponent,
+                ammoList,
+                xform.Coordinates,
+                targetPos,
+                out _,
+                user: null,
+                throwItems: false);
         }
 
         private void UpdateAppearance(EntityUid uid, EmitterComponent component)

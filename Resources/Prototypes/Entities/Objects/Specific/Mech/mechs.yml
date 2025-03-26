@@ -3,6 +3,7 @@
   save: false
   abstract: true
   components:
+  - type: TileMovement
   - type: MobMover
   - type: Mech
   - type: MechAir
