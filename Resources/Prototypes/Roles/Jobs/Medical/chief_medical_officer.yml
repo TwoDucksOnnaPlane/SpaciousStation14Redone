@@ -58,7 +58,7 @@
     hat: ClothingMstrSurgeonHood
     neck: ClothingMstrSurgeonCollar
     gloves: ClothingMstrSurgeonGloves
-    outer: ClothingMstrSurgeonRobe
+    outerClothing: ClothingMstrSurgeonRobe
   innerClothingSkirt: UniformScrubsColorCybersun
   satchel: ClothingBackpackSatchelCMOFilled
   duffelbag: ClothingBackpackDuffelCMOFilled

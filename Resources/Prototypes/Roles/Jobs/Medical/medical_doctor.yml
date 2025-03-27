@@ -37,7 +37,7 @@
     mask: ClothingPhysicianMask
     neck: ClothingPhysicianCollar
     gloves: ClothingPhysicianGloves
-    outer: ClothingPhysicianRobes
+    outerClothing: ClothingPhysicianRobes
   innerClothingSkirt: UniformScrubsColorBlack
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled
