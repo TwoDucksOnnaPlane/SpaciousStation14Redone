@@ -20,7 +20,6 @@
   # - Chaplain # DeltaV - Move Chaplain into Epistemics
   - Chef
   - Clown
-  - HeadOfPersonnel
   - Janitor
   # - Lawyer # DeltaV - Move Lawyer into Justice
   - Mime
@@ -59,7 +58,7 @@
   - DeathSquad
   - AdministrativeAssistant # Delta V - Administrative Assistant, see Resources/Prototypes/Nyanotrasen/Roles/Jobs/Command/admin_assistant.yml
   primary: false
-  weight: 100
+  weight: 120
 
 - type: department
   id: Dignitary
@@ -70,7 +69,7 @@
   - NanotrasenRepresentative # Goobstation
   - Magistrate # Goobstation
   primary: false
-  weight: 101
+  weight: 100
 
 - type: department
   id: Engineering

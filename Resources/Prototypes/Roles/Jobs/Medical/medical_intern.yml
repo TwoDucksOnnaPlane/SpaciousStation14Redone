@@ -34,7 +34,7 @@
     ears: ClothingHeadsetMedical
     pocket2: BookMedicalReferenceBook
     gloves: ClothingPhysicianGloves
-    outerClothing: ClothingPhysicianRobes
+    outerClothing: ClothingPhysicianRobe
   # innerClothingSkirt: ClothingUniformJumpskirtColorWhite # DeltaV
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

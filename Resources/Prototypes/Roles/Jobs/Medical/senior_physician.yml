@@ -36,7 +36,7 @@
     jumpsuit: ClothingUniformJumpsuitSeniorPhysician
     back: ClothingBackpackMedicalFilled
     shoes: ClothingShoesColorBlack
-    outerClothing: ClothingPhysicianRobes
+    outerClothing: ClothingPhysicianRobe
     id: SeniorPhysicianPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled

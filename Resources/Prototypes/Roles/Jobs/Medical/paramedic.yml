@@ -43,7 +43,7 @@
     pocket1: HandheldGPSBasic
     pocket2: HandheldCrewMonitor
     gloves: ClothingPhysicianGloves
-    outerClothing: ClothingPhysicianRobes
+    outerClothing: ClothingPhysicianRobe
     neck: ClothingPhysicianCollar
     head: ClothingPhysicianHood
   innerClothingSkirt: UniformScrubsColorBlack
