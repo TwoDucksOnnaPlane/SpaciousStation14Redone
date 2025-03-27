@@ -33,7 +33,7 @@
     ears: ClothingHeadsetMedical
     hat: ClothingApothecaryHood
     gloves: ClothingApothecaryGloves
-    outer: ClothingApothecaryRobe
+    outerClothing: ClothingApothecaryRobe
   innerClothingSkirt: ClothingApothecaryScrubs
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled
