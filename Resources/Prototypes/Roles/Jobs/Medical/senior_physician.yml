@@ -1,6 +1,6 @@
 - type: job
   id: SeniorPhysician
-  name: job-name-senior-physician
+  name: Surgeon
   description: job-description-senior-physician
   playTimeTracker: JobSeniorPhysician
   requirements:
