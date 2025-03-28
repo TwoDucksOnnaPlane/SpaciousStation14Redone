@@ -1,7 +1,6 @@
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using Content.Server._ERRORGATE.Hearing;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
@@ -41,9 +40,6 @@ using Robust.Shared.Utility;
 using Content.Server.Shuttles.Components;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Dynamics.Joints;
-using Content.Shared.Mobs.Components;
-using Content.Shared.Mobs;
-using Content.Shared._ERRORGATE.Hearing;
 
 namespace Content.Server.Chat.Systems;
 
@@ -547,25 +543,6 @@ public sealed partial class ChatSystem : SharedChatSystem
                 wrappedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-unknown-wrap-message", string.Empty, result, language);
             }
 
-            // ERRORGATE Deafening
-            if (TryComp<MobStateComponent>(session.AttachedEntity, out var playermobstate))
-            {
-                if (playermobstate.CurrentState == MobState.Dead)
-                {
-                    continue;
-                }
-            }
-
-            if (TryComp<DeafComponent>(session.AttachedEntity, out var deafComp))
-            {
-                var canthearmessage = deafComp.DeafChatMessage;
-                var wrappedcanthearmessage = $"{canthearmessage}";
-
-                _chatManager.ChatMessageToOne(ChatChannel.Local, canthearmessage, wrappedcanthearmessage, EntityUid.Invalid, false, session.Channel);
-                continue;
-            }
-            // ERRORGATE end
-
             _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, false, session.Channel);
         }
 
@@ -748,26 +725,6 @@ public sealed partial class ChatSystem : SharedChatSystem
             if (entRange == MessageRangeCheckResult.Disallowed)
                 continue;
             var entHideChat = entRange == MessageRangeCheckResult.HideChat;
-
-            // ERRORGATE Deafening
-            if (TryComp<MobStateComponent>(session.AttachedEntity, out var playermobstate))
-            {
-                if (playermobstate.CurrentState == MobState.Dead)
-                {
-                    continue;
-                }
-            }
-
-            if (TryComp<DeafComponent>(session.AttachedEntity, out var deafComp))
-            {
-                var canthearmessage = deafComp.DeafChatMessage;
-                var wrappedcanthearmessage = $"{canthearmessage}";
-
-                _chatManager.ChatMessageToOne(channel, canthearmessage, wrappedcanthearmessage, EntityUid.Invalid, false, session.Channel);
-                continue;
-            }
-            // ERRORGATE end
-
             if (session.AttachedEntity is not { Valid: true } playerEntity)
                 continue;
             EntityUid listener = session.AttachedEntity.Value;

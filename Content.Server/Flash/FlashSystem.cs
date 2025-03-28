@@ -1,5 +1,4 @@
 using System.Linq;
-using Content.Server._ERRORGATE.Hearing;
 using Content.Server.Flash.Components;
 using Content.Shared.Flash.Components;
 using Content.Server.Light.EntitySystems;
@@ -27,7 +26,6 @@ using InventoryComponent = Content.Shared.Inventory.InventoryComponent;
 using Content.Shared.Traits.Assorted.Components;
 using Robust.Shared.Random;
 using Content.Shared.Eye.Blinding.Systems;
-using Content.Shared._ERRORGATE.Hearing;
 
 namespace Content.Server.Flash
 {
@@ -146,12 +144,6 @@ namespace Content.Server.Flash
             flashable.LastFlash = _timing.CurTime;
             flashable.Duration = flashDuration / 1000f; // TODO: Make this sane...
             Dirty(target, flashable);
-
-            if (HasComp<HearingComponent>(target))
-            {
-                var deafen = new HearingChangedEvent(target, false, false, flashDuration / 1000f, "You can't hear anything!");
-                RaiseLocalEvent(target, deafen);
-            }
 
             if (TryComp<BlindableComponent>(target, out var blindable)
                 && !blindable.IsBlind

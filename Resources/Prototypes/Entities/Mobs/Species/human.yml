@@ -29,7 +29,6 @@
     - TauCetiBasic
     - SolCommon
   - type: FootPrints
-  - type: Hearing
 
 - type: entity
   parent: BaseSpeciesDummy
