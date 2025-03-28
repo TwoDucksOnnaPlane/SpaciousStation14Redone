@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Client.GameTicking.Managers;
 using Content.Client.Lobby;
 using Content.Shared._ERRORGATE.Hearing;
-using Content.Shared._Finster.Audio;
 using Content.Shared.Audio.Events;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
@@ -23,33 +22,27 @@ using Robust.Shared.Utility;
 namespace Content.Client._Finster.Audio;
 
 // Part of ContentAudioSystem that is responsible for lobby music playing/stopping and round-end sound-effect.
-public sealed partial class DeafEffectSystem : EntitySystem
+public sealed partial class AudioEffectsSystem
 {
     [Dependency] private readonly IPlayerManager _player = default!;
-    [Dependency] protected readonly SharedAudioSystem _audio = default!;
 
-    public override void Initialize()
+    private static readonly ProtoId<AudioPresetPrototype> EffectPreset = "SewerPipe";
+
+    public void OnDeafInit(Entity<AudioComponent> ent, ref ComponentInit args)
     {
-        base.Initialize();
+        //if (!_timing.IsFirstTimePredicted)
+        //    return;
 
-        SubscribeLocalEvent<AudioComponent, ComponentInit>(OnInit);
-    }
+        //if (!Exists(ent))
+        //    return;
 
-    private void OnInit(Entity<AudioComponent> ent, ref ComponentInit args)
-    {
-        if (ApplyDeaf(ent, ref args))
-            return;
-    }
-
-    public bool ApplyDeaf(Entity<AudioComponent> ent, ref ComponentInit args)
-    {
-        if (TryComp<DeafComponent>(_player.LocalEntity, out var comp) && comp.BlockSounds &&
-            TryComp<TransformComponent>(ent, out var xformComp) && xformComp.MapUid is not null)
+        if (TryComp<DeafComponent>(_player.LocalEntity, out var comp) &&
+                comp.BlockSounds &&
+                TryComp<TransformComponent>(ent, out var xformComp) &&
+                !ent.Comp.Global)
         {
-            _audio.SetVolume(ent, -20f, ent.Comp);
-            return true;
+            TryAddEffect(ent, EffectPreset);
+            _audio.SetVolume(ent, -30f, ent.Comp);
         }
-
-        return false;
     }
 }
