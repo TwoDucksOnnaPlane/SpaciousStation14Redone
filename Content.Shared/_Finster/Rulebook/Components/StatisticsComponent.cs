@@ -12,6 +12,69 @@ public sealed partial class StatisticsComponent : Component
     [DataField, AutoNetworkedField]
     public Dictionary<AttributeType, int> Attributes { get; set; } = new();
 
+    [DataField, AutoNetworkedField]
+    public Dictionary<SkillType, int> Skills { get; set; } = new();
+
+    /// <summary>
+    /// Gets an attribute's value, or returns a default (10) if not found.
+    /// </summary>
+    public int GetAttributeValue(AttributeType attribute)
+    {
+        return Attributes.TryGetValue(attribute, out var value) ? value : 10;
+    }
+
+    /// <summary>
+    /// Gets an attribute's value, or returns a default (10) if not found.
+    /// </summary>
+    public int GetSkillValue(SkillType skill)
+    {
+        return Skills.TryGetValue(skill, out var value) ? value : 0;
+    }
+
+    public int GetSkillModifier(SkillType skill, int skillLevel)
+    {
+        // Untrained penalty (overrides everything)
+        if (skillLevel == 0)
+            return -4;
+
+        var difficulty = skill.GetDifficulty();
+        var baseAttribute = skill.GetBaseAttribute();
+
+        return difficulty switch
+        {
+            SkillDifficulty.Easy => CalculateEasySkill(skillLevel),
+            SkillDifficulty.Average => CalculateAverageSkill(skillLevel),
+            SkillDifficulty.Hard => CalculateHardSkill(skillLevel),
+            SkillDifficulty.VeryHard => CalculateVeryHardSkill(skillLevel),
+            _ => CalculateEasySkill(skillLevel)
+        };
+    }
+
+    private int CalculateEasySkill(int level)
+    {
+        if (level == 1) return 0;
+        if (level == 2) return 2;
+        return 2 + ((level - 2) / 2); // +1 per 2 levels after 2
+    }
+
+    private int CalculateAverageSkill(int level)
+    {
+        if (level == 1) return -1;
+        return -1 + level; // +1 per level after 1
+    }
+
+    private int CalculateHardSkill(int level)
+    {
+        if (level == 1) return -2;
+        return -2 + (level - 1); // +1 per level after 1
+    }
+
+    private int CalculateVeryHardSkill(int level)
+    {
+        if (level == 1) return -3;
+        return -3 + (level - 1); // +1 per level after 1
+    }
+
     /// <summary>
     /// Calculate modifier, given by the attribute.
     /// </summary>
@@ -38,61 +101,31 @@ public enum AttributeType
     Dexterity,
 
     /// <summary>
-    /// Affect on communication skills, understading and learning something new.
+    /// Heal yourself, heal your allies, use computers.
     /// </summary>
     Intelligence,
 
     /// <summary>
-    /// Reduce any damage, like physical. It also can reduce time in crit, when your death is become.
+    /// Withstand PSYCHIC ATTACKS, make your mind a fortress.
     /// </summary>
-    Endurance,
-
-    /// <summary>
-    /// Tt help to target into body parts on ranged distance with the
-    /// ranged weapons and guns.
-    /// </summary>
-    Perception
+    Will,
 }
 
 public enum SkillType
 {
     /// <summary>
-    /// How good are you can use melee weapons. Mostly affected by Dexterity.
+    /// It's First Aid. You should know what this is.
+    /// ranged weapon, and another calculations.
     /// </summary>
-    Melee,
+    [SkillDifficulty(SkillDifficulty.Easy)]
+    [BaseAttribute(AttributeType.Intelligence)]
+    FirstAid,
 
     /// <summary>
-    /// How good you can use ranged weapons. Mostly affected by Strength for control & Perception for aim.
+    /// Diagnosing Injuries. Using Medical equipment.
+    /// missing attacks (in melee combat).
     /// </summary>
-    Ranged,
-
-    /// <summary>
-    /// How good you can apply first aid help to anyone. Mostly affected by Intelligence.
-    /// </summary>
-    Medicine,
-
-    /// <summary>
-    /// How good you know how to construct and craft any items. Mostly affected by Intelligence.
-    /// </summary>
-    Engineering,
-
-    /// <summary>
-    /// Try to dodge the melee attacks. Mostly affected by Dexterity.
-    /// </summary>
-    //Dodging,
-
-    /// <summary>
-    /// How good you can deal damage by your bare hands. Mostly affected by Strength.
-    /// </summary>
-    //MartialArts,
-}
-
-public enum SkillLevelType
-{
-    Weak = DiceType.D4,
-    Normal = DiceType.D6,
-    Good = DiceType.D8,
-    Expert = DiceType.D10,
-    Master = DiceType.D12,
-    Legendary = DiceType.D20
+    [SkillDifficulty(SkillDifficulty.Average)]
+    [BaseAttribute(AttributeType.Intelligence)]
+    Diagnosis,
 }
