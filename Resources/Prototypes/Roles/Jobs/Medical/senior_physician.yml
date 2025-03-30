@@ -1,6 +1,6 @@
 - type: job
   id: SeniorPhysician
-  name: job-name-senior-physician
+  name: Surgeon
   description: job-description-senior-physician
   playTimeTracker: JobSeniorPhysician
   requirements:
@@ -13,6 +13,10 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
       min: 216000 # 60 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: SeniorPhysicianGear
   icon: "JobIconSeniorPhysician"
   supervisors: job-supervisors-cmo
@@ -26,20 +30,34 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 2.0
+    - type: Statistics
+      attributes:
+        Strength: 8
+        Dexterity: 9
+        Intelligence: 12
+        Will: 8
+      skills:
+        FirstAid: 3
+        Diagnosis: 3
+        Surgery: 3
 
 - type: startingGear
   id: SeniorPhysicianGear
   subGear:
   - DoctorPlasmamanGear
   equipment:
-    head: ClothingHeadHatBeretSeniorPhysician
+    head: UniformScrubsColorBlack
     jumpsuit: ClothingUniformJumpsuitSeniorPhysician
     back: ClothingBackpackMedicalFilled
     shoes: ClothingShoesColorBlack
-    outerClothing: ClothingOuterCoatLabSeniorPhysician
+    outerClothing: ClothingPhysicianRobe
     id: SeniorPhysicianPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
-  innerClothingSkirt: ClothingUniformJumpskirtSeniorPhysician
+    hat: ClothingPhysicianHood
+    mask: ClothingPhysicianMask
+    neck: ClothingPhysicianCollar
+    gloves: ClothingPhysicianGloves
+  innerClothingSkirt: UniformScrubsColorBlack
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

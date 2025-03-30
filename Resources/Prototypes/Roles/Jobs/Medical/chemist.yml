@@ -1,12 +1,16 @@
 - type: job
   id: Chemist
-  name: job-name-chemist
+  name: Apothecary
   description: job-description-chemist
   playTimeTracker: JobChemist
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
       min: 28800 # DeltaV - 8 hours
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
@@ -20,18 +24,31 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 1.75
+    - type: Statistics
+      attributes:
+        Strength: 8
+        Dexterity: 9
+        Intelligence: 12
+        Will: 8
+      skills:
+        FirstAid: 2
+        Diagnosis: 2
+        Surgery: 2
 
 - type: startingGear
   id: ChemistGear
   subGear:
   - ChemistPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitChemistry
+    jumpsuit: ClothingApothecaryScrubs
     back: ClothingBackpackChemistryFilled
-    shoes: ClothingShoesColorWhite
+    shoes: ClothingShoesApothecaryBoots
     id: ChemistryPDA
     ears: ClothingHeadsetMedical
-  innerClothingSkirt: ClothingUniformJumpskirtChemistry
+    hat: ClothingApothecaryHood
+    gloves: ClothingApothecaryGloves
+    outerClothing: ClothingApothecaryRobe
+  innerClothingSkirt: ClothingApothecaryScrubs
   satchel: ClothingBackpackSatchelChemistryFilled
   duffelbag: ClothingBackpackDuffelChemistryFilled
 

@@ -16,6 +16,10 @@
       - Blindness
       - Pacifist
       - BrittleBoneDisease
+  - !type:CharacterEmployerRequirement
+    inverted: true
+    employers:
+    - Unemployed
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
@@ -31,6 +35,16 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: Statistics
+        attributes:
+          Strength: 13
+          Dexterity: 13
+          Intelligence: 9
+          Will: 9
+        skills:
+          FirstAid: 2
   afterLoadoutSpecial:
   - !type:ModifyEnvirosuitSpecial
     charges: 6

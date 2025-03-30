@@ -1,0 +1,49 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingApothecaryGloves
+  name: apothecary's gloves
+  description: Stained and partially burnt leather gloves.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Hands/Gloves/apothecary_gloves.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Hands/Gloves/apothecary_gloves.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-brown
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingMstrSurgeonGloves
+  name: master surgeon's gloves
+  description: A pair of green gloves, stained with blood.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Hands/Gloves/mstrsurgeon_gloves.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Hands/Gloves/mstrsurgeon_gloves.rsi
+  - type: GloveHeatResistance
+    heatResistance: 1400
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-brown
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingPhysicianGloves
+  name: physician's gloves
+  description: A pair of black gloves, designed to hide stains.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Hands/Gloves/physician_gloves.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Hands/Gloves/physician_gloves.rsi
+  - type: GloveHeatResistance
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-black
+  - type: FingerprintMask

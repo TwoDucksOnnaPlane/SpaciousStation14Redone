@@ -13,6 +13,7 @@
     types:
       - Knife
   - type: MeleeWeapon
+    ResistanceBypass: true
     wideAnimationRotation: -135
     attackRate: .8
     range: 1.5

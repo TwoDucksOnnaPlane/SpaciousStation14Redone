@@ -11,9 +11,24 @@
   - Janitor
   - Maintenance
   special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Statistics
+        attributes:
+          Strength: 10
+          Dexterity: 10
+          Intelligence: 11
+          Will: 10
+        skills:
+          Housekeeping: 6
   - !type:GiveItemOnHolidaySpecial
     holiday: GarbageDay
     prototype: WeaponRevolverInspector
+  requirements:
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
 
 - type: startingGear
   id: JanitorGear

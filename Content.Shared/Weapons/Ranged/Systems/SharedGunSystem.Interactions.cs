@@ -24,10 +24,6 @@ public abstract partial class SharedGunSystem
             if (!component.AvailableModes.HasFlag(SelectiveFire.Burst))
                 return;
 
-            if (component.FireRate != component.BurstFireRate)
-                args.PushMarkup(Loc.GetString("gun-burst-fire-rate-examine", ("color", FireRateExamineColor),
-                    ("fireRate", $"{(int) (component.BurstFireRate * 60)}")));
-
             args.PushMarkup(Loc.GetString("gun-burst-fire-burst-count", ("color", FireRateExamineColor),
                 ("burstcount", $"{component.ShotsPerBurst}")));
         }

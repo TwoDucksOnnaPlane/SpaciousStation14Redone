@@ -1,0 +1,49 @@
+- type: entity
+  parent: [ ClothingHeadBase , ClothingMaskBase ]
+  id: ClothingApothecaryHood
+  name: apothecary's hood
+  description: A hood with a beak for the apothecary, spooky.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Hats/apothecary_hood.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Hats/apothecary_hood.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
+
+- type: entity
+  parent: [ ClothingHeadBase , ClothingOuterStorageFoldableBase ]
+  id: ClothingMstrSurgeonHood
+  name: master surgeon's hood
+  description: A red hood for the Master Surgeon, hides the blood.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Hats/mstrsurgeon_hood.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Hats/mstrsurgeon_hood.rsi
+
+- type: entity
+  parent: [ ClothingHeadBase , ClothingOuterStorageFoldableBaseOpened]
+  id: ClothingMstrSurgeonHoodOpen
+  name: master surgeon's hood
+  suffix: Opened
+
+- type: entity
+  parent: [ ClothingHeadBase , ClothingOuterStorageFoldableBase ]
+  id: ClothingPhysicianHood
+  name: physician's hood
+  description: Black always did hide stains the best.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Hats/physician_hood.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Hats/physician_hood.rsi
+
+- type: entity
+  parent: [ ClothingHeadBase , ClothingOuterStorageFoldableBaseOpened ]
+  id: ClothingPhysicianHoodOpen
+  name: physician's hood
+  suffix: Opened

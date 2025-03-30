@@ -22,6 +22,9 @@
       traits:
         - Foreigner
         - ForeignerLight
+    - !type:CharacterEmployerRequirement
+      employers:
+      - NanoTrasen
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
@@ -53,6 +56,15 @@
           - DispelPower
           - MetapsionicPower
           - TelepathyPower
+      - type: Statistics
+        attributes:
+          Strength: 7
+          Dexterity: 8
+          Intelligence: 12
+          Will: 16
+        skills:
+          Electrician: 3
+          Mechanic: 2
   afterLoadoutSpecial:
   - !type:ModifyEnvirosuitSpecial
     charges: 8

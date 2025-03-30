@@ -61,24 +61,26 @@
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutMedicalHandsGlovesChemist
+      id: LoadoutMedicalApothecaryGloves
 
-#- type: characterItemGroup
-#  id: LoadoutChemistHead
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup
+  id: LoadoutChemistHead
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutMedicalApothecaryHood
+
 #- type: characterItemGroup
 #  id: LoadoutChemistId
 #  maxItems: 1
 #  items:
 #
-- type: characterItemGroup
-  id: LoadoutChemistNeck
-  maxItems: 1
-  items:
-    - type: loadout
-      id: LoadoutMedicalNeckTieChem
+#- type: characterItemGroup
+#  id: LoadoutChemistNeck
+#  maxItems: 1
+#  items:
+#    - type: loadout
+#      id: LoadoutMedicalNeckTieChem
 
 #- type: characterItemGroup
 #  id: LoadoutChemistMask
@@ -90,26 +92,18 @@
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutMedicalOuterLabcoatChem
-    - type: loadout
-      id: LoadoutMedicalOuterApronChemist
-    - type: loadout
-      id: LoadoutChemistWinterCoat
+      id: LoadoutMedicalApothecaryRobes
 
 - type: characterItemGroup
   id: LoadoutChemistShoes
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutMedicalShoesEnclosedChem
+      id: LoadoutMedicalApothecaryBoots
 
 - type: characterItemGroup
   id: LoadoutChemistUniforms
   maxItems: 1
   items:
     - type: loadout
-      id: LoadoutMedicalUniformJumpsuitChemShirt
-    - type: loadout
-      id: LoadoutMedicalUniformJumpsuitChemistry
-    - type: loadout
-      id: LoadoutMedicalUniformJumpskirtChemistry
+      id: LoadoutMedicalAPothecaryScrubs

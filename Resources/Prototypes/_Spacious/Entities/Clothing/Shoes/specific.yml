@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesApothecaryBoots
+  name: apothecary's boots
+  description: The apothecary's boots, designed to protect against spills and splashes.
+  components:
+  - type: Sprite
+    sprite: _Spacious/Clothing/Shoes/apothecary_boots.rsi
+  - type: Clothing
+    sprite: _Spacious/Clothing/Shoes/apothecary_boots.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Caustic: 0.9

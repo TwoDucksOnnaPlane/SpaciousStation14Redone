@@ -12,6 +12,22 @@
   extendedAccess:
   - Salvage
   - Orders # DeltaV - Orders, see Resources/Prototypes/DeltaV/Access/cargo.yml
+  requirements:
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Statistics
+        attributes:
+          Strength: 13
+          Dexterity: 13
+          Intelligence: 9
+          Will: 7
+        skills:
+          Housekeeping: 2
 
 - type: startingGear
   id: CargoTechGear

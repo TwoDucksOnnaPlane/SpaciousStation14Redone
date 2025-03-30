@@ -1,12 +1,16 @@
 - type: job
   id: MedicalDoctor
-  name: job-name-doctor
+  name: Physician
   description: job-description-doctor
   playTimeTracker: JobMedicalDoctor
   requirements:
     - !type:CharacterDepartmentTimeRequirement
       department: Medical
       min: 14400 #4 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
@@ -22,18 +26,33 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 1.75
+    - type: Statistics
+      attributes:
+        Strength: 8
+        Dexterity: 9
+        Intelligence: 12
+        Will: 8
+      skills:
+        FirstAid: 1
+        Diagnosis: 2
+        Surgery: 1
 
 - type: startingGear
   id: DoctorGear
   subGear:
   - DoctorPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+    jumpsuit: UniformScrubsColorBlack
     back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorWhite
+    shoes: ClothingShoesBootsLaceup
     id: MedicalPDA
     ears: ClothingHeadsetMedical
-  innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
+    hat: ClothingPhysicianHood
+    mask: ClothingPhysicianMask
+    neck: ClothingPhysicianCollar
+    gloves: ClothingPhysicianGloves
+    outerClothing: ClothingPhysicianRobe
+  innerClothingSkirt: UniformScrubsColorBlack
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled
 

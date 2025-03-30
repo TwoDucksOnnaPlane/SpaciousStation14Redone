@@ -11,6 +11,20 @@
   - Justice # DeltaV - Justice dept
   - Lawyer
   - Maintenance
+  requirements:
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Statistics
+        attributes:
+          Strength: 10
+          Dexterity: 10
+          Intelligence: 10
+          Will: 10
 
 - type: startingGear
   id: LawyerGear

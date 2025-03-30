@@ -1,6 +1,6 @@
 - type: job
   id: MedicalIntern
-  name: job-name-intern
+  name: Barber-Surgeon
   description: job-description-intern
   playTimeTracker: JobMedicalIntern
   requirements:
@@ -8,6 +8,10 @@
     #   department: Medical
     #   time: 54000 # 15 hrs
     #   inverted: true # stop playing intern if you're good at med!
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"
   supervisors: job-supervisors-medicine
@@ -21,18 +25,31 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 1.5
+    - type: Statistics
+      attributes:
+        Strength: 8
+        Dexterity: 9
+        Intelligence: 11
+        Will: 8
+      skills:
+        FirstAid: 1
+        Diagnosis: 1
+        Surgery: 1
+        Housekeeping: 2
 
 - type: startingGear
   id: MedicalInternGear
   subGear:
   - DoctorPlasmamanGear
   equipment:
-    jumpsuit: UniformScrubsColorBlue # DeltaV - Intern starts with blue scrubs
+    jumpsuit: UniformScrubsColorBlack # Spacious - Scrubs changed to black
     back: ClothingBackpackMedicalFilled
-    shoes: ClothingShoesColorWhite
+    shoes: ClothingShoesBootsLaceup
     id: MedicalInternPDA
     ears: ClothingHeadsetMedical
     pocket2: BookMedicalReferenceBook
+    gloves: ClothingPhysicianGloves
+    outerClothing: ClothingPhysicianRobe
   # innerClothingSkirt: ClothingUniformJumpskirtColorWhite # DeltaV
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

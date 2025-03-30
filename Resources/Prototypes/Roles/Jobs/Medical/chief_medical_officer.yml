@@ -2,7 +2,7 @@
 
 - type: job
   id: ChiefMedicalOfficer
-  name: job-name-cmo
+  name: Master Surgeon
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
@@ -11,6 +11,9 @@
       traits:
         - Foreigner
         - ForeignerLight
+    - !type:CharacterEmployerRequirement
+      employers:
+      - NanoTrasen
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
@@ -38,6 +41,16 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 2.5
+    - type: Statistics
+      attributes:
+        Strength: 8
+        Dexterity: 9
+        Intelligence: 13
+        Will: 8
+      skills:
+        FirstAid: 4
+        Diagnosis: 4
+        Surgery: 4
   afterLoadoutSpecial:
   - !type:ModifyEnvirosuitSpecial
     charges: 8
@@ -49,12 +62,17 @@
   subGear:
   - CMOPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCMO
+    jumpsuit: UniformScrubsColorCybersun
     back: ClothingBackpackCMOFilled
-    shoes: ClothingShoesColorBrown
+    shoes: ClothingShoesBootsLaceup
     id: CMOPDA
     ears: ClothingHeadsetAltMedical # Goobstation
-  innerClothingSkirt: ClothingUniformJumpskirtCMO
+    mask: ClothingMstrSurgeonMask
+    hat: ClothingMstrSurgeonHood
+    neck: ClothingMstrSurgeonCollar
+    gloves: ClothingMstrSurgeonGloves
+    outerClothing: ClothingMstrSurgeonRobe
+  innerClothingSkirt: UniformScrubsColorCybersun
   satchel: ClothingBackpackSatchelCMOFilled
   duffelbag: ClothingBackpackDuffelCMOFilled
 

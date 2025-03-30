@@ -7,6 +7,10 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Logistics # DeltaV - Logistics Department replacing Cargo
       min: 21600 #DeltaV 6 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   #  - !type:OverallPlaytimeRequirement #DeltaV
   #    time: 36000 #10 hrs
   icon: "JobIconShaftMiner"
@@ -17,6 +21,18 @@
   - Salvage
   - Maintenance
   - External
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Statistics
+        attributes:
+          Strength: 13
+          Dexterity: 13
+          Intelligence: 10
+          Will: 7
+        skills:
+          FirstAid: 2
+          Diagnosis: 2
 
 - type: startingGear
   id: SalvageSpecialistGear

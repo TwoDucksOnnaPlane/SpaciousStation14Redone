@@ -7,12 +7,28 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Epistemics # DeltaV - Epistemics Department replacing Science
       min: 14400 #4 hrs
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: ScientistGear
   icon: "JobIconScientist"
   supervisors: job-supervisors-rd
   access:
   - Research
   - Maintenance
+  special:
+  - !type:AddComponentSpecial
+  components:
+    - type: Statistics
+      attributes:
+        Strength: 7
+        Dexterity: 8
+        Intelligence: 12
+        Will: 12
+      skills:
+        Electrician: 1
+        Mechanic: 1
 
 - type: startingGear
   id: ScientistGear

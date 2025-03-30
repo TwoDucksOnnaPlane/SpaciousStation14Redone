@@ -186,21 +186,21 @@
       group: LoadoutChemistEyes
     - !type:CharacterJobRequirement
       jobs:
-         - Chemist
+        - Chemist
   items:
     - ClothingEyesGlassesChemicalBudget
 
 - type: loadout
   id: LoadoutMedicalEyesGlassesChemical
   category: JobsMedicalChemist
-  cost: 2
+  cost: 1
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutChemistEyes
     - !type:CharacterJobRequirement
       jobs:
-         - Chemist
+        - Chemist
   items:
     - ClothingEyesGlassesChemical
 
@@ -213,14 +213,14 @@
     - !type:CharacterItemGroupRequirement
       group: LoadoutChemistEyes
     - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
+      jobs:
+        - Chemist
   items:
     - ClothingEyesGlassesChemist
 
 # Gloves
 - type: loadout
-  id: LoadoutMedicalHandsGlovesChemist
+  id: LoadoutMedicalApothecaryGloves
   category: JobsMedicalChemist
   cost: 0
   exclusive: true
@@ -228,52 +228,40 @@
     - !type:CharacterItemGroupRequirement
       group: LoadoutChemistGloves
     - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
+      jobs:
+        - Chemist
   items:
-    - ClothingHandsGlovesChemist
+    - ClothingApothecaryGloves
 
 # Head
-
-# Id
-
-# Neck
 - type: loadout
-  id: LoadoutMedicalNeckTieChem
+  id: LoadoutMedicalApothecaryHood
   category: JobsMedicalChemist
   cost: 0
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
-      group: LoadoutChemistNeck
+      group: LoadoutChemistHead
     - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
+      jobs:
+        - Chemist
   items:
-    - ClothingNeckTieChem
+    - ClothingApothecaryHood
+
+# Id
+
+# Neck
 
 # Mask
 
 # Outer
-- type: loadout
-  id: LoadoutChemistWinterCoat
-  category: JobsMedicalChemist
-  cost: 0
-  requirements:
-  - !type:CharacterItemGroupRequirement
-    group: LoadoutChemistOuter
-  - !type:CharacterJobRequirement
-    jobs:
-    - Chemist
-  items:
-  - ClothingOuterWinterChem
 
 - type: loadout
-  id: LoadoutMedicalOuterLabcoatChem
+  id: LoadoutMedicalApothecaryRobes
   category: JobsMedicalChemist
   cost: 0
   exclusive: true
-  customColorTint: true
+  customColorTint: false
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutChemistOuter
@@ -281,40 +269,26 @@
       jobs:
         - Chemist
   items:
-    - ClothingOuterCoatLabChem
-
-- type: loadout
-  id: LoadoutMedicalOuterApronChemist
-  category: JobsMedicalChemist
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChemistOuter
-    - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
-  items:
-    - ClothingOuterApronChemist
+    - ClothingApothecaryRobe
 
 # Shoes
 - type: loadout
-  id: LoadoutMedicalShoesEnclosedChem
-  category: JobsMedicalAUncategorized
+  id: LoadoutMedicalApothecaryBoots
+  category: JobsMedicalChemist
   cost: 0
   exclusive: true
   requirements:
     - !type:CharacterItemGroupRequirement
       group: LoadoutChemistShoes
     - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
+      jobs:
+        - Chemist
   items:
-    - ClothingShoesEnclosedChem
+    - ClothingShoesApothecaryBoots
 
 # Uniforms
 - type: loadout
-  id: LoadoutMedicalUniformJumpsuitChemShirt
+  id: LoadoutMedicalApothecaryScrubs
   category: JobsMedicalChemist
   cost: 0
   exclusive: true
@@ -322,35 +296,7 @@
     - !type:CharacterItemGroupRequirement
       group: LoadoutChemistUniforms
     - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
+      jobs:
+        - Chemist
   items:
-    - ClothingUniformJumpsuitChemShirt
-
-- type: loadout
-  id: LoadoutMedicalUniformJumpsuitChemistry
-  category: JobsMedicalChemist
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChemistUniforms
-    - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
-  items:
-    - ClothingUniformJumpsuitChemistry
-
-- type: loadout
-  id: LoadoutMedicalUniformJumpskirtChemistry
-  category: JobsMedicalChemist
-  cost: 0
-  exclusive: true
-  requirements:
-    - !type:CharacterItemGroupRequirement
-      group: LoadoutChemistUniforms
-    - !type:CharacterJobRequirement
-       jobs:
-         - Chemist
-  items:
-    - ClothingUniformJumpskirtChemistry
+    - ClothingApothecaryScrubs

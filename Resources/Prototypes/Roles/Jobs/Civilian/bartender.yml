@@ -7,6 +7,10 @@
     - !type:CharacterDepartmentTimeRequirement
       department: Civilian
       min: 3600 #DeltaV
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop
@@ -17,6 +21,17 @@
   extendedAccess:
   - Kitchen
   - Hydroponics
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Statistics
+        attributes:
+          Strength: 10
+          Dexterity: 10
+          Intelligence: 10
+          Will: 10
+        skills:
+          Housekeeping: 1
 
 - type: startingGear
   id: BartenderGear

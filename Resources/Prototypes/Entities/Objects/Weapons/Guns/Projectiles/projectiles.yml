@@ -24,6 +24,16 @@
   description: If you can see this you're probably dead!
   abstract: true
   components:
+  - type: Projectile
+    impactEffect: BulletImpactEffect
+    damage:
+      types: 
+        Piercing: 14
+    soundHit:
+      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+  - type: TimedDespawn
+    lifetime: 10
+  - type: LagCompensation
   - type: Reflective
   - type: FlyBySound
   - type: Clickable
@@ -39,32 +49,14 @@
     angularDamping: 0
   - type: Fixtures
     fixtures:
-      projectile:
+      projectile:  # First fixture
         shape:
           !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:
-        - Impassable
-        - BulletImpassable
-      fly-by: &flybyfixture
-        shape: !type:PhysShapeCircle
-          radius: 1.5
-        layer:
-        - Impassable
-        - MidImpassable
-        - HighImpassable
-        - LowImpassable
-        hard: False
-  - type: Projectile
-    impactEffect: BulletImpactEffect
-    damage:
-      types:
-        Piercing: 14
-    soundHit:
-      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
-  - type: TimedDespawn
-    lifetime: 10
+          - Impassable
+          - BulletImpassable
 
 - type: entity
   id: BaseBulletTrigger # Trigger-on-collide bullets
@@ -87,7 +79,6 @@
         mask:
         - Impassable
         - BulletImpassable
-      fly-by: *flybyfixture
 
 - type: entity
   id: BaseBulletPractice
@@ -205,7 +196,6 @@
         mask:
           - Impassable
           - BulletImpassable
-      fly-by: *flybyfixture
   - type: Ammo
   - type: Projectile
     damage:
@@ -247,7 +237,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 30
@@ -290,7 +279,6 @@
         mask:
         - Impassable
         - BulletImpassable
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 20
@@ -329,7 +317,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 1
@@ -365,7 +352,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
 #   soundHit:  Waiting on serv3
     damage:
@@ -407,7 +393,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: StaminaDamageOnCollide
     damage: 40
   - type: Projectile
@@ -556,7 +541,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
     damage:
       types:
@@ -996,7 +980,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: StaminaDamageOnCollide
     damage: 15
@@ -1077,7 +1060,6 @@
         hard: false
         mask:
         - Opaque
-      fly-by: *flybyfixture
   - type: Projectile
     impactEffect: BulletImpactEffectRedDisabler
     damage:
@@ -1115,7 +1097,6 @@
         hard: false
         mask:
         - Opaque # WWDP allow shooting through windows
-      fly-by: *flybyfixture
   - type: Ammo
   - type: Projectile
     impactEffect: BulletImpactEffectOrangeDisabler

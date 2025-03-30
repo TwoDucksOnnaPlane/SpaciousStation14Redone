@@ -1,6 +1,6 @@
 - type: job
   id: Paramedic
-  name: job-name-paramedic
+  name: Cutter
   description: job-description-paramedic
   playTimeTracker: JobParamedic
   requirements:
@@ -10,6 +10,10 @@
     - !type:CharacterDepartmentTimeRequirement # DeltaV - Medical dept time requirement
       department: Medical
       min: 28800 # DeltaV - 8 hours
+    - !type:CharacterEmployerRequirement
+      inverted: true
+      employers:
+      - Unemployed
     # - !type:OverallPlaytimeRequirement # DeltaV - No playtime requirement
     #   time: 54000 # 15 hrs
   startingGear: ParamedicGear
@@ -28,21 +32,34 @@
     - type: CPRTraining
     - type: SurgerySpeedModifier
       speedModifier: 1.75
+    - type: Statistics
+      attributes:
+        Strength: 10
+        Dexterity: 11
+        Intelligence: 13
+        Will: 8
+      skills:
+        FirstAid: 3
+        Diagnosis: 3
 
 - type: startingGear
   id: ParamedicGear
   subGear:
   - ParamedicPlasmamanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitParamedic
+    jumpsuit: UniformScrubsColorBlack
     back: ClothingBackpackParamedicFilledDV
-    shoes: ClothingShoesColorBlue
+    shoes: ClothingShoesBootsLaceup
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalEMTFilled
     pocket1: HandheldGPSBasic
     pocket2: HandheldCrewMonitor
-  innerClothingSkirt: ClothingUniformJumpskirtParamedic
+    gloves: ClothingPhysicianGloves
+    outerClothing: ClothingPhysicianRobe
+    neck: ClothingPhysicianCollar
+    head: ClothingPhysicianHood
+  innerClothingSkirt: UniformScrubsColorBlack
   satchel: ClothingBackpackSatchelParamedicFilledDV
   duffelbag: ClothingBackpackDuffelParamedicFilledDV
 
